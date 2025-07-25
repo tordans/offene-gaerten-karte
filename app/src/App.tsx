@@ -83,7 +83,33 @@ function App() {
     <div className="h-screen flex">
       {/* Sidebar */}
       <div className="w-64 bg-white shadow-lg p-4 overflow-y-auto">
-        <h1 className="text-xl font-bold mb-4">Offene Gärten</h1>
+        <h1 className="text-xl font-bold mb-4">Offene Gärten Karte</h1>
+
+        {/* Project Description */}
+        <div className="mb-6 p-3 bg-gray-50 rounded-lg">
+          <p className="text-sm text-gray-700 mb-3">
+            Diese interaktive Karte zeigt alle offenen Gärten aus der Datenbank von
+            <a
+              href="https://www.xn--offene-grten-ncb.de/gaerten-alphabetisch/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline ml-1"
+            >
+              Offene Gärten
+            </a>
+            . Die Daten daten wurden zuletzt am 25.7.2025 gescraped und geocodiert.
+          </p>
+          <p className="text-xs text-gray-500">
+            <a
+              href="https://github.com/tordans/offene-gaerten-karte"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              GitHub Repository
+            </a>
+          </p>
+        </div>
 
         {/* Month Filter */}
         <div className="mb-6">
