@@ -3,6 +3,8 @@ import { Map, Marker, Popup } from 'react-map-gl/maplibre';
 import type { Garden, GardensJson } from './types';
 import { formatDistanceToNow } from 'date-fns';
 import { de } from 'date-fns/locale';
+// Import data as a module
+import gardensData from './data/gardens-parsed.json';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 // Use MapTiler landscape style
@@ -39,23 +41,9 @@ function App() {
   });
 
   useEffect(() => {
-    // Copy the data file to public directory first, then access it
-    fetch('/data/gardens-parsed.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data: GardensJson) => setGardens(data))
-      .catch(error => {
-        console.error('Error loading gardens:', error);
-        // Fallback: try to load from relative path
-        fetch('../../data/gardens-parsed.json')
-          .then(response => response.json())
-          .then((data: GardensJson) => setGardens(data))
-          .catch(err => console.error('Fallback also failed:', err));
-      });
+    // Use imported data directly
+    console.log('Loading gardens data:', gardensData);
+    setGardens(gardensData as GardensJson);
   }, []);
 
   const filteredGardens = selectedMonth
