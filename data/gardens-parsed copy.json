@@ -170,7 +170,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-097/",
     "address": {
-      "raw": "15827 Blankenfelde-Mahlow, Feldstraße 33 "
+      "raw": "15827 Blankenfelde-Mahlow OT Blankenfelde, Feldstraße 33 "
     },
     "dates": [
       {
@@ -202,10 +202,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.116Z",
-    "_id": "097",
-    "lat": 52.3345407,
-    "lng": 13.4023214,
-    "_geocodedAt": "2025-07-25T07:38:55.230Z"
+    "_id": "097"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-078/",
@@ -330,7 +327,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-019/",
     "address": {
-      "raw": "16348 Wandlitz, Straße am See 35 "
+      "raw": "16348 Wandlitz OT Stolzenhagen, Straße am See 35 "
     },
     "dates": [
       {
@@ -353,10 +350,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.117Z",
-    "_id": "019",
-    "lat": 52.7711418,
-    "lng": 13.4368388,
-    "_geocodedAt": "2025-07-25T07:38:56.353Z"
+    "_id": "019"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-058/",
@@ -423,7 +417,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-023/",
     "address": {
-      "raw": "16062 Hohen Neuendorf, Fasanenallee 60 "
+      "raw": "16062 Hohen Neuendorf OT Bergfelde, Fasanenallee 60 "
     },
     "dates": [
       {
@@ -455,10 +449,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.119Z",
-    "_id": "023",
-    "lat": 52.6708825,
-    "lng": 13.3308336,
-    "_geocodedAt": "2025-07-25T07:38:57.629Z"
+    "_id": "023"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-035/",
@@ -530,7 +521,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-127/",
     "address": {
-      "raw": "15834 Rangsdorf Machnow, Fenneweg 1"
+      "raw": "15834 Rangsdorf OT Groß Machnow, Fenneweg 1"
     },
     "dates": [
       {
@@ -553,10 +544,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.121Z",
-    "_id": "127",
-    "lat": 52.2714754,
-    "lng": 13.5030112,
-    "_geocodedAt": "2025-07-25T07:38:58.813Z"
+    "_id": "127"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-062/",
@@ -583,7 +571,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-126/",
     "address": {
-      "raw": "Sachsenstr. 14; 15806 Zossen"
+      "raw": "de vanderpoost tuin"
     },
     "dates": [
       {
@@ -708,15 +696,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.122Z",
-    "_id": "126",
-    "lat": 52.248334,
-    "lng": 13.4203829,
-    "_geocodedAt": "2025-07-25T07:45:57.750Z"
+    "_id": "126"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-063/",
     "address": {
-      "raw": "10829 Berlin-Schöneberg, Kleingartenkolonie Lindenhain im Schöneberger Südgelände, Hans-Dannert-Weg 158  "
+      "raw": "       52°28&#039;12.6&quot;N 13°21&#039;41.3&quot;E "
     },
     "dates": [
       {
@@ -730,10 +715,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.123Z",
-    "_id": "063",
-    "lat": 52.4701013,
-    "lng": 13.3589885,
-    "_geocodedAt": "2025-07-25T07:46:02.609Z"
+    "_id": "063"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-034/",
@@ -791,7 +773,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-130/",
     "address": {
-      "raw": "15848 Rietz, Rassmannsdorf 10b"
+      "raw": "Alwine Landhaus an den Spreewiesen"
     },
     "dates": [
       {
@@ -904,10 +886,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.125Z",
-    "_id": "130",
-    "lat": 52.2557013,
-    "lng": 14.2552093,
-    "_geocodedAt": "2025-07-25T07:46:00.544Z"
+    "_id": "130"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-075/",
@@ -1109,7 +1088,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-002/",
     "address": {
-      "raw": "17291 Nordwestuckermark, Stangenweg 3 "
+      "raw": "17291 Nordwestuckermark OT Christianenhof, Stangenweg 3 "
     },
     "dates": [
       {
@@ -1200,10 +1179,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.130Z",
-    "_id": "002",
-    "lat": 53.3592443,
-    "lng": 13.6664799,
-    "_geocodedAt": "2025-07-25T07:39:03.656Z"
+    "_id": "002"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-055/",
@@ -1308,7 +1284,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-106/",
     "address": {
-      "raw": "14550 Groß Kreutz, Weißbirkenweg 5"
+      "raw": "14550 Groß Kreutz OT Jeserig, Weißbirkenweg 5"
     },
     "dates": [
       {
@@ -1331,15 +1307,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.132Z",
-    "_id": "106",
-    "lat": 52.4060501,
-    "lng": 12.7082639,
-    "_geocodedAt": "2025-07-25T07:39:04.753Z"
+    "_id": "106"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-014/",
     "address": {
-      "raw": "16845 Stüdenitz, Kyritzer Str.7"
+      "raw": "16845 Stüdenitz/Schönermerk, Kyritzer Str.7"
     },
     "dates": [
       {
@@ -1380,10 +1353,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.133Z",
-    "_id": "014",
-    "lat": 52.8907936,
-    "lng": 12.2862997,
-    "_geocodedAt": "2025-07-25T07:53:43.193Z"
+    "_id": "014"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-048/",
@@ -1410,7 +1380,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-009/",
     "address": {
-      "raw": "16278 Angermünde, Zum Dorfanger 18 "
+      "raw": "16278 Angermünde OT Schmargendorf, Zum Dorfanger 18 "
     },
     "dates": [
       {
@@ -1433,10 +1403,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.134Z",
-    "_id": "009",
-    "lat": 52.9787098,
-    "lng": 13.9660102,
-    "_geocodedAt": "2025-07-25T07:39:06.958Z"
+    "_id": "009"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-137/",
@@ -1574,7 +1541,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-121/",
     "address": {
-      "raw": "14558 Nuthetal, Richard-Kuckuck-Str. 95 "
+      "raw": "14558 Nuthetal OT Rehbrücke, Richard-Kuckuck-Str. 95 "
     },
     "dates": [
       {
@@ -1588,10 +1555,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.140Z",
-    "_id": "121",
-    "lat": 52.3492535,
-    "lng": 13.1197132,
-    "_geocodedAt": "2025-07-25T07:39:08.055Z"
+    "_id": "121"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-064/",
@@ -1689,7 +1653,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-101/",
     "address": {
-      "raw": "15713, Waldsiedlung 13"
+      "raw": "15713 Königswusterhausen OT Wernsdorf, Waldsiedlung 13"
     },
     "dates": [
       {
@@ -1712,15 +1676,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.141Z",
-    "_id": "101",
-    "lat": 52.3676561,
-    "lng": 13.7099806,
-    "_geocodedAt": "2025-07-25T07:53:44.454Z"
+    "_id": "101"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-052/",
     "address": {
-      "raw": "12623 Berlin, Feldrain 14 "
+      "raw": "12623 Berlin, Feldrain 14/Am Rosenhag "
     },
     "dates": [
       {
@@ -1752,15 +1713,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.142Z",
-    "_id": "052",
-    "lat": 52.5240409,
-    "lng": 13.6277863,
-    "_geocodedAt": "2025-07-25T07:53:45.543Z"
+    "_id": "052"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-117/",
     "address": {
-      "raw": "14552 Michendorf, Rosenweg 9 "
+      "raw": "14552 Michendorf OT Wilhelmshorst, Rosenweg 9 "
     },
     "dates": [
       {
@@ -1783,15 +1741,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.142Z",
-    "_id": "117",
-    "lat": 52.3297206,
-    "lng": 13.0692631,
-    "_geocodedAt": "2025-07-25T07:39:11.447Z"
+    "_id": "117"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-005/",
     "address": {
-      "raw": "16775 Stechlin, Forststeig 2a "
+      "raw": "16775 Stechlin OT Neuglobsow, Forststeig 2a "
     },
     "dates": [
       {
@@ -1812,15 +1767,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.142Z",
-    "_id": "005",
-    "lat": 53.144773,
-    "lng": 13.0430243,
-    "_geocodedAt": "2025-07-25T07:39:12.543Z"
+    "_id": "005"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-091/",
     "address": {
-      "raw": "Johannes-Niemeyer-Weg 9 b, Steinstücken, Wannsee, Steglitz-Zehlendorf, Berlin, Teltow, 14109, Deutschland"
+      "raw": "14109 Berlin-Steinstücken, Johannis-Niemeyer-Weg 9 b "
     },
     "dates": [
       {
@@ -1834,10 +1786,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.143Z",
-    "_id": "091",
-    "lat": 52.3891668,
-    "lng": 13.1319319,
-    "_geocodedAt": "2025-07-25T07:53:46.773Z"
+    "_id": "091"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-029/",
@@ -2112,7 +2061,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-116/",
     "address": {
-      "raw": "Ravensbergweg 10, 14552 Michendorf /"
+      "raw": "Ravensbergweg 10, 14552 Michendorf / OT Wilhelmshorst"
     },
     "dates": [
       {
@@ -2135,10 +2084,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.147Z",
-    "_id": "116",
-    "lat": 52.3328663,
-    "lng": 13.0575898,
-    "_geocodedAt": "2025-07-25T07:39:14.986Z"
+    "_id": "116"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-045/",
@@ -2236,7 +2182,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-120/",
     "address": {
-      "raw": "14558, Nuthetal, Schinkelstr. 17 "
+      "raw": "14558, Nuthetal OT Rehbrücke, Schinkelstr. 17 "
     },
     "dates": [
       {
@@ -2268,10 +2214,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.150Z",
-    "_id": "120",
-    "lat": 52.3503757,
-    "lng": 13.1076617,
-    "_geocodedAt": "2025-07-25T07:39:16.063Z"
+    "_id": "120"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-065/",
@@ -2490,7 +2433,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-073/",
     "address": {
-      "raw": "14669 Ketzin, Potsdamer Allee 8b"
+      "raw": "14669 Ketzin OT Falkenrehde, Potsdamer Allee 8b"
     },
     "dates": [
       {
@@ -2513,10 +2456,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.152Z",
-    "_id": "073",
-    "lat": 52.4934919,
-    "lng": 12.9259632,
-    "_geocodedAt": "2025-07-25T07:39:17.257Z"
+    "_id": "073"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-008/",
@@ -2657,7 +2597,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-123/",
     "address": {
-      "raw": "14547 Beelitz, Straße der Einheit 140 "
+      "raw": "14547 Beelitz OT Fichtenwalde, Straße der Einheit 140 "
     },
     "dates": [
       {
@@ -2680,10 +2620,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.154Z",
-    "_id": "123",
-    "lat": 52.2828556,
-    "lng": 12.8846083,
-    "_geocodedAt": "2025-07-25T07:39:18.418Z"
+    "_id": "123"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-089/",
@@ -2741,7 +2678,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-027/",
     "address": {
-      "raw": "14641 Nauen Behnitz, Heineberger Weg 21 "
+      "raw": "14641 Nauen OT Klein Behnitz, Heineberger Weg 21 "
     },
     "dates": [
       {
@@ -2755,10 +2692,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.156Z",
-    "_id": "027",
-    "lat": 52.5766311,
-    "lng": 12.6811473,
-    "_geocodedAt": "2025-07-25T07:39:19.551Z"
+    "_id": "027"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-070/",
@@ -2834,7 +2768,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-119/",
     "address": {
-      "raw": "14552 Michendorf, Straße des Friedens 87 "
+      "raw": "14552 Michendorf OT Langerwisch, Straße des Friedens 87 "
     },
     "dates": [
       {
@@ -2857,10 +2791,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.158Z",
-    "_id": "119",
-    "lat": 52.3129582,
-    "lng": 13.0661189,
-    "_geocodedAt": "2025-07-25T07:39:20.760Z"
+    "_id": "119"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-085/",
@@ -3021,7 +2952,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-115/",
     "address": {
-      "raw": "14548 Schwielowsee,, Bergholzer Straße 26  "
+      "raw": "14548 Schwielowsee, OT Caputh, Bergholzer Straße 26  "
     },
     "dates": [
       {
@@ -3044,15 +2975,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.159Z",
-    "_id": "115",
-    "lat": 52.3472017,
-    "lng": 13.0144491,
-    "_geocodedAt": "2025-07-25T07:39:21.857Z"
+    "_id": "115"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-103/",
     "address": {
-      "raw": "15537 Neu Zittau, Walther-Rathenau-Str. 25 "
+      "raw": "15537 Neu Zittau OT Burig, Walther-Rathenau-Str. 25 "
     },
     "dates": [
       {
@@ -3093,10 +3021,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.160Z",
-    "_id": "103",
-    "lat": 52.3832557,
-    "lng": 13.7682119,
-    "_geocodedAt": "2025-07-25T07:39:22.973Z"
+    "_id": "103"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-046/",
@@ -3152,7 +3077,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-010/",
     "address": {
-      "raw": "16303 Schwedt, Bernd-von-Arnim-Str. 42 "
+      "raw": "16303 Schwedt OT Criewen, Bernd-von-Arnim-Str. 42 "
     },
     "dates": [
       {
@@ -3211,10 +3136,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.161Z",
-    "_id": "010",
-    "lat": 53.0162031,
-    "lng": 14.226455,
-    "_geocodedAt": "2025-07-25T07:39:24.109Z"
+    "_id": "010"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-102/",
@@ -3290,7 +3212,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-114/",
     "address": {
-      "raw": "14458 Schwielowsee, Ziegelstr. 15 "
+      "raw": "14458 Schwielowsee OT Caputh, Ziegelstr. 15 "
     },
     "dates": [
       {
@@ -3313,10 +3235,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.162Z",
-    "_id": "114",
-    "lat": 52.3486013,
-    "lng": 12.9935911,
-    "_geocodedAt": "2025-07-25T07:39:25.287Z"
+    "_id": "114"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-051/",
@@ -3343,7 +3262,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-006/",
     "address": {
-      "raw": "16775 Großwoltersdorf, Seestr. 12 D "
+      "raw": "16775 Großwoltersdorf OT Altglobsow, Seestr. 12 D "
     },
     "dates": [
       {
@@ -3357,10 +3276,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.163Z",
-    "_id": "006",
-    "lat": 53.1313392,
-    "lng": 13.1175727,
-    "_geocodedAt": "2025-07-25T07:39:26.490Z"
+    "_id": "006"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-092/",
@@ -3387,7 +3303,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-084/",
     "address": {
-      "raw": "14476 Potsdam, Thomas-Müntzer-Str. 7"
+      "raw": "jochen&#039;s hostahof"
     },
     "dates": [
       {
@@ -3417,15 +3333,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.164Z",
-    "_id": "084",
-    "lat": 52.4078825,
-    "lng": 12.9671495,
-    "_geocodedAt": "2025-07-25T07:44:34.190Z"
+    "_id": "084"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-118/",
     "address": {
-      "raw": "14552 Michendorf, Rosenweg 8 "
+      "raw": "14552 Michendorf OT Wilhelmshorst, Rosenweg 8 "
     },
     "dates": [
       {
@@ -3448,10 +3361,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.164Z",
-    "_id": "118",
-    "lat": 52.3290982,
-    "lng": 13.0699458,
-    "_geocodedAt": "2025-07-25T07:39:28.683Z"
+    "_id": "118"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-071/",
@@ -3487,7 +3397,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-134/",
     "address": {
-      "raw": "14947 Nuthe-Urstromtal, Kemnitzer Str. 41 "
+      "raw": "14947 Nuthe-Urstromtal OT Felgentreu, Kemnitzer Str. 41 "
     },
     "dates": [
       {
@@ -3528,10 +3438,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.165Z",
-    "_id": "134",
-    "lat": 52.0972456,
-    "lng": 13.0112607,
-    "_geocodedAt": "2025-07-25T07:39:29.800Z"
+    "_id": "134"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-026/",
@@ -3714,7 +3621,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-129/",
     "address": {
-      "raw": "15754 Heidesee, Ring 41 "
+      "raw": "15754 Heidesee OT Kolberg, Ring 41 "
     },
     "dates": [
       {
@@ -3737,10 +3644,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.167Z",
-    "_id": "129",
-    "lat": 52.2369412,
-    "lng": 13.815099,
-    "_geocodedAt": "2025-07-25T07:39:31.008Z"
+    "_id": "129"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-095/",
@@ -3785,7 +3689,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-001/",
     "address": {
-      "raw": "17348 Woldegk, Vogelsang 1 "
+      "raw": "17348 Woldegk OT Grauenhagen, Vogelsang 1 "
     },
     "dates": [
       {
@@ -3817,15 +3721,12 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.168Z",
-    "_id": "001",
-    "lat": 53.4105003,
-    "lng": 13.5593833,
-    "_geocodedAt": "2025-07-25T07:39:32.175Z"
+    "_id": "001"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-113/",
     "address": {
-      "raw": "14548 Schwielowsee, uferpromenade"
+      "raw": "14548 Schwielowsee OT Caputh, uferpromenade"
     },
     "dates": [
       {
@@ -3844,10 +3745,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.168Z",
-    "_id": "113",
-    "lat": 52.3428165,
-    "lng": 12.9796812,
-    "_geocodedAt": "2025-07-25T07:39:33.233Z"
+    "_id": "113"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-056/",
@@ -3883,7 +3781,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-105/",
     "address": {
-      "raw": "14550 Groß Kreutz, Schulstr. 46"
+      "raw": "14550 Groß Kreutz OT Jeserig, Schulstr. 46"
     },
     "dates": [
       {
@@ -3906,10 +3804,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.169Z",
-    "_id": "105",
-    "lat": 52.4107646,
-    "lng": 12.6893153,
-    "_geocodedAt": "2025-07-25T07:39:34.367Z"
+    "_id": "105"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-040/",
@@ -3936,7 +3831,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-017/",
     "address": {
-      "raw": "16833 Fehrbellin, Hauptstr. 42 "
+      "raw": "16833 Fehrbellin OT Königshorst, Hauptstr. 42 "
     },
     "dates": [
       {
@@ -3959,10 +3854,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.170Z",
-    "_id": "017",
-    "lat": 52.7093915,
-    "lng": 12.7941555,
-    "_geocodedAt": "2025-07-25T07:39:35.557Z"
+    "_id": "017"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-060/",
@@ -3989,7 +3881,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-125/",
     "address": {
-      "raw": "Soldpuhlweg 1, 14974 Ludwigsfelde Schulzendorf"
+      "raw": "Soldpuhlweg 1, 14974 Ludwigsfelde OT Groß Schulzendorf"
     },
     "dates": [
       {
@@ -4012,10 +3904,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.171Z",
-    "_id": "125",
-    "lat": 52.2722174,
-    "lng": 13.3446834,
-    "_geocodedAt": "2025-07-25T07:39:36.645Z"
+    "_id": "125"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-037/",
@@ -4087,7 +3976,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-021/",
     "address": {
-      "raw": "16359, Bahnhofstraße. 29, Germany"
+      "raw": "16359 Biesental, Bahnhofstr. 29 "
     },
     "dates": [
       {
@@ -4126,10 +4015,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.171Z",
-    "_id": "021",
-    "lat": 51.4744366,
-    "lng": 7.3069855,
-    "_geocodedAt": "2025-07-25T07:53:48.521Z"
+    "_id": "021"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-076/",
@@ -4280,7 +4166,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-108/",
     "address": {
-      "raw": "14797, Lehniner Allee 36"
+      "raw": "14797 Koster Lehnin OT Göhlsdorf, Lehniner Allee 36 "
     },
     "dates": [
       {
@@ -4348,10 +4234,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.173Z",
-    "_id": "108",
-    "lat": 52.3580768,
-    "lng": 12.7968363,
-    "_geocodedAt": "2025-07-25T07:44:36.626Z"
+    "_id": "108"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-077/",
@@ -4407,7 +4290,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-132/",
     "address": {
-      "raw": "Trebatscher Hauptstraße 26a; 15848 Tauche/"
+      "raw": "Trebatscher Hauptstraße 26a; 15848 Tauche/ OT Trebatsch"
     },
     "dates": [
       {
@@ -4421,10 +4304,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.175Z",
-    "_id": "132",
-    "lat": 52.0844183,
-    "lng": 14.1657841,
-    "_geocodedAt": "2025-07-25T07:39:40.475Z"
+    "_id": "132"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-020/",
@@ -4511,7 +4391,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-124/",
     "address": {
-      "raw": "14552 Michendorf, Beelitzer Str. 10 "
+      "raw": "14552 Michendorf OT Stücken, Beelitzer Str. 10 "
     },
     "dates": [
       {
@@ -4525,10 +4405,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.176Z",
-    "_id": "124",
-    "lat": 52.3113594,
-    "lng": 13.0570864,
-    "_geocodedAt": "2025-07-25T07:39:41.576Z"
+    "_id": "124"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-016/",
@@ -4651,7 +4528,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-112/",
     "address": {
-      "raw": "14542 Werder, An der Ziegelei 7 "
+      "raw": "14542 Werder OT Glindow, An der Ziegelei 7 "
     },
     "dates": [
       {
@@ -4665,10 +4542,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.178Z",
-    "_id": "112",
-    "lat": 52.3548132,
-    "lng": 12.9199236,
-    "_geocodedAt": "2025-07-25T07:39:42.921Z"
+    "_id": "112"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-057/",
@@ -4704,7 +4578,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-094/",
     "address": {
-      "raw": "14513 Teltow, Rudolf-Virchow-Str. 3"
+      "raw": "hostagrten teltow"
     },
     "dates": [
       {
@@ -4727,10 +4601,7 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.179Z",
-    "_id": "094",
-    "lat": 52.3832863,
-    "lng": 13.3034373,
-    "_geocodedAt": "2025-07-25T07:44:37.911Z"
+    "_id": "094"
   },
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-082/",
@@ -4757,7 +4628,7 @@
   {
     "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-128/",
     "address": {
-      "raw": "15 749 Mittenwalde, Telzer Höhe 1 "
+      "raw": "15 749 Mittenwalde OT Telz, Telzer Höhe 1 "
     },
     "dates": [
       {
@@ -4807,9 +4678,6 @@
       }
     ],
     "_parsedAt": "2025-07-25T07:15:20.180Z",
-    "_id": "128",
-    "lat": 52.248522,
-    "lng": 13.4979145,
-    "_geocodedAt": "2025-07-25T07:39:45.200Z"
+    "_id": "128"
   }
 ]

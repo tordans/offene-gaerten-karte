@@ -2,7 +2,7 @@ import { writeFile, readFile } from 'fs/promises';
 import { join } from 'path';
 import type { GardensJson } from '../../shared/types';
 
-const DATA_PATH = join(import.meta.dir, '../../data/gardens.json');
+const DATA_PATH = join(import.meta.dir, '../../data/gardens-parsed.json');
 const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search';
 
 async function geocode(address: string): Promise<{ lat: number; lon: number } | null> {
@@ -31,7 +31,7 @@ async function main() {
         updated = true;
         console.log(`Geocoded: ${address} -> ${geo.lat},${geo.lon}`);
       } else {
-        console.warn(`No geocode result for: ${address}`);
+        console.warn(`No geocode result for: ${address} (${garden.url})`);
       }
     } catch (e) {
       console.error(`Failed to geocode ${address}:`, e);
@@ -40,7 +40,7 @@ async function main() {
   }
   if (updated) {
     await writeFile(DATA_PATH, JSON.stringify(gardens, null, 2), 'utf-8');
-    console.log('Updated gardens.json');
+    console.log('Updated gardens-parsed.json');
   } else {
     console.log('No updates needed.');
   }
