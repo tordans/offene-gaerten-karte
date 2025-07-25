@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Map, Marker, Popup } from 'react-map-gl/maplibre';
+import { useQueryState, parseAsArrayOf, parseAsString } from 'nuqs';
 import type { Garden, GardensJson } from './types';
 import { formatDistanceToNow } from 'date-fns';
 import { de } from 'date-fns/locale';
@@ -38,6 +39,7 @@ function App() {
   const [gardens, setGardens] = useState<Garden[]>([]);
   const [selectedMonth, setSelectedMonth] = useState<number | null>(null);
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
+  const [favorites, setFavorites] = useQueryState('favorites', parseAsArrayOf(parseAsString).withDefault([]));
   const [selectedGarden, setSelectedGarden] = useState<Garden | null>(null);
   const [viewState, setViewState] = useState({
     longitude: 13.4050, // Berlin center
@@ -102,6 +104,17 @@ function App() {
     const date = new Date(year || new Date().getFullYear(), month - 1, day);
     return date.toLocaleDateString('de-DE', { weekday: 'short' });
   };
+
+  // Function to toggle favorite status
+  const toggleFavorite = (gardenId: string) => {
+    const newFavorites = favorites?.includes(gardenId)
+      ? favorites.filter((id: string) => id !== gardenId)
+      : [...(favorites || []), gardenId];
+    setFavorites(newFavorites);
+  };
+
+  // Function to check if a garden is favorited
+  const isFavorite = (gardenId: string) => favorites?.includes(gardenId) || false;
 
   return (
     <div className="h-screen flex">
@@ -203,44 +216,43 @@ function App() {
           </div>
         )}
 
-        {/* Selected Garden Info */}
-        {selectedGarden && (
-          <div className="border-t pt-4">
-            <h3 className="font-semibold mb-2">{selectedGarden.address.raw}</h3>
-            <div className="text-sm text-gray-600 mb-2 space-y-1">
-              <a
-                href={selectedGarden.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline block"
-              >
-                View Details
-              </a>
-              <a
-                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(selectedGarden.address.raw)}&travelmode=transit`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-600 hover:underline block"
-              >
-                🚌 Get Directions (Public Transport)
-              </a>
-            </div>
-            <div className="text-sm">
-              <strong>Opening Dates:</strong>
-              <ul className="mt-1 space-y-1">
-                {selectedGarden.dates.map((date, index) => {
-                  const { formatted, relative } = formatDate(date.parsed);
-                  return (
-                    <li key={index} className="text-gray-700">
-                      <div>{formatted} {date.parsed.startTime && date.parsed.endTime && `(${date.parsed.startTime}-${date.parsed.endTime})`}</div>
-                      <div className="text-xs text-gray-500">{relative}</div>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+        {/* Favorites Section */}
+        <div className="mb-6">
+          <h2 className="text-lg font-semibold mb-3">Favorites ({favorites?.length || 0})</h2>
+          <div className="space-y-2">
+            {favorites && favorites.length > 0 ? (
+              gardens
+                .filter(garden => garden._id && isFavorite(garden._id))
+                .map((garden) => (
+                  <div key={garden._id} className="p-2 bg-blue-50 rounded border-l-4 border-blue-400">
+                    <div className="text-sm font-medium text-gray-800 mb-1">
+                      {garden.address.raw}
+                    </div>
+                    <div className="text-xs text-gray-600 mb-2">
+                      <button
+                        onClick={() => garden._id && toggleFavorite(garden._id)}
+                        className="text-red-600 hover:text-red-800 mr-2"
+                      >
+                        ❌ Remove
+                      </button>
+                      <button
+                        onClick={() => setSelectedGarden(garden)}
+                        className="text-blue-600 hover:text-blue-800"
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                ))
+            ) : (
+              <div className="text-sm text-gray-500 italic">
+                No favorites yet. Click the heart icon on any garden to add it to your favorites.
+              </div>
+            )}
           </div>
-        )}
+        </div>
+
+
       </div>
 
       {/* Map */}
@@ -251,11 +263,12 @@ function App() {
           mapStyle={MAP_STYLE}
           style={{ width: '100%', height: '100%' }}
         >
-          {filteredGardens
-            .filter(garden => garden.lat && garden.lng)
+          {/* Always show favorite gardens as blue markers */}
+          {gardens
+            .filter(garden => garden._id && isFavorite(garden._id) && garden.lat && garden.lng)
             .map((garden) => (
               <Marker
-                key={garden._id || garden.url}
+                key={`favorite-${garden._id}`}
                 longitude={garden.lng!}
                 latitude={garden.lat!}
                 onClick={e => {
@@ -263,7 +276,24 @@ function App() {
                   setSelectedGarden(garden);
                 }}
               >
-                <div className="w-6 h-6 bg-green-500 rounded-full border-2 border-white cursor-pointer hover:bg-green-600 transition-colors" />
+                <div className="w-6 h-6 rounded-full border-2 border-white cursor-pointer transition-colors bg-blue-500 hover:bg-blue-600" />
+              </Marker>
+            ))}
+
+          {/* Show filtered gardens as green markers (excluding favorites to avoid duplicates) */}
+          {filteredGardens
+            .filter(garden => garden._id && !isFavorite(garden._id) && garden.lat && garden.lng)
+            .map((garden) => (
+              <Marker
+                key={`filtered-${garden._id}`}
+                longitude={garden.lng!}
+                latitude={garden.lat!}
+                onClick={e => {
+                  e.originalEvent.stopPropagation();
+                  setSelectedGarden(garden);
+                }}
+              >
+                <div className="w-6 h-6 rounded-full border-2 border-white cursor-pointer transition-colors bg-green-500 hover:bg-green-600" />
               </Marker>
             ))}
 
@@ -281,6 +311,12 @@ function App() {
                   {selectedGarden.address.raw}
                 </h3>
                 <div className="text-xs text-gray-600 mb-2 space-y-1">
+                  <button
+                    onClick={() => selectedGarden._id && toggleFavorite(selectedGarden._id)}
+                    className={`text-xs ${selectedGarden._id && isFavorite(selectedGarden._id) ? 'text-red-600' : 'text-gray-600'} hover:underline block`}
+                  >
+                    {selectedGarden._id && isFavorite(selectedGarden._id) ? '❤️ Remove from Favorites' : '🤍 Add to Favorites'}
+                  </button>
                   <a
                     href={selectedGarden.url}
                     target="_blank"
