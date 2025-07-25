@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Map, Marker, Popup } from 'react-map-gl';
+import { Map, Marker, Popup } from 'react-map-gl/maplibre';
 import type { Garden, GardensJson } from './types';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
-const MAP_STYLE = 'https://maps.black/tilejson/openstreetmap-protomaps.json';
+// Use MapTiler landscape style
+const MAP_STYLE = 'https://api.maptiler.com/maps/landscape/style.json?key=ur6Yh3ULc6QjatOYBgln';
 
 function App() {
   const [gardens, setGardens] = useState<Garden[]>([]);
@@ -16,10 +17,23 @@ function App() {
   });
 
   useEffect(() => {
-    fetch('../../data/gardens-parsed.json')
-      .then(response => response.json())
+    // Copy the data file to public directory first, then access it
+    fetch('/data/gardens-parsed.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data: GardensJson) => setGardens(data))
-      .catch(error => console.error('Error loading gardens:', error));
+      .catch(error => {
+        console.error('Error loading gardens:', error);
+        // Fallback: try to load from relative path
+        fetch('../../data/gardens-parsed.json')
+          .then(response => response.json())
+          .then((data: GardensJson) => setGardens(data))
+          .catch(err => console.error('Fallback also failed:', err));
+      });
   }, []);
 
   const filteredGardens = selectedMonth
