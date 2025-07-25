@@ -1,6 +1,6 @@
 import { writeFile, readFile } from 'fs/promises';
 import { join } from 'path';
-import { GardensJson } from '../../shared/types';
+import type { GardensJson } from '../../shared/types';
 
 const DATA_PATH = join(import.meta.dir, '../../data/gardens.json');
 const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search';
