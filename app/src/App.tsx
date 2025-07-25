@@ -1,20 +1,31 @@
 import { useState, useEffect } from 'react';
 import { Map, Marker, Popup } from 'react-map-gl/maplibre';
 import type { Garden, GardensJson } from './types';
+import { formatDistanceToNow } from 'date-fns';
+import { de } from 'date-fns/locale';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 // Use MapTiler landscape style
 const MAP_STYLE = 'https://api.maptiler.com/maps/landscape/style.json?key=ur6Yh3ULc6QjatOYBgln';
 
-// Function to format parsed dates
-function formatDate(parsed: { day: number; month: number; year?: number }): string {
+// Function to format parsed dates with relative time
+function formatDate(parsed: { day: number; month: number; year?: number }): { formatted: string; relative: string } {
   const monthNames = [
     'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
     'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
   ];
   const monthName = monthNames[parsed.month - 1];
-  const year = parsed.year ? ` ${parsed.year}` : '';
-  return `${parsed.day}. ${monthName}${year}`;
+  const year = parsed.year || new Date().getFullYear();
+  const formatted = `${parsed.day}. ${monthName} ${year}`;
+
+  // Create date object for relative time calculation
+  const date = new Date(year, parsed.month - 1, parsed.day);
+  const relative = formatDistanceToNow(date, {
+    addSuffix: true,
+    locale: de
+  });
+
+  return { formatted, relative };
 }
 
 function App() {
@@ -121,11 +132,15 @@ function App() {
             <div className="text-sm">
               <strong>Opening Dates:</strong>
               <ul className="mt-1 space-y-1">
-                {selectedGarden.dates.map((date, index) => (
-                  <li key={index} className="text-gray-700">
-                    {formatDate(date.parsed)} {date.parsed.startTime && date.parsed.endTime && `(${date.parsed.startTime}-${date.parsed.endTime})`}
-                  </li>
-                ))}
+                {selectedGarden.dates.map((date, index) => {
+                  const { formatted, relative } = formatDate(date.parsed);
+                  return (
+                    <li key={index} className="text-gray-700">
+                      <div>{formatted} {date.parsed.startTime && date.parsed.endTime && `(${date.parsed.startTime}-${date.parsed.endTime})`}</div>
+                      <div className="text-xs text-gray-500">{relative}</div>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
@@ -182,11 +197,15 @@ function App() {
                 <div className="text-xs">
                   <strong>Opening Dates:</strong>
                   <ul className="mt-1 space-y-1">
-                    {selectedGarden.dates.map((date, index) => (
-                      <li key={index} className="text-gray-700">
-                        {formatDate(date.parsed)} {date.parsed.startTime && date.parsed.endTime && `(${date.parsed.startTime}-${date.parsed.endTime})`}
-                      </li>
-                    ))}
+                    {selectedGarden.dates.map((date, index) => {
+                      const { formatted, relative } = formatDate(date.parsed);
+                      return (
+                        <li key={index} className="text-gray-700">
+                          <div>{formatted} {date.parsed.startTime && date.parsed.endTime && `(${date.parsed.startTime}-${date.parsed.endTime})`}</div>
+                          <div className="text-xs text-gray-500">{relative}</div>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
