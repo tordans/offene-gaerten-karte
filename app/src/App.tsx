@@ -12,16 +12,20 @@ const MAP_STYLE = 'https://api.maptiler.com/maps/landscape/style.json?key=ur6Yh3
 
 // Function to format parsed dates with relative time
 function formatDate(parsed: { day: number; month: number; year?: number }): { formatted: string; relative: string } {
-  const monthNames = [
-    'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
-    'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
-  ];
-  const monthName = monthNames[parsed.month - 1];
   const year = parsed.year || new Date().getFullYear();
-  const formatted = `${parsed.day}. ${monthName} ${year}`;
+
+  // Create date object for formatting
+  const date = new Date(year, parsed.month - 1, parsed.day);
+
+  // Use German locale for date formatting
+  const formatted = date.toLocaleDateString('de-DE', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
 
   // Create date object for relative time calculation
-  const date = new Date(year, parsed.month - 1, parsed.day);
   const relative = formatDistanceToNow(date, {
     addSuffix: true,
     locale: de
@@ -33,6 +37,7 @@ function formatDate(parsed: { day: number; month: number; year?: number }): { fo
 function App() {
   const [gardens, setGardens] = useState<Garden[]>([]);
   const [selectedMonth, setSelectedMonth] = useState<number | null>(null);
+  const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const [selectedGarden, setSelectedGarden] = useState<Garden | null>(null);
   const [viewState, setViewState] = useState({
     longitude: 13.4050, // Berlin center
@@ -48,7 +53,10 @@ function App() {
 
   const filteredGardens = selectedMonth
     ? gardens.filter(garden =>
-        garden.dates.some(date => date.parsed.month === selectedMonth)
+        garden.dates.some(date =>
+          date.parsed.month === selectedMonth &&
+          (selectedDay === null || date.parsed.day === selectedDay)
+        )
       )
     : gardens;
 
@@ -62,10 +70,38 @@ function App() {
     };
   });
 
+  // Get available days for selected month with counts
+  const availableDays = selectedMonth
+    ? Array.from(
+        new Set(
+          gardens
+            .flatMap(garden => garden.dates)
+            .filter(date => date.parsed.month === selectedMonth)
+            .map(date => date.parsed.day)
+        )
+      )
+      .sort((a, b) => a - b)
+      .map(day => ({
+        day,
+        count: gardens.filter(garden =>
+          garden.dates.some(date =>
+            date.parsed.month === selectedMonth &&
+            date.parsed.day === day
+          )
+        ).length
+      }))
+    : [];
+
   const monthNames = [
     'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
   ];
+
+  // Helper function to get weekday name for a specific day
+  const getWeekdayName = (day: number, month: number, year?: number) => {
+    const date = new Date(year || new Date().getFullYear(), month - 1, day);
+    return date.toLocaleDateString('de-DE', { weekday: 'short' });
+  };
 
   return (
     <div className="h-screen flex">
@@ -104,7 +140,10 @@ function App() {
           <h2 className="text-lg font-semibold mb-3">Filter by Month</h2>
           <div className="space-y-2">
             <button
-              onClick={() => setSelectedMonth(null)}
+              onClick={() => {
+                setSelectedMonth(null);
+                setSelectedDay(null);
+              }}
               className={`w-full text-left px-3 py-2 rounded ${
                 selectedMonth === null
                   ? 'bg-blue-100 text-blue-800'
@@ -116,7 +155,10 @@ function App() {
             {monthCounts.map(({ month, count }) => (
               <button
                 key={month}
-                onClick={() => setSelectedMonth(month)}
+                onClick={() => {
+                  setSelectedMonth(month);
+                  setSelectedDay(null);
+                }}
                 className={`w-full text-left px-3 py-2 rounded ${
                   selectedMonth === month
                     ? 'bg-blue-100 text-blue-800'
@@ -128,6 +170,38 @@ function App() {
             ))}
           </div>
         </div>
+
+        {/* Day Filter */}
+        {selectedMonth && availableDays.length > 0 && (
+          <div className="mb-6">
+            <h2 className="text-lg font-semibold mb-3">Filter by Day</h2>
+            <div className="space-y-2">
+              <button
+                onClick={() => setSelectedDay(null)}
+                className={`w-full text-left px-3 py-2 rounded ${
+                  selectedDay === null
+                    ? 'bg-green-100 text-green-800'
+                    : 'bg-gray-50 hover:bg-gray-100'
+                }`}
+              >
+                All Days in {monthNames[selectedMonth - 1]} ({monthCounts.find(m => m.month === selectedMonth)?.count || 0})
+              </button>
+              {availableDays.map(({ day, count }) => (
+                <button
+                  key={day}
+                  onClick={() => setSelectedDay(day)}
+                  className={`w-full text-left px-3 py-2 rounded ${
+                    selectedDay === day
+                      ? 'bg-green-100 text-green-800'
+                      : 'bg-gray-50 hover:bg-gray-100'
+                  }`}
+                >
+                  {getWeekdayName(day, selectedMonth)} {day}. {monthNames[selectedMonth - 1]} ({count})
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Selected Garden Info */}
         {selectedGarden && (
