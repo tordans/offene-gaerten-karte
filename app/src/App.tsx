@@ -186,10 +186,10 @@ function App() {
               >
                 All Days in {monthNames[selectedMonth - 1]} ({monthCounts.find(m => m.month === selectedMonth)?.count || 0})
               </button>
-              {availableDays.map(({ day, count }) => (
-                <button
-                  key={day}
-                  onClick={() => setSelectedDay(day)}
+                                        {availableDays.map(({ day, count }) => (
+                            <button
+                              key={`${selectedMonth}-${day}`}
+                              onClick={() => setSelectedDay(day)}
                   className={`w-full text-left px-3 py-2 rounded ${
                     selectedDay === day
                       ? 'bg-green-100 text-green-800'
@@ -207,14 +207,22 @@ function App() {
         {selectedGarden && (
           <div className="border-t pt-4">
             <h3 className="font-semibold mb-2">{selectedGarden.address.raw}</h3>
-            <div className="text-sm text-gray-600 mb-2">
+            <div className="text-sm text-gray-600 mb-2 space-y-1">
               <a
                 href={selectedGarden.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-blue-600 hover:underline block"
               >
                 View Details
+              </a>
+              <a
+                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(selectedGarden.address.raw)}&travelmode=transit`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:underline block"
+              >
+                🚌 Get Directions (Public Transport)
               </a>
             </div>
             <div className="text-sm">
@@ -272,14 +280,22 @@ function App() {
                 <h3 className="font-semibold text-sm mb-1">
                   {selectedGarden.address.raw}
                 </h3>
-                <div className="text-xs text-gray-600 mb-2">
+                <div className="text-xs text-gray-600 mb-2 space-y-1">
                   <a
                     href={selectedGarden.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-600 hover:underline block"
                   >
                     View Details
+                  </a>
+                  <a
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(selectedGarden.address.raw)}&travelmode=transit`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-600 hover:underline block"
+                  >
+                    🚌 Get Directions (Public Transport)
                   </a>
                 </div>
                 <div className="text-xs">
