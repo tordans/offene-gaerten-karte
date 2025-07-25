@@ -1,0 +1,4413 @@
+[
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-015/",
+    "address": {
+      "raw": "Bahnhofstr. 30; 16845 Neustadt (Dosse)"
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.112Z",
+    "_id": "015"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-042/",
+    "address": {
+      "raw": "13465 Berlin, Im Fischgrund 23"
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.113Z",
+    "_id": "042"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-107/",
+    "address": {
+      "raw": "14550 Groß Kreutz, Brandenburger Str. 4 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.114Z",
+    "_id": "107"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-054/",
+    "address": {
+      "raw": "15366 Neuenhagen bei Berlin, Grüne Aue 26"
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.115Z",
+    "_id": "054"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-111/",
+    "address": {
+      "raw": "14542 Werder, Potsdamer Str. 13 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.115Z",
+    "_id": "111"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-003/",
+    "address": {
+      "raw": "hof repente"
+    },
+    "dates": [
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.116Z",
+    "_id": "003"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-097/",
+    "address": {
+      "raw": "15827 Blankenfelde-Mahlow OT Blankenfelde, Feldstraße 33 "
+    },
+    "dates": [
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.116Z",
+    "_id": "097"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-078/",
+    "address": {
+      "raw": "14167 Berlin-Zehlendorf, Prinz-Handjery-Str. 32A "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.116Z",
+    "_id": "078"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-039/",
+    "address": {
+      "raw": "13587 Berlin-Spandau/Hakenfelde, Klingenhofer Steig 24 a "
+    },
+    "dates": [
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "25. Oktober 15-19 Uhr",
+        "parsed": {
+          "day": 25,
+          "month": 10,
+          "startTime": "15:00",
+          "endTime": "19:00"
+        }
+      },
+      {
+        "raw": "22. November 15-19 Uhr",
+        "parsed": {
+          "day": 22,
+          "month": 11,
+          "startTime": "15:00",
+          "endTime": "19:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.117Z",
+    "_id": "039"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-081/",
+    "address": {
+      "raw": "14469 Potsdam-Bornim, Schräger Weg 7 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.117Z",
+    "_id": "081"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-019/",
+    "address": {
+      "raw": "16348 Wandlitz OT Stolzenhagen, Straße am See 35 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.117Z",
+    "_id": "019"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-058/",
+    "address": {
+      "raw": "15370 Petershagen, Florastraße 55 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.118Z",
+    "_id": "058"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-131/",
+    "address": {
+      "raw": "Siedlung 23 c; 15848 Ranzig"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.118Z",
+    "_id": "131"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-023/",
+    "address": {
+      "raw": "16062 Hohen Neuendorf OT Bergfelde, Fasanenallee 60 "
+    },
+    "dates": [
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.119Z",
+    "_id": "023"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-035/",
+    "address": {
+      "raw": "13587 Berlin-Spandau Hakenfelde, Eiskellerweg 24 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.119Z",
+    "_id": "035"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-127/",
+    "address": {
+      "raw": "15834 Rangsdorf OT Groß Machnow, Fenneweg 1"
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.121Z",
+    "_id": "127"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-062/",
+    "address": {
+      "raw": "Pfalzburger Str. 5; 10719 Berlin"
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.122Z",
+    "_id": "062"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-126/",
+    "address": {
+      "raw": "de vanderpoost tuin"
+    },
+    "dates": [
+      {
+        "raw": "09. Februar 10-18 Uhr",
+        "parsed": {
+          "day": 9,
+          "month": 2,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "09. März 10-18 Uhr",
+        "parsed": {
+          "day": 9,
+          "month": 3,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "03. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 3,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "06. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 6,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "<span style=\"text-decoration: underline;\"><strong><span style=\"color: #0000ff; text-decoration: underline;\">20. Juli 10-18 Uhr zusätzlich geöffnet</span></strong></span>",
+        "parsed": {
+          "day": 20,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "19. Oktober 10-18 Uhr",
+        "parsed": {
+          "day": 19,
+          "month": 10,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Februar 2026 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 2
+        }
+      },
+      {
+        "raw": "22. März 2026 10-18 Uhr",
+        "parsed": {
+          "day": 22,
+          "month": 3
+        }
+      },
+      {
+        "raw": "individuelle Termine im April auch Wochentags nach Absprache möglich &#8212;&gt; <a href=\"https://www.xn--offene-grten-ncb.de/kontakt-bruedigam/\"><span style=\"text-decoration: underline;\">Kontaktformular</span></a>",
+        "parsed": {
+          "day": 0,
+          "month": 0
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.122Z",
+    "_id": "126"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-063/",
+    "address": {
+      "raw": "       52°28&#039;12.6&quot;N 13°21&#039;41.3&quot;E "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 11-17 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.123Z",
+    "_id": "063"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-034/",
+    "address": {
+      "raw": "14612 Falkensee, Herderallee 12 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.124Z",
+    "_id": "034"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-022/",
+    "address": {
+      "raw": "16547 Birkenwerder, In der Niederheide 5 b "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.125Z",
+    "_id": "022"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-130/",
+    "address": {
+      "raw": "Alwine Landhaus an den Spreewiesen"
+    },
+    "dates": [
+      {
+        "raw": "12. April 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "16. August 10-18 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.125Z",
+    "_id": "130"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-075/",
+    "address": {
+      "raw": "14476  Neu Fahrland, Bassewitzstr. 8 "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.126Z",
+    "_id": "075"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-059/",
+    "address": {
+      "raw": "15370 Petershagen, Wielandstr. 32 "
+    },
+    "dates": [
+      {
+        "raw": "13. April 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.126Z",
+    "_id": "059"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-018/",
+    "address": {
+      "raw": "Dorfstraße 43; 16766 Sommerfeld"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.127Z",
+    "_id": "018"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-080/",
+    "address": {
+      "raw": "14469 Potsdam-Bornim, Am Priesteracker 4 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.127Z",
+    "_id": "080"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-038/",
+    "address": {
+      "raw": "13583 Berlin-Spandau, Borkzeile 34"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-16 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "16:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.127Z",
+    "_id": "038"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-096/",
+    "address": {
+      "raw": "15831 Mahlow, Herweghstr. 2 "
+    },
+    "dates": [
+      {
+        "raw": "13. Juli 10- 18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.129Z",
+    "_id": "096"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-079/",
+    "address": {
+      "raw": "12209 Berlin-Lichterfelde, Schütte-Lanz-Str. 50"
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.129Z",
+    "_id": "079"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-002/",
+    "address": {
+      "raw": "17291 Nordwestuckermark OT Christianenhof, Stangenweg 3 "
+    },
+    "dates": [
+      {
+        "raw": "15. März 11-15 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 3,
+          "startTime": "11:00",
+          "endTime": "15:00"
+        }
+      },
+      {
+        "raw": "16. März 11-15 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 3,
+          "startTime": "11:00",
+          "endTime": "15:00"
+        }
+      },
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "28. Juni 11-17 Uhr",
+        "parsed": {
+          "day": 28,
+          "month": 6,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "29. Juni 11-17 Uhr",
+        "parsed": {
+          "day": 29,
+          "month": 6,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "07. März 2026 11-15 Uhr",
+        "parsed": {
+          "day": 7,
+          "month": 3
+        }
+      },
+      {
+        "raw": "08. März 2026 11-15 Uhr",
+        "parsed": {
+          "day": 8,
+          "month": 3
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.130Z",
+    "_id": "002"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-055/",
+    "address": {
+      "raw": "15366 Neuenhagen bei Berlin, Unter den Ulmen 22 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10- 18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.131Z",
+    "_id": "055"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-110/",
+    "address": {
+      "raw": "14542 Werder, Am Plessower See 19 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "06. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 6,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.131Z",
+    "_id": "110"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-043/",
+    "address": {
+      "raw": "13467 Berlin, Klaushager Weg 32"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.132Z",
+    "_id": "043"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-106/",
+    "address": {
+      "raw": "14550 Groß Kreutz OT Jeserig, Weißbirkenweg 5"
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.132Z",
+    "_id": "106"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-014/",
+    "address": {
+      "raw": "16845 Stüdenitz/Schönermerk, Kyritzer Str.7"
+    },
+    "dates": [
+      {
+        "raw": "13. April 11-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "11. Mai 11-17 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "15. Juni 11-17 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "14. September 11-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.133Z",
+    "_id": "014"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-048/",
+    "address": {
+      "raw": "13088 Berlin-Weißensee, Herbert-Baum-Str. 35 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.133Z",
+    "_id": "048"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-009/",
+    "address": {
+      "raw": "16278 Angermünde OT Schmargendorf, Zum Dorfanger 18 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.134Z",
+    "_id": "009"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-137/",
+    "address": {
+      "raw": "14913 Jüterbog, Werder 6 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.136Z",
+    "_id": "137"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-072/",
+    "address": {
+      "raw": "15537 Grünheide, Körperstr. 3 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.138Z",
+    "_id": "072"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-025/",
+    "address": {
+      "raw": "Kiezerstr. ; Schollene"
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 11-17 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "13. Juli 11-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "11:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.138Z",
+    "_id": "025"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-033/",
+    "address": {
+      "raw": "14612 Falkensee, Leinestraße 39 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.139Z",
+    "_id": "033"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-121/",
+    "address": {
+      "raw": "14558 Nuthetal OT Rehbrücke, Richard-Kuckuck-Str. 95 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.140Z",
+    "_id": "121"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-064/",
+    "address": {
+      "raw": "12099 Berlin, Heinweg 32"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.140Z",
+    "_id": "064"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-013/",
+    "address": {
+      "raw": "16225 Eberswalde, Eichwerderstraße 1"
+    },
+    "dates": [
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.140Z",
+    "_id": "013"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-044/",
+    "address": {
+      "raw": "Klaushager Weg 30 13467 Berlin"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.141Z",
+    "_id": "044"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-101/",
+    "address": {
+      "raw": "15713 Königswusterhausen OT Wernsdorf, Waldsiedlung 13"
+    },
+    "dates": [
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "<span style=\"text-decoration: underline; color: #0000ff;\"><strong>16. August 10-18 Uhr zusätzlich geöffnet</strong></span>",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.141Z",
+    "_id": "101"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-052/",
+    "address": {
+      "raw": "12623 Berlin, Feldrain 14/Am Rosenhag "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.142Z",
+    "_id": "052"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-117/",
+    "address": {
+      "raw": "14552 Michendorf OT Wilhelmshorst, Rosenweg 9 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.142Z",
+    "_id": "117"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-005/",
+    "address": {
+      "raw": "16775 Stechlin OT Neuglobsow, Forststeig 2a "
+    },
+    "dates": [
+      {
+        "raw": "13. September 10- 18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.142Z",
+    "_id": "005"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-091/",
+    "address": {
+      "raw": "14109 Berlin-Steinstücken, Johannis-Niemeyer-Weg 9 b "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.143Z",
+    "_id": "091"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-029/",
+    "address": {
+      "raw": "14656 Brieselang, Jochen-Weigert-Str. 58  "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.143Z",
+    "_id": "029"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-087/",
+    "address": {
+      "raw": "14469 Potsdam, Russische Kolonie 12 "
+    },
+    "dates": [
+      {
+        "raw": "12. April 10-17 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.144Z",
+    "_id": "087"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-068/",
+    "address": {
+      "raw": "12355 Berlin-Rudow, Am Espenpfuhl 30 "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.144Z",
+    "_id": "068"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-086/",
+    "address": {
+      "raw": "14469 Potsdam, Katharinenholzstr. 25 "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.144Z",
+    "_id": "086"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-069/",
+    "address": {
+      "raw": "Strohblumenweg 101, 12524 Berlin"
+    },
+    "dates": [
+      {
+        "raw": "16. August 10-17 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "17. August 10-17 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.145Z",
+    "_id": "069"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-028/",
+    "address": {
+      "raw": "14641 Nauen, Am Schlangenhorst 19"
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.145Z",
+    "_id": "028"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-090/",
+    "address": {
+      "raw": "14478 Potsdam, Vogelsang 31 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.145Z",
+    "_id": "090"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-004/",
+    "address": {
+      "raw": "16831 Rheinsberg, Amselweg 1 "
+    },
+    "dates": [
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.146Z",
+    "_id": "004"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-053/",
+    "address": {
+      "raw": "12623 Berlin-Mahlsdorf, Lübecker Str. 1 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.146Z",
+    "_id": "053"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-116/",
+    "address": {
+      "raw": "Ravensbergweg 10, 14552 Michendorf / OT Wilhelmshorst"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.147Z",
+    "_id": "116"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-045/",
+    "address": {
+      "raw": "13467 Berlin-Hermsdorf, Hillmannstr. 1-3 "
+    },
+    "dates": [
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.147Z",
+    "_id": "045"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-100/",
+    "address": {
+      "raw": "15732 Schulzendorf, Weimarer Str. 70 "
+    },
+    "dates": [
+      {
+        "raw": "12. April 10-17 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "10. Mai 10-17 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "14. Juni 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.150Z",
+    "_id": "100"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-012/",
+    "address": {
+      "raw": "16225 Eberswalde, Nelkenweg 1 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.150Z",
+    "_id": "012"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-120/",
+    "address": {
+      "raw": "14558, Nuthetal OT Rehbrücke, Schinkelstr. 17 "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.150Z",
+    "_id": "120"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-065/",
+    "address": {
+      "raw": "12043 Berlin-Neukölln, böhmisches dorf"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 12-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "12:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 12-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "12:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.151Z",
+    "_id": "065"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-032/",
+    "address": {
+      "raw": "14612 Falkensee, Im Wolfsgarten 17 "
+    },
+    "dates": [
+      {
+        "raw": "12. April 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "16. August 10-18 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.151Z",
+    "_id": "032"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-024/",
+    "address": {
+      "raw": "16321 Bernau, Dohlensteg 7 "
+    },
+    "dates": [
+      {
+        "raw": "16. August 10-18 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.152Z",
+    "_id": "024"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-136/",
+    "address": {
+      "raw": "14913 Jüterbog, Grüna 95 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.152Z",
+    "_id": "136"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-073/",
+    "address": {
+      "raw": "14669 Ketzin OT Falkenrehde, Potsdamer Allee 8b"
+    },
+    "dates": [
+      {
+        "raw": "25. Mai 10-17 Uhr (Irisblüte)",
+        "parsed": {
+          "day": 25,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "06. Juli 10-17 Uhr (Taglilienblüte)",
+        "parsed": {
+          "day": 6,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.152Z",
+    "_id": "073"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-008/",
+    "address": {
+      "raw": "16247 Althüttendorf, Glasstr. 15 "
+    },
+    "dates": [
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.153Z",
+    "_id": "008"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-049/",
+    "address": {
+      "raw": "12685 Berlin-Marzahn, Salanderweg 5 "
+    },
+    "dates": [
+      {
+        "raw": "individuelle Termine zur Kamelienblüte von Januar bis April jederzeit nach Absprache &#8212;&gt; <a href=\"https://www.xn--offene-grten-ncb.de/kontakt-kamelien-richter/\"><span style=\"text-decoration: underline;\">Kontaktformular</span></a>",
+        "parsed": {
+          "day": 0,
+          "month": 0
+        }
+      },
+      {
+        "raw": "12. April 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.153Z",
+    "_id": "049"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-066/",
+    "address": {
+      "raw": "waldgarten britz"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.154Z",
+    "_id": "066"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-123/",
+    "address": {
+      "raw": "14547 Beelitz OT Fichtenwalde, Straße der Einheit 140 "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.154Z",
+    "_id": "123"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-089/",
+    "address": {
+      "raw": "14478 Potsdam, Ravensbergweg 7 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.154Z",
+    "_id": "089"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-031/",
+    "address": {
+      "raw": "14612 Falkensee, Zaunkönigstr. 8 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.155Z",
+    "_id": "031"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-027/",
+    "address": {
+      "raw": "14641 Nauen OT Klein Behnitz, Heineberger Weg 21 "
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.156Z",
+    "_id": "027"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-070/",
+    "address": {
+      "raw": "15569 Woltersdorf, Eichendamm 25a "
+    },
+    "dates": [
+      {
+        "raw": "06. Juli 11-18 Uhr",
+        "parsed": {
+          "day": 6,
+          "month": 7,
+          "startTime": "11:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.156Z",
+    "_id": "070"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-135/",
+    "address": {
+      "raw": "14943 Luckenwalde, Lehmhufenweg 17 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.157Z",
+    "_id": "135"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-119/",
+    "address": {
+      "raw": "14552 Michendorf OT Langerwisch, Straße des Friedens 87 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "04. Oktober 10-17 Uhr",
+        "parsed": {
+          "day": 4,
+          "month": 10,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.158Z",
+    "_id": "119"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-085/",
+    "address": {
+      "raw": "14469 Potsdam, Baumschulenweg 7 b "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.158Z",
+    "_id": "085"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-093/",
+    "address": {
+      "raw": "14532 Stahnsdorf, Friedrich-Naumann- Str. 133"
+    },
+    "dates": [
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.158Z",
+    "_id": "093"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-007/",
+    "address": {
+      "raw": "fontane-garten"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "16. August 10-18 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.159Z",
+    "_id": "007"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-115/",
+    "address": {
+      "raw": "14548 Schwielowsee, OT Caputh, Bergholzer Straße 26  "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.159Z",
+    "_id": "115"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-103/",
+    "address": {
+      "raw": "15537 Neu Zittau OT Burig, Walther-Rathenau-Str. 25 "
+    },
+    "dates": [
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "16. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.160Z",
+    "_id": "103"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-046/",
+    "address": {
+      "raw": "13469 Berlin-Lübars, Im Wiesenbusch 9 "
+    },
+    "dates": [
+      {
+        "raw": "<span style=\"text-decoration: underline;\">Gartenöffnung verschoben auf:</span>",
+        "parsed": {
+          "day": 0,
+          "month": 0
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.160Z",
+    "_id": "046"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-011/",
+    "address": {
+      "raw": "16225 Eberswalde, Kiefernweg 2"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.160Z",
+    "_id": "011"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-010/",
+    "address": {
+      "raw": "16303 Schwedt OT Criewen, Bernd-von-Arnim-Str. 42 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.161Z",
+    "_id": "010"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-102/",
+    "address": {
+      "raw": "15537 Gosen-Neu Zittau, Petersstr. 15"
+    },
+    "dates": [
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.161Z",
+    "_id": "102"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-047/",
+    "address": {
+      "raw": "13158 Berlin-Rosenthal, Schönhauser Str. 20 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.161Z",
+    "_id": "047"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-114/",
+    "address": {
+      "raw": "14458 Schwielowsee OT Caputh, Ziegelstr. 15 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.162Z",
+    "_id": "114"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-051/",
+    "address": {
+      "raw": "12683 Berlin-Biesdorf, Wulkower Str. 22 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.162Z",
+    "_id": "051"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-006/",
+    "address": {
+      "raw": "16775 Großwoltersdorf OT Altglobsow, Seestr. 12 D "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.163Z",
+    "_id": "006"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-092/",
+    "address": {
+      "raw": "14532 Stahnsdorf, Parkallee 30 "
+    },
+    "dates": [
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.163Z",
+    "_id": "092"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-084/",
+    "address": {
+      "raw": "jochen&#039;s hostahof"
+    },
+    "dates": [
+      {
+        "raw": "<strong><span style=\"color: #ff0000;\">13. April fällt aus gesundheitlichen Gründen aus</span></strong>",
+        "parsed": {
+          "day": 13,
+          "month": 4
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.164Z",
+    "_id": "084"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-118/",
+    "address": {
+      "raw": "14552 Michendorf OT Wilhelmshorst, Rosenweg 8 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.164Z",
+    "_id": "118"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-071/",
+    "address": {
+      "raw": "15569 Woltersdorf, Werderstr. 40 "
+    },
+    "dates": [
+      {
+        "raw": "05. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 5,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "06. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 6,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.165Z",
+    "_id": "071"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-134/",
+    "address": {
+      "raw": "14947 Nuthe-Urstromtal OT Felgentreu, Kemnitzer Str. 41 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.165Z",
+    "_id": "134"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-026/",
+    "address": {
+      "raw": "14712 Rathenow, Egon-Erwin-Kisch-Weg 6 "
+    },
+    "dates": [
+      {
+        "raw": "12. April 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.166Z",
+    "_id": "026"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-067/",
+    "address": {
+      "raw": "Straße 179, 36, 12355 Berlin"
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.166Z",
+    "_id": "067"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-122/",
+    "address": {
+      "raw": "Alte Feldstr. 14; 14558 Nuthetal"
+    },
+    "dates": [
+      {
+        "raw": "16. August 10-18 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.166Z",
+    "_id": "122"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-088/",
+    "address": {
+      "raw": "14467 Potsdam, Am Grünen Gitter 9 "
+    },
+    "dates": [
+      {
+        "raw": "12. April 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "16. August 10-18 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.167Z",
+    "_id": "088"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-083/",
+    "address": {
+      "raw": "karl foerster garten"
+    },
+    "dates": [
+      {
+        "raw": "12. Juli: 12, 14 und 16 Uhr Gartenführungen",
+        "parsed": {
+          "day": 12,
+          "month": 7
+        }
+      },
+      {
+        "raw": "13. Juli: 11, 13 und 15 Uhr Gartenführungen",
+        "parsed": {
+          "day": 13,
+          "month": 7
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.167Z",
+    "_id": "083"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-129/",
+    "address": {
+      "raw": "15754 Heidesee OT Kolberg, Ring 41 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.167Z",
+    "_id": "129"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-095/",
+    "address": {
+      "raw": "Berliner Str. 37; 14979 Großbeeren"
+    },
+    "dates": [
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.168Z",
+    "_id": "095"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-001/",
+    "address": {
+      "raw": "17348 Woldegk OT Grauenhagen, Vogelsang 1 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.168Z",
+    "_id": "001"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-113/",
+    "address": {
+      "raw": "14548 Schwielowsee OT Caputh, uferpromenade"
+    },
+    "dates": [
+      {
+        "raw": "<strong><span style=\"color: #ff0000;\">10. Mai fällt aus gesundheitlichen Gründen aus</span></strong>",
+        "parsed": {
+          "day": 10,
+          "month": 5
+        }
+      },
+      {
+        "raw": "<strong><span style=\"color: #ff0000;\">11. Mai fällt aus gesundheitlichen Gründen aus</span></strong>",
+        "parsed": {
+          "day": 11,
+          "month": 5
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.168Z",
+    "_id": "113"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-056/",
+    "address": {
+      "raw": "15366 Neuenhagen, Edelweißstr. 21 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.169Z",
+    "_id": "056"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-105/",
+    "address": {
+      "raw": "14550 Groß Kreutz OT Jeserig, Schulstr. 46"
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.169Z",
+    "_id": "105"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-040/",
+    "address": {
+      "raw": "13465 Berlin-Fronau, Ansgarstr. 15"
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.169Z",
+    "_id": "040"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-017/",
+    "address": {
+      "raw": "16833 Fehrbellin OT Königshorst, Hauptstr. 42 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.170Z",
+    "_id": "017"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-060/",
+    "address": {
+      "raw": "15344 Strausberg (Gartenstadt), Friedensstr. 10"
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.170Z",
+    "_id": "060"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-125/",
+    "address": {
+      "raw": "Soldpuhlweg 1, 14974 Ludwigsfelde OT Groß Schulzendorf"
+    },
+    "dates": [
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.171Z",
+    "_id": "125"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-037/",
+    "address": {
+      "raw": "13591 Berlin-Spandau, Bolteweg 32 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.171Z",
+    "_id": "037"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-021/",
+    "address": {
+      "raw": "16359 Biesental, Bahnhofstr. 29 "
+    },
+    "dates": [
+      {
+        "raw": "13. April 10-17 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-17 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-17 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      },
+      {
+        "raw": "14. September 10- 17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.171Z",
+    "_id": "021"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-076/",
+    "address": {
+      "raw": "landhausgarten fraenkel"
+    },
+    "dates": [
+      {
+        "raw": "<span class=\"TextRun SCXW241824534 BCX2\" lang=\"DE-DE\" xml:lang=\"DE-DE\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW241824534 BCX2\">Ostern bis Oktober 2024<br /></span></span>",
+        "parsed": {
+          "day": 0,
+          "month": 0
+        }
+      },
+      {
+        "raw": "<span class=\"TextRun SCXW241824534 BCX2\" lang=\"DE-DE\" xml:lang=\"DE-DE\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW241824534 BCX2\">Mo-Do 08-14 Uhr</span></span>",
+        "parsed": {
+          "day": 0,
+          "month": 0
+        }
+      },
+      {
+        "raw": "<span class=\"TextRun SCXW241824534 BCX2\" lang=\"DE-DE\" xml:lang=\"DE-DE\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW241824534 BCX2\">Fr-So 10-18 Uhr</span></span>",
+        "parsed": {
+          "day": 0,
+          "month": 0
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.172Z",
+    "_id": "076"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-099/",
+    "address": {
+      "raw": "Thälmannstr. 17, 15827 Blankenfelde"
+    },
+    "dates": [
+      {
+        "raw": "31. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 31,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "01. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 1,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.172Z",
+    "_id": "099"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-133/",
+    "address": {
+      "raw": "14929 Treuenbrietzen, Jahnstr. 22 "
+    },
+    "dates": [
+      {
+        "raw": "<span style=\"color: #ff0000;\"><strong>14. Juni fällt aus gesundheitlichen Gründen aus</strong></span>",
+        "parsed": {
+          "day": 14,
+          "month": 6
+        }
+      },
+      {
+        "raw": "<span style=\"color: #ff0000;\"><strong>15. Juni fällt aus gesundheitlichen Gründen aus</strong></span>",
+        "parsed": {
+          "day": 15,
+          "month": 6
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.173Z",
+    "_id": "133"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-109/",
+    "address": {
+      "raw": "14797 Kloster Lehnin, Beelitzer Str. 86 "
+    },
+    "dates": [
+      {
+        "raw": "<span style=\"color: #ff0000;\"><strong>10. Mai fällt aus gesundheitlichen Gründen aus</strong></span>",
+        "parsed": {
+          "day": 10,
+          "month": 5
+        }
+      },
+      {
+        "raw": "<span style=\"color: #ff0000;\"><strong>11. Mai fällt aus gesundheitlichen Gründen aus</strong></span>",
+        "parsed": {
+          "day": 11,
+          "month": 5
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.173Z",
+    "_id": "109"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-108/",
+    "address": {
+      "raw": "14797 Koster Lehnin OT Göhlsdorf, Lehniner Allee 36 "
+    },
+    "dates": [
+      {
+        "raw": "13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "19. Oktober 10-18 Uhr",
+        "parsed": {
+          "day": 19,
+          "month": 10,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.173Z",
+    "_id": "108"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-077/",
+    "address": {
+      "raw": "14532 Kleinmachnow, Seematen 9 "
+    },
+    "dates": [
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.174Z",
+    "_id": "077"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-098/",
+    "address": {
+      "raw": "15827 Blankenfelde-Mahlow, Am Bruch 13 "
+    },
+    "dates": [
+      {
+        "raw": "<span style=\"color: #ff0000;\"><strong>15. Juni fällt aus gesundheitlichen Gründen aus</strong></span>",
+        "parsed": {
+          "day": 15,
+          "month": 6
+        }
+      },
+      {
+        "raw": "17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.174Z",
+    "_id": "098"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-132/",
+    "address": {
+      "raw": "Trebatscher Hauptstraße 26a; 15848 Tauche/ OT Trebatsch"
+    },
+    "dates": [
+      {
+        "raw": "12. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 12,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.175Z",
+    "_id": "132"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-020/",
+    "address": {
+      "raw": "15348 Wandlitz, Karl-Marx-Str. 8"
+    },
+    "dates": [
+      {
+        "raw": "15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.175Z",
+    "_id": "020"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-036/",
+    "address": {
+      "raw": "13589 Berlin-Spandau, Niederheideweg 51 "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 12-17 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "12:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.176Z",
+    "_id": "036"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-061/",
+    "address": {
+      "raw": "15378 Herzfelde, Strausberger Str. 4 "
+    },
+    "dates": [
+      {
+        "raw": "<strong><span style=\"color: #ff0000;\">15. Juni fällt aus gesundheitlichen Gründen aus<br /></span></strong>",
+        "parsed": {
+          "day": 15,
+          "month": 6
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.176Z",
+    "_id": "061"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-124/",
+    "address": {
+      "raw": "14552 Michendorf OT Stücken, Beelitzer Str. 10 "
+    },
+    "dates": [
+      {
+        "raw": "14. September 10-17 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "17:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.176Z",
+    "_id": "124"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-016/",
+    "address": {
+      "raw": "16833 Karwesee, Hauptstr. 5 b "
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "16. August 10-18 Uhr",
+        "parsed": {
+          "day": 16,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.177Z",
+    "_id": "016"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-104/",
+    "address": {
+      "raw": "landschafts- und kunstverein"
+    },
+    "dates": [
+      {
+        "raw": "12./13. April 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 4,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "10./11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14./15. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 15,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "12./13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "16./17. August 10-18 Uhr",
+        "parsed": {
+          "day": 17,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13./14. September 10- 18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.177Z",
+    "_id": "104"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-041/",
+    "address": {
+      "raw": "13465 Berlin-Frohnau, Kammgasse 18 "
+    },
+    "dates": [
+      {
+        "raw": "11. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 11,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.178Z",
+    "_id": "041"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-112/",
+    "address": {
+      "raw": "14542 Werder OT Glindow, An der Ziegelei 7 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.178Z",
+    "_id": "112"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-057/",
+    "address": {
+      "raw": "15370 Fredersdorf-Vogelsdorf, Kurze Straße 10"
+    },
+    "dates": [
+      {
+        "raw": "10. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. September 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.179Z",
+    "_id": "057"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-094/",
+    "address": {
+      "raw": "hostagrten teltow"
+    },
+    "dates": [
+      {
+        "raw": "28. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 28,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "29. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 29,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.179Z",
+    "_id": "094"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-082/",
+    "address": {
+      "raw": "14469 Potsdam-Bornim, Florastr. 61 "
+    },
+    "dates": [
+      {
+        "raw": "14. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.180Z",
+    "_id": "082"
+  },
+  {
+    "url": "https://www.xn--offene-grten-ncb.de/garten-nummer-128/",
+    "address": {
+      "raw": "15 749 Mittenwalde OT Telz, Telzer Höhe 1 "
+    },
+    "dates": [
+      {
+        "raw": "18. Mai 10-18 Uhr",
+        "parsed": {
+          "day": 18,
+          "month": 5,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "07. Juni 10-18 Uhr",
+        "parsed": {
+          "day": 7,
+          "month": 6,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "13. Juli 10-18 Uhr",
+        "parsed": {
+          "day": 13,
+          "month": 7,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "10. August 10-18 Uhr",
+        "parsed": {
+          "day": 10,
+          "month": 8,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      },
+      {
+        "raw": "14. September 10-18 Uhr",
+        "parsed": {
+          "day": 14,
+          "month": 9,
+          "startTime": "10:00",
+          "endTime": "18:00"
+        }
+      }
+    ],
+    "_parsedAt": "2025-07-25T07:15:20.180Z",
+    "_id": "128"
+  }
+]
