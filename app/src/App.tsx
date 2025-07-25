@@ -6,6 +6,17 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 // Use MapTiler landscape style
 const MAP_STYLE = 'https://api.maptiler.com/maps/landscape/style.json?key=ur6Yh3ULc6QjatOYBgln';
 
+// Function to format parsed dates
+function formatDate(parsed: { day: number; month: number; year?: number }): string {
+  const monthNames = [
+    'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+    'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
+  ];
+  const monthName = monthNames[parsed.month - 1];
+  const year = parsed.year ? ` ${parsed.year}` : '';
+  return `${parsed.day}. ${monthName}${year}`;
+}
+
 function App() {
   const [gardens, setGardens] = useState<Garden[]>([]);
   const [selectedMonth, setSelectedMonth] = useState<number | null>(null);
@@ -112,7 +123,7 @@ function App() {
               <ul className="mt-1 space-y-1">
                 {selectedGarden.dates.map((date, index) => (
                   <li key={index} className="text-gray-700">
-                    {date.raw}
+                    {formatDate(date.parsed)} {date.parsed.startTime && date.parsed.endTime && `(${date.parsed.startTime}-${date.parsed.endTime})`}
                   </li>
                 ))}
               </ul>
@@ -173,7 +184,7 @@ function App() {
                   <ul className="mt-1 space-y-1">
                     {selectedGarden.dates.map((date, index) => (
                       <li key={index} className="text-gray-700">
-                        {date.raw}
+                        {formatDate(date.parsed)} {date.parsed.startTime && date.parsed.endTime && `(${date.parsed.startTime}-${date.parsed.endTime})`}
                       </li>
                     ))}
                   </ul>
