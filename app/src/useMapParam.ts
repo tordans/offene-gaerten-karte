@@ -12,11 +12,6 @@ const DEFAULT_MAP_PARAM: MapParam = {
   lng: 13.4050,
 };
 
-// Round numbers for URL to maintain 8 decimal places
-const roundForURL = (num: number, decimals: number = 8): number => {
-  return Math.round(num * Math.pow(10, decimals)) / Math.pow(10, decimals);
-};
-
 const mapParamParser = createParser({
   parse: (query: string) => {
     const parts = query.split('/');
@@ -35,12 +30,9 @@ const mapParamParser = createParser({
     return { zoom, lat, lng } satisfies MapParam;
   },
   serialize: ({ zoom, lat, lng }: MapParam): string => {
-    const roundedZoom = Math.round(zoom * 100) / 100; // Round to 2 decimals for zoom
-    const roundedLat = roundForURL(lat, 6); // 6 decimal places for lat
-    const roundedLng = roundForURL(lng, 6); // 6 decimal places for lng
-    return `${roundedZoom}/${roundedLat}/${roundedLng}`;
+    return `${zoom}/${lat}/${lng}`;
   },
-}).withDefault(DEFAULT_MAP_PARAM);
+}).withOptions({ history: 'replace' }).withDefault(DEFAULT_MAP_PARAM);
 
 export function useMapParam() {
   const [mapParam, setMapParam] = useQueryState('map', mapParamParser);
