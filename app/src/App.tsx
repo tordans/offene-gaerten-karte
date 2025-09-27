@@ -95,8 +95,8 @@ function App() {
     : [];
 
   const monthNames = [
-    'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+    'Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun',
+    'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'
   ];
 
   // Helper function to get weekday name for a specific day
@@ -150,7 +150,7 @@ function App() {
 
         {/* Month Filter */}
         <div className="mb-6">
-          <h2 className="text-lg font-semibold mb-3">Filter by Month</h2>
+          <h2 className="text-lg font-semibold mb-3">Nach Monat filtern</h2>
           <div className="space-y-2">
             <button
               onClick={() => {
@@ -163,7 +163,7 @@ function App() {
                   : 'bg-gray-50 hover:bg-gray-100'
               }`}
             >
-              All Gardens ({gardens.length})
+              Alle Gärten ({gardens.length})
             </button>
             {monthCounts.map(({ month, count }) => (
               <button
@@ -187,7 +187,7 @@ function App() {
         {/* Day Filter */}
         {selectedMonth && availableDays.length > 0 && (
           <div className="mb-6">
-            <h2 className="text-lg font-semibold mb-3">Filter by Day</h2>
+            <h2 className="text-lg font-semibold mb-3">Nach Tag filtern</h2>
             <div className="space-y-2">
               <button
                 onClick={() => setSelectedDay(null)}
@@ -197,7 +197,7 @@ function App() {
                     : 'bg-gray-50 hover:bg-gray-100'
                 }`}
               >
-                All Days in {monthNames[selectedMonth - 1]} ({monthCounts.find(m => m.month === selectedMonth)?.count || 0})
+                Alle Tage im {monthNames[selectedMonth - 1]} ({monthCounts.find(m => m.month === selectedMonth)?.count || 0})
               </button>
                                         {availableDays.map(({ day, count }) => (
                             <button
@@ -218,7 +218,7 @@ function App() {
 
         {/* Favorites Section */}
         <div className="mb-6">
-          <h2 className="text-lg font-semibold mb-3">Favorites ({favorites?.length || 0})</h2>
+          <h2 className="text-lg font-semibold mb-3">Favoriten ({favorites?.length || 0})</h2>
           <div className="space-y-2">
             {favorites && favorites.length > 0 ? (
               gardens
@@ -233,20 +233,20 @@ function App() {
                         onClick={() => garden._id && toggleFavorite(garden._id)}
                         className="text-red-600 hover:text-red-800 mr-2"
                       >
-                        ❌ Remove
+                        ❌ Entfernen
                       </button>
                       <button
                         onClick={() => setSelectedGarden(garden)}
                         className="text-blue-600 hover:text-blue-800"
                       >
-                        View Details
+                        Details anzeigen
                       </button>
                     </div>
                   </div>
                 ))
             ) : (
               <div className="text-sm text-gray-500 italic">
-                No favorites yet. Click the heart icon on any garden to add it to your favorites.
+                Noch keine Favoriten. Klicken Sie auf das Herz-Symbol bei einem Garten, um ihn zu Ihren Favoriten hinzuzufügen.
               </div>
             )}
           </div>
@@ -315,7 +315,7 @@ function App() {
                     onClick={() => selectedGarden._id && toggleFavorite(selectedGarden._id)}
                     className={`text-xs ${selectedGarden._id && isFavorite(selectedGarden._id) ? 'text-red-600' : 'text-gray-600'} hover:underline block`}
                   >
-                    {selectedGarden._id && isFavorite(selectedGarden._id) ? '❤️ Remove from Favorites' : '🤍 Add to Favorites'}
+                    {selectedGarden._id && isFavorite(selectedGarden._id) ? '❤️ Aus Favoriten entfernen' : '🤍 Zu Favoriten hinzufügen'}
                   </button>
                   <a
                     href={selectedGarden.url}
@@ -323,7 +323,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline block"
                   >
-                    View Details
+                    Details anzeigen
                   </a>
                   <a
                     href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(selectedGarden.address.raw)}&travelmode=transit`}
@@ -331,11 +331,11 @@ function App() {
                     rel="noopener noreferrer"
                     className="text-green-600 hover:underline block"
                   >
-                    🚌 Get Directions (Public Transport)
+                    🚌 Route berechnen (ÖPNV)
                   </a>
                 </div>
                 <div className="text-xs">
-                  <strong>Opening Dates:</strong>
+                  <strong>Öffnungszeiten:</strong>
                   <ul className="mt-1 space-y-1">
                     {selectedGarden.dates.map((date, index) => {
                       const { formatted, relative } = formatDate(date.parsed);
