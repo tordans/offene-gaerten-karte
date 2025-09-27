@@ -8,6 +8,8 @@ import { de } from 'date-fns/locale';
 import gardensData from './data/gardens-and-dates.json';
 import DebugPanel from './DebugPanel';
 import DebugToggle from './DebugToggle';
+import BackgroundToggle from './BackgroundToggle';
+import BackgroundLayers from './BackgroundLayers';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 // Use MapTiler landscape style
@@ -117,6 +119,7 @@ function App() {
 
   // Function to check if a garden is favorited
   const isFavorite = (gardenId: string) => favorites?.includes(gardenId) || false;
+
 
   return (
     <div className="h-screen flex">
@@ -259,6 +262,7 @@ function App() {
           </div>
         </div>
 
+        <BackgroundToggle />
 
         {/* Debug Link */}
         <div className="mt-auto pt-4 border-t border-gray-200">
@@ -275,6 +279,8 @@ function App() {
           mapStyle={MAP_STYLE}
           style={{ width: '100%', height: '100%' }}
         >
+          <BackgroundLayers />
+
           {/* Always show favorite gardens as blue markers */}
           {gardens
             .filter(garden => garden.id && isFavorite(garden.id) && garden.coordinates.lat && garden.coordinates.lng)
