@@ -1,0 +1,3931 @@
+[
+  {
+    "id": "15",
+    "websiteSlug": "garten-nummer-015",
+    "address": "Bahnhofstr. 30, 16845 Neustadt (Dosse)",
+    "coordinates": {
+      "lat": 52.8544129,
+      "lng": 12.4466449
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "websiteSlug": "garten-nummer-042",
+    "address": "13465 Berlin, Im Fischgrund 23",
+    "coordinates": {
+      "lat": 52.6297094,
+      "lng": 13.2996808
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "websiteSlug": "garten-nummer-107",
+    "address": "14550 Groß Kreutz, Brandenburger Str. 4",
+    "coordinates": {
+      "lat": 52.4035978,
+      "lng": 12.7739676
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "websiteSlug": "garten-nummer-054",
+    "address": "15366 Neuenhagen bei Berlin, Grüne Aue 26",
+    "coordinates": {
+      "lat": 52.5256145,
+      "lng": 13.6649803
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "websiteSlug": "garten-nummer-111",
+    "address": "14542 Werder, Potsdamer Str. 13",
+    "coordinates": {
+      "lat": 52.3742781,
+      "lng": 12.9353054
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "websiteSlug": "garten-nummer-003",
+    "address": "hof repente",
+    "coordinates": {
+      "lat": 53.1671903,
+      "lng": 12.8187028
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "websiteSlug": "garten-nummer-097",
+    "address": "15827 Blankenfelde-Mahlow, Feldstraße 33",
+    "coordinates": {
+      "lat": 52.3345407,
+      "lng": 13.4023214
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "websiteSlug": "garten-nummer-078",
+    "address": "14167 Berlin-Zehlendorf, Prinz-Handjery-Str. 32A",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "39",
+    "websiteSlug": "garten-nummer-039",
+    "address": "13587 Berlin-Spandau/Hakenfelde, Klingenhofer Steig 24 a",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 25,
+        "month": 10,
+        "year": 2025,
+        "startTime": "15:00",
+        "endTime": "19:00"
+      },
+      {
+        "day": 22,
+        "month": 11,
+        "year": 2025,
+        "startTime": "15:00",
+        "endTime": "19:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "81",
+    "websiteSlug": "garten-nummer-081",
+    "address": "14469 Potsdam-Bornim, Schräger Weg 7",
+    "coordinates": {
+      "lat": 52.4272026,
+      "lng": 13.0125859
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "websiteSlug": "garten-nummer-019",
+    "address": "16348 Wandlitz, Straße am See 35",
+    "coordinates": {
+      "lat": 52.7711418,
+      "lng": 13.4368388
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "websiteSlug": "garten-nummer-058",
+    "address": "15370 Petershagen, Florastraße 55",
+    "coordinates": {
+      "lat": 52.5151282,
+      "lng": 13.7777939
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "131",
+    "websiteSlug": "garten-nummer-131",
+    "address": "Siedlung 23 c; 15848 Ranzig",
+    "coordinates": {
+      "lat": 52.1145516,
+      "lng": 14.1771329
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "websiteSlug": "garten-nummer-023",
+    "address": "16062 Hohen Neuendorf, Fasanenallee 60",
+    "coordinates": {
+      "lat": 52.6708825,
+      "lng": 13.3308336
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "websiteSlug": "garten-nummer-035",
+    "address": "13587 Berlin-Spandau Hakenfelde, Eiskellerweg 24",
+    "coordinates": {
+      "lat": 52.5882428,
+      "lng": 13.1396831
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "websiteSlug": "garten-nummer-127",
+    "address": "15834 Rangsdorf Machnow, Fenneweg 1",
+    "coordinates": {
+      "lat": 52.2714754,
+      "lng": 13.5030112
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "websiteSlug": "garten-nummer-062",
+    "address": "Pfalzburger Str. 5; 10719 Berlin",
+    "coordinates": {
+      "lat": 52.4989632,
+      "lng": 13.3222004
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "126",
+    "websiteSlug": "garten-nummer-126",
+    "address": "Sachsenstr. 14; 15806 Zossen",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 9,
+        "month": 2,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 9,
+        "month": 3,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 3,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 6,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 20,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 19,
+        "month": 10,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 2,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 22,
+        "month": 3,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin",
+      "1 invalid date entries found"
+    ]
+  },
+  {
+    "id": "63",
+    "websiteSlug": "garten-nummer-063",
+    "address": "10829 Berlin-Schöneberg, Kleingartenkolonie Lindenhain im Schöneberger Südgelände, Hans-Dannert-Weg 158",
+    "coordinates": {
+      "lat": 52.4701013,
+      "lng": 13.3589885
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "websiteSlug": "garten-nummer-034",
+    "address": "14612 Falkensee, Herderallee 12",
+    "coordinates": {
+      "lat": 52.5715914,
+      "lng": 13.1163045
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "websiteSlug": "garten-nummer-022",
+    "address": "16547 Birkenwerder, In der Niederheide 5 b",
+    "coordinates": {
+      "lat": 52.6829436,
+      "lng": 13.2629517
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "130",
+    "websiteSlug": "garten-nummer-130",
+    "address": "15848 Rietz, Rassmannsdorf 10b",
+    "coordinates": {
+      "lat": 52.2557013,
+      "lng": 14.2552093
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "websiteSlug": "garten-nummer-075",
+    "address": "14476  Neu Fahrland, Bassewitzstr. 8",
+    "coordinates": {
+      "lat": 52.4489714,
+      "lng": 13.0480294
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "websiteSlug": "garten-nummer-059",
+    "address": "15370 Petershagen, Wielandstr. 32",
+    "coordinates": {
+      "lat": 52.5365876,
+      "lng": 13.7916986
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "websiteSlug": "garten-nummer-018",
+    "address": "Dorfstraße 43; 16766 Sommerfeld",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "80",
+    "websiteSlug": "garten-nummer-080",
+    "address": "14469 Potsdam-Bornim, Am Priesteracker 4",
+    "coordinates": {
+      "lat": 52.4222003,
+      "lng": 12.9977862
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "websiteSlug": "garten-nummer-038",
+    "address": "13583 Berlin-Spandau, Borkzeile 34",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "16:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "96",
+    "websiteSlug": "garten-nummer-096",
+    "address": "15831 Mahlow, Herweghstr. 2",
+    "coordinates": {
+      "lat": 52.3640928,
+      "lng": 13.4130029
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "websiteSlug": "garten-nummer-079",
+    "address": "12209 Berlin-Lichterfelde, Schütte-Lanz-Str. 50",
+    "coordinates": {
+      "lat": 52.4123927,
+      "lng": 13.3278905
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "websiteSlug": "garten-nummer-002",
+    "address": "17291 Nordwestuckermark, Stangenweg 3",
+    "coordinates": {
+      "lat": 53.3592443,
+      "lng": 13.6664799
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 3,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "15:00"
+      },
+      {
+        "day": 16,
+        "month": 3,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "15:00"
+      },
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 28,
+        "month": 6,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 29,
+        "month": 6,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 7,
+        "month": 3,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 8,
+        "month": 3,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "websiteSlug": "garten-nummer-055",
+    "address": "15366 Neuenhagen bei Berlin, Unter den Ulmen 22",
+    "coordinates": {
+      "lat": 52.5319199,
+      "lng": 13.6681462
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "websiteSlug": "garten-nummer-110",
+    "address": "14542 Werder, Am Plessower See 19",
+    "coordinates": {
+      "lat": 52.3871984,
+      "lng": 12.9070274
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 6,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "websiteSlug": "garten-nummer-043",
+    "address": "13467 Berlin, Klaushager Weg 32",
+    "coordinates": {
+      "lat": 52.6192274,
+      "lng": 13.2959901
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "websiteSlug": "garten-nummer-106",
+    "address": "14550 Groß Kreutz, Weißbirkenweg 5",
+    "coordinates": {
+      "lat": 52.4060501,
+      "lng": 12.7082639
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "websiteSlug": "garten-nummer-014",
+    "address": "16845 Stüdenitz, Kyritzer Str.7",
+    "coordinates": {
+      "lat": 52.8907936,
+      "lng": 12.2862997
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "websiteSlug": "garten-nummer-048",
+    "address": "13088 Berlin-Weißensee, Herbert-Baum-Str. 35",
+    "coordinates": {
+      "lat": 52.5463064,
+      "lng": 13.4576358
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "websiteSlug": "garten-nummer-009",
+    "address": "16278 Angermünde, Zum Dorfanger 18",
+    "coordinates": {
+      "lat": 52.9787098,
+      "lng": 13.9660102
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "137",
+    "websiteSlug": "garten-nummer-137",
+    "address": "14913 Jüterbog, Werder 6",
+    "coordinates": {
+      "lat": 52.0108834,
+      "lng": 13.1264389
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "websiteSlug": "garten-nummer-072",
+    "address": "15537 Grünheide, Körperstr. 3",
+    "coordinates": {
+      "lat": 52.4240197,
+      "lng": 13.8022254
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "websiteSlug": "garten-nummer-025",
+    "address": "Kiezerstr. ; Schollene",
+    "coordinates": {
+      "lat": 52.6776556,
+      "lng": 12.2181562
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "websiteSlug": "garten-nummer-033",
+    "address": "14612 Falkensee, Leinestraße 39",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "121",
+    "websiteSlug": "garten-nummer-121",
+    "address": "14558 Nuthetal, Richard-Kuckuck-Str. 95",
+    "coordinates": {
+      "lat": 52.3492535,
+      "lng": 13.1197132
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "websiteSlug": "garten-nummer-064",
+    "address": "12099 Berlin, Heinweg 32",
+    "coordinates": {
+      "lat": 52.4617605,
+      "lng": 13.3983843
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "websiteSlug": "garten-nummer-013",
+    "address": "16225 Eberswalde, Eichwerderstraße 1",
+    "coordinates": {
+      "lat": 52.8322615,
+      "lng": 13.8245607
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "websiteSlug": "garten-nummer-044",
+    "address": "Klaushager Weg 30 13467 Berlin",
+    "coordinates": {
+      "lat": 52.6190542,
+      "lng": 13.2960288
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "101",
+    "websiteSlug": "garten-nummer-101",
+    "address": "15713, Waldsiedlung 13",
+    "coordinates": {
+      "lat": 52.3676561,
+      "lng": 13.7099806
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "websiteSlug": "garten-nummer-052",
+    "address": "12623 Berlin, Feldrain 14",
+    "coordinates": {
+      "lat": 52.5240409,
+      "lng": 13.6277863
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "117",
+    "websiteSlug": "garten-nummer-117",
+    "address": "14552 Michendorf, Rosenweg 9",
+    "coordinates": {
+      "lat": 52.3297206,
+      "lng": 13.0692631
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "websiteSlug": "garten-nummer-005",
+    "address": "16775 Stechlin, Forststeig 2a",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "91",
+    "websiteSlug": "garten-nummer-091",
+    "address": "Johannes-Niemeyer-Weg 9 b, Steinstücken, Wannsee, Steglitz-Zehlendorf, Berlin, Teltow, 14109, Deutschland",
+    "coordinates": {
+      "lat": 52.3891668,
+      "lng": 13.1319319
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "websiteSlug": "garten-nummer-029",
+    "address": "14656 Brieselang, Jochen-Weigert-Str. 58",
+    "coordinates": {
+      "lat": 52.5999873,
+      "lng": 12.9922654
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "websiteSlug": "garten-nummer-087",
+    "address": "14469 Potsdam, Russische Kolonie 12",
+    "coordinates": {
+      "lat": 52.4098744,
+      "lng": 13.0574824
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "websiteSlug": "garten-nummer-068",
+    "address": "12355 Berlin-Rudow, Am Espenpfuhl 30",
+    "coordinates": {
+      "lat": 52.4142984,
+      "lng": 13.5042554
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "websiteSlug": "garten-nummer-086",
+    "address": "14469 Potsdam, Katharinenholzstr. 25",
+    "coordinates": {
+      "lat": 52.4124577,
+      "lng": 13.0216677
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "websiteSlug": "garten-nummer-069",
+    "address": "Strohblumenweg 101, 12524 Berlin",
+    "coordinates": {
+      "lat": 52.4191984,
+      "lng": 13.5486104
+    },
+    "dates": [
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "websiteSlug": "garten-nummer-028",
+    "address": "14641 Nauen, Am Schlangenhorst 19",
+    "coordinates": {
+      "lat": 52.6134411,
+      "lng": 12.8910519
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "websiteSlug": "garten-nummer-090",
+    "address": "14478 Potsdam, Vogelsang 31",
+    "coordinates": {
+      "lat": 52.3713603,
+      "lng": 13.0822716
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "websiteSlug": "garten-nummer-004",
+    "address": "16831 Rheinsberg, Amselweg 1",
+    "coordinates": {
+      "lat": 53.0899975,
+      "lng": 12.8965782
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "websiteSlug": "garten-nummer-053",
+    "address": "12623 Berlin-Mahlsdorf, Lübecker Str. 1",
+    "coordinates": {
+      "lat": 52.5238304,
+      "lng": 13.6424432
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "116",
+    "websiteSlug": "garten-nummer-116",
+    "address": "Ravensbergweg 10, 14552 Michendorf /",
+    "coordinates": {
+      "lat": 52.3328663,
+      "lng": 13.0575898
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "websiteSlug": "garten-nummer-045",
+    "address": "13467 Berlin-Hermsdorf, Hillmannstr. 1-3",
+    "coordinates": {
+      "lat": 52.6127856,
+      "lng": 13.3024896
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "websiteSlug": "garten-nummer-100",
+    "address": "15732 Schulzendorf, Weimarer Str. 70",
+    "coordinates": {
+      "lat": 52.3500076,
+      "lng": 13.6031798
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "websiteSlug": "garten-nummer-012",
+    "address": "16225 Eberswalde, Nelkenweg 1",
+    "coordinates": {
+      "lat": 52.8512425,
+      "lng": 13.8234662
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "websiteSlug": "garten-nummer-120",
+    "address": "14558, Nuthetal, Schinkelstr. 17",
+    "coordinates": {
+      "lat": 52.3503757,
+      "lng": 13.1076617
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "websiteSlug": "garten-nummer-065",
+    "address": "12043 Berlin-Neukölln, böhmisches dorf",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "12:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "12:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "32",
+    "websiteSlug": "garten-nummer-032",
+    "address": "14612 Falkensee, Im Wolfsgarten 17",
+    "coordinates": {
+      "lat": 52.5720747,
+      "lng": 13.0623601
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "websiteSlug": "garten-nummer-024",
+    "address": "16321 Bernau, Dohlensteg 7",
+    "coordinates": {
+      "lat": 52.6979927,
+      "lng": 13.5466729
+    },
+    "dates": [
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "136",
+    "websiteSlug": "garten-nummer-136",
+    "address": "14913 Jüterbog, Grüna 95",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "73",
+    "websiteSlug": "garten-nummer-073",
+    "address": "14669 Ketzin, Potsdamer Allee 8b",
+    "coordinates": {
+      "lat": 52.4934919,
+      "lng": 12.9259632
+    },
+    "dates": [
+      {
+        "day": 25,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 6,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "websiteSlug": "garten-nummer-008",
+    "address": "16247 Althüttendorf, Glasstr. 15",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "49",
+    "websiteSlug": "garten-nummer-049",
+    "address": "12685 Berlin-Marzahn, Salanderweg 5",
+    "coordinates": {
+      "lat": 52.5356413,
+      "lng": 13.5548967
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "1 invalid date entries found"
+    ]
+  },
+  {
+    "id": "66",
+    "websiteSlug": "garten-nummer-066",
+    "address": "waldgarten britz",
+    "coordinates": {
+      "lat": 52.4272436,
+      "lng": 13.4281011
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "123",
+    "websiteSlug": "garten-nummer-123",
+    "address": "14547 Beelitz, Straße der Einheit 140",
+    "coordinates": {
+      "lat": 52.2828556,
+      "lng": 12.8846083
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "websiteSlug": "garten-nummer-089",
+    "address": "14478 Potsdam, Ravensbergweg 7",
+    "coordinates": {
+      "lat": 52.3736489,
+      "lng": 13.0837752
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "websiteSlug": "garten-nummer-031",
+    "address": "14612 Falkensee, Zaunkönigstr. 8",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "27",
+    "websiteSlug": "garten-nummer-027",
+    "address": "14641 Nauen Behnitz, Heineberger Weg 21",
+    "coordinates": {
+      "lat": 52.5766311,
+      "lng": 12.6811473
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "websiteSlug": "garten-nummer-070",
+    "address": "15569 Woltersdorf, Eichendamm 25a",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 6,
+        "month": 7,
+        "year": 2025,
+        "startTime": "11:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "135",
+    "websiteSlug": "garten-nummer-135",
+    "address": "14943 Luckenwalde, Lehmhufenweg 17",
+    "coordinates": {
+      "lat": 52.0847398,
+      "lng": 13.1319146
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "websiteSlug": "garten-nummer-119",
+    "address": "14552 Michendorf, Straße des Friedens 87",
+    "coordinates": {
+      "lat": 52.3129582,
+      "lng": 13.0661189
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 4,
+        "month": 10,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "websiteSlug": "garten-nummer-085",
+    "address": "14469 Potsdam, Baumschulenweg 7 b",
+    "coordinates": {
+      "lat": 52.4088042,
+      "lng": 12.9918507
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "websiteSlug": "garten-nummer-093",
+    "address": "14532 Stahnsdorf, Friedrich-Naumann- Str. 133",
+    "coordinates": {
+      "lat": 52.3873755,
+      "lng": 13.2137548
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "websiteSlug": "garten-nummer-007",
+    "address": "fontane-garten",
+    "coordinates": {
+      "lat": 52.4234413,
+      "lng": 13.0517226
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "websiteSlug": "garten-nummer-115",
+    "address": "14548 Schwielowsee,, Bergholzer Straße 26",
+    "coordinates": {
+      "lat": 52.3472017,
+      "lng": 13.0144491
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "websiteSlug": "garten-nummer-103",
+    "address": "15537 Neu Zittau, Walther-Rathenau-Str. 25",
+    "coordinates": {
+      "lat": 52.3832557,
+      "lng": 13.7682119
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 16,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "websiteSlug": "garten-nummer-046",
+    "address": "13469 Berlin-Lübars, Im Wiesenbusch 9",
+    "coordinates": {
+      "lat": 52.6194034,
+      "lng": 13.3370936
+    },
+    "dates": [],
+    "errors": [
+      "1 invalid date entries found"
+    ]
+  },
+  {
+    "id": "11",
+    "websiteSlug": "garten-nummer-011",
+    "address": "16225 Eberswalde, Kiefernweg 2",
+    "coordinates": {
+      "lat": 52.8456249,
+      "lng": 13.8188743
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "websiteSlug": "garten-nummer-010",
+    "address": "16303 Schwedt, Bernd-von-Arnim-Str. 42",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "102",
+    "websiteSlug": "garten-nummer-102",
+    "address": "15537 Gosen-Neu Zittau, Petersstr. 15",
+    "coordinates": {
+      "lat": 52.3904756,
+      "lng": 13.7314748
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "websiteSlug": "garten-nummer-047",
+    "address": "13158 Berlin-Rosenthal, Schönhauser Str. 20",
+    "coordinates": {
+      "lat": 52.5965169,
+      "lng": 13.3885363
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "114",
+    "websiteSlug": "garten-nummer-114",
+    "address": "14458 Schwielowsee, Ziegelstr. 15",
+    "coordinates": {
+      "lat": 52.3486013,
+      "lng": 12.9935911
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "websiteSlug": "garten-nummer-051",
+    "address": "12683 Berlin-Biesdorf, Wulkower Str. 22",
+    "coordinates": {
+      "lat": 52.5019827,
+      "lng": 13.5597216
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "websiteSlug": "garten-nummer-006",
+    "address": "16775 Großwoltersdorf, Seestr. 12 D",
+    "coordinates": {
+      "lat": 53.1313392,
+      "lng": 13.1175727
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "websiteSlug": "garten-nummer-092",
+    "address": "14532 Stahnsdorf, Parkallee 30",
+    "coordinates": {
+      "lat": 52.3874359,
+      "lng": 13.2075845
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "websiteSlug": "garten-nummer-084",
+    "address": "14476 Potsdam, Thomas-Müntzer-Str. 7",
+    "coordinates": {
+      "lat": 52.4078825,
+      "lng": 12.9671495
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "118",
+    "websiteSlug": "garten-nummer-118",
+    "address": "14552 Michendorf, Rosenweg 8",
+    "coordinates": {
+      "lat": 52.3290982,
+      "lng": 13.0699458
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "websiteSlug": "garten-nummer-071",
+    "address": "15569 Woltersdorf, Werderstr. 40",
+    "coordinates": {
+      "lat": 52.4420559,
+      "lng": 13.7629994
+    },
+    "dates": [
+      {
+        "day": 5,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 6,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "134",
+    "websiteSlug": "garten-nummer-134",
+    "address": "14947 Nuthe-Urstromtal, Kemnitzer Str. 41",
+    "coordinates": {
+      "lat": 52.0972456,
+      "lng": 13.0112607
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "websiteSlug": "garten-nummer-026",
+    "address": "14712 Rathenow, Egon-Erwin-Kisch-Weg 6",
+    "coordinates": {
+      "lat": 52.5834534,
+      "lng": 12.3379947
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "websiteSlug": "garten-nummer-067",
+    "address": "Straße 179, 36, 12355 Berlin",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "122",
+    "websiteSlug": "garten-nummer-122",
+    "address": "Alte Feldstr. 14; 14558 Nuthetal",
+    "coordinates": {
+      "lat": 52.3157734,
+      "lng": 13.1330931
+    },
+    "dates": [
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "websiteSlug": "garten-nummer-088",
+    "address": "14467 Potsdam, Am Grünen Gitter 9",
+    "coordinates": {
+      "lat": 52.4002257,
+      "lng": 13.0375355
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "websiteSlug": "garten-nummer-083",
+    "address": "karl foerster garten",
+    "coordinates": {
+      "lat": 50.9696737,
+      "lng": 11.0075814
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ]
+  },
+  {
+    "id": "129",
+    "websiteSlug": "garten-nummer-129",
+    "address": "15754 Heidesee, Ring 41",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "95",
+    "websiteSlug": "garten-nummer-095",
+    "address": "Berliner Str. 37; 14979 Großbeeren",
+    "coordinates": {
+      "lat": 52.3591969,
+      "lng": 13.3104145
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "websiteSlug": "garten-nummer-001",
+    "address": "17348 Woldegk, Vogelsang 1",
+    "coordinates": {
+      "lat": 53.4105003,
+      "lng": 13.5593833
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "113",
+    "websiteSlug": "garten-nummer-113",
+    "address": "14548 Schwielowsee, uferpromenade",
+    "coordinates": {
+      "lat": 52.3428165,
+      "lng": 12.9796812
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "websiteSlug": "garten-nummer-056",
+    "address": "15366 Neuenhagen, Edelweißstr. 21",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "105",
+    "websiteSlug": "garten-nummer-105",
+    "address": "14550 Groß Kreutz, Schulstr. 46",
+    "coordinates": {
+      "lat": 52.4107646,
+      "lng": 12.6893153
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "websiteSlug": "garten-nummer-040",
+    "address": "13465 Berlin-Fronau, Ansgarstr. 15",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "17",
+    "websiteSlug": "garten-nummer-017",
+    "address": "16833 Fehrbellin, Hauptstr. 42",
+    "coordinates": {
+      "lat": 52.7093915,
+      "lng": 12.7941555
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "websiteSlug": "garten-nummer-060",
+    "address": "15344 Strausberg (Gartenstadt), Friedensstr. 10",
+    "coordinates": {
+      "lat": 52.5967931,
+      "lng": 13.8948451
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "websiteSlug": "garten-nummer-125",
+    "address": "Soldpuhlweg 1, 14974 Ludwigsfelde Schulzendorf",
+    "coordinates": {
+      "lat": 52.2722174,
+      "lng": 13.3446834
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "websiteSlug": "garten-nummer-037",
+    "address": "13591 Berlin-Spandau, Bolteweg 32",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "21",
+    "websiteSlug": "garten-nummer-021",
+    "address": "16359, Bahnhofstraße. 29, Germany",
+    "coordinates": {
+      "lat": 51.4744366,
+      "lng": 7.3069855
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "websiteSlug": "garten-nummer-076",
+    "address": "landhausgarten fraenkel",
+    "coordinates": {
+      "lat": 52.4443295,
+      "lng": 13.1314394
+    },
+    "dates": [],
+    "errors": [
+      "3 invalid date entries found"
+    ]
+  },
+  {
+    "id": "99",
+    "websiteSlug": "garten-nummer-099",
+    "address": "Thälmannstr. 17, 15827 Blankenfelde",
+    "coordinates": {
+      "lat": 52.3223763,
+      "lng": 13.4353445
+    },
+    "dates": [
+      {
+        "day": 31,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 1,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "133",
+    "websiteSlug": "garten-nummer-133",
+    "address": "14929 Treuenbrietzen, Jahnstr. 22",
+    "coordinates": {
+      "lat": 52.1018359,
+      "lng": 12.8852789
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ]
+  },
+  {
+    "id": "109",
+    "websiteSlug": "garten-nummer-109",
+    "address": "14797 Kloster Lehnin, Beelitzer Str. 86",
+    "coordinates": {
+      "lat": 52.3184882,
+      "lng": 12.7654969
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "websiteSlug": "garten-nummer-108",
+    "address": "14797, Lehniner Allee 36",
+    "coordinates": {
+      "lat": 52.3580768,
+      "lng": 12.7968363
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 19,
+        "month": 10,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "websiteSlug": "garten-nummer-077",
+    "address": "14532 Kleinmachnow, Seematen 9",
+    "coordinates": {
+      "lat": 52.4178828,
+      "lng": 13.2243007
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "websiteSlug": "garten-nummer-098",
+    "address": "15827 Blankenfelde-Mahlow, Am Bruch 13",
+    "coordinates": {
+      "lat": 52.3305973,
+      "lng": 13.4111131
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "132",
+    "websiteSlug": "garten-nummer-132",
+    "address": "Trebatscher Hauptstraße 26a; 15848 Tauche/",
+    "coordinates": {
+      "lat": 52.0844183,
+      "lng": 14.1657841
+    },
+    "dates": [
+      {
+        "day": 12,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "websiteSlug": "garten-nummer-020",
+    "address": "15348 Wandlitz, Karl-Marx-Str. 8",
+    "coordinates": {
+      "lat": 52.7618332,
+      "lng": 13.4698802
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "websiteSlug": "garten-nummer-036",
+    "address": "13589 Berlin-Spandau, Niederheideweg 51",
+    "coordinates": {
+      "lat": 52.5642789,
+      "lng": 13.1658155
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "12:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "websiteSlug": "garten-nummer-061",
+    "address": "15378 Herzfelde, Strausberger Str. 4",
+    "coordinates": {
+      "lat": 52.4838362,
+      "lng": 13.8487436
+    },
+    "dates": [
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ]
+  },
+  {
+    "id": "124",
+    "websiteSlug": "garten-nummer-124",
+    "address": "14552 Michendorf, Beelitzer Str. 10",
+    "coordinates": {
+      "lat": 52.3113594,
+      "lng": 13.0570864
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "websiteSlug": "garten-nummer-016",
+    "address": "16833 Karwesee, Hauptstr. 5 b",
+    "coordinates": {
+      "lat": 52.7598134,
+      "lng": 12.7829445
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 16,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "websiteSlug": "garten-nummer-104",
+    "address": "landschafts- und kunstverein",
+    "coordinates": {
+      "lat": 52.3924379,
+      "lng": 12.6134111
+    },
+    "dates": [
+      {
+        "day": 13,
+        "month": 4,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 15,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 17,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "websiteSlug": "garten-nummer-041",
+    "address": "13465 Berlin-Frohnau, Kammgasse 18",
+    "coordinates": {
+      "lat": 52.6264836,
+      "lng": 13.2865103
+    },
+    "dates": [
+      {
+        "day": 11,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "websiteSlug": "garten-nummer-112",
+    "address": "14542 Werder, An der Ziegelei 7",
+    "coordinates": {
+      "lat": 52.3548132,
+      "lng": 12.9199236
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "websiteSlug": "garten-nummer-057",
+    "address": "15370 Fredersdorf-Vogelsdorf, Kurze Straße 10",
+    "coordinates": {
+      "lat": 52.5246605,
+      "lng": 13.7526251
+    },
+    "dates": [
+      {
+        "day": 10,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "websiteSlug": "garten-nummer-094",
+    "address": "14513 Teltow, Rudolf-Virchow-Str. 3",
+    "coordinates": {
+      "lat": 52.3832863,
+      "lng": 13.3034373
+    },
+    "dates": [
+      {
+        "day": 28,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 29,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "websiteSlug": "garten-nummer-082",
+    "address": "14469 Potsdam-Bornim, Florastr. 61",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 14,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  },
+  {
+    "id": "128",
+    "websiteSlug": "garten-nummer-128",
+    "address": "15 749 Mittenwalde, Telzer Höhe 1",
+    "coordinates": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "dates": [
+      {
+        "day": 18,
+        "month": 5,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 7,
+        "month": 6,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 13,
+        "month": 7,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 10,
+        "month": 8,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      },
+      {
+        "day": 14,
+        "month": 9,
+        "year": 2025,
+        "startTime": "10:00",
+        "endTime": "18:00"
+      }
+    ],
+    "errors": [
+      "lat, lng conversion failed, falling back to berlin"
+    ]
+  }
+]

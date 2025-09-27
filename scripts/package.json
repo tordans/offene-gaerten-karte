@@ -1,0 +1,13 @@
+{
+  "name": "offene-gaerten-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for fetching and processing garden data",
+  "type": "module",
+  "scripts": {
+    "fetch-data": "node --experimental-strip-types fetch-and-process-data.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

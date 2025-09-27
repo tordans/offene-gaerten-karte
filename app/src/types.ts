@@ -1,9 +1,4 @@
-export type GardenDateRaw = {
-  raw: string;
-  parsed: GardenDateParsed;
-};
-
-export type GardenDateParsed = {
+export type GardenDate = {
   day: number;
   month: number;
   year?: number;
@@ -12,16 +7,15 @@ export type GardenDateParsed = {
 };
 
 export type Garden = {
-  url: string;
-  address: {
-    raw: string;
-    parsed?: string; // Optionally normalized
+  id: string;
+  websiteSlug: string;
+  address: string;
+  coordinates: {
+    lat: number;
+    lng: number;
   };
-  dates: GardenDateRaw[];
-  lat?: number;
-  lng?: number;
-  _id: string;
-  [key: string]: any; // For extra raw/debug info
+  dates: GardenDate[];
+  errors?: string[];
 };
 
 export type GardensJson = Garden[];

@@ -30,27 +30,53 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
           cache: 'npm'
           cache-dependency-path: app/package-lock.json
-      - name: Install dependencies
+
+      - name: Install Script Dependencies
+        run: |
+          cd scripts
+          npm ci
+
+      - name: Fetch Latest Data from Google Sheets
+        run: |
+          cd scripts
+          npm run fetch-data
+
+      - name: Commit Updated Data
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add app/src/data/gardens-and-dates.json
+          git diff --staged --quiet || git commit -m 'Update garden data from Google Sheets [skip ci]'
+          git push
+
+      - name: Install App Dependencies
         run: |
           cd app
           npm ci
+
       - name: Build
         run: |
           cd app
           npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
           path: './app/dist'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

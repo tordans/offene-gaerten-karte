@@ -5,7 +5,7 @@ import type { Garden, GardensJson } from './types';
 import { formatDistanceToNow } from 'date-fns';
 import { de } from 'date-fns/locale';
 // Import data as a module
-import gardensData from './data/gardens-parsed.json';
+import gardensData from './data/gardens-and-dates.json';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 // Use MapTiler landscape style
@@ -56,8 +56,8 @@ function App() {
   const filteredGardens = selectedMonth
     ? gardens.filter(garden =>
         garden.dates.some(date =>
-          date.parsed.month === selectedMonth &&
-          (selectedDay === null || date.parsed.day === selectedDay)
+          date.month === selectedMonth &&
+          (selectedDay === null || date.day === selectedDay)
         )
       )
     : gardens;
@@ -67,7 +67,7 @@ function App() {
     return {
       month,
       count: gardens.filter(garden =>
-        garden.dates.some(date => date.parsed.month === month)
+        garden.dates.some(date => date.month === month)
       ).length
     };
   });
@@ -78,8 +78,8 @@ function App() {
         new Set(
           gardens
             .flatMap(garden => garden.dates)
-            .filter(date => date.parsed.month === selectedMonth)
-            .map(date => date.parsed.day)
+            .filter(date => date.month === selectedMonth)
+            .map(date => date.day)
         )
       )
       .sort((a, b) => a - b)
@@ -87,8 +87,8 @@ function App() {
         day,
         count: gardens.filter(garden =>
           garden.dates.some(date =>
-            date.parsed.month === selectedMonth &&
-            date.parsed.day === day
+            date.month === selectedMonth &&
+            date.day === day
           )
         ).length
       }))
@@ -222,15 +222,15 @@ function App() {
           <div className="space-y-2">
             {favorites && favorites.length > 0 ? (
               gardens
-                .filter(garden => garden._id && isFavorite(garden._id))
+                .filter(garden => garden.id && isFavorite(garden.id))
                 .map((garden) => (
-                  <div key={garden._id} className="p-2 bg-blue-50 rounded border-l-4 border-blue-400">
+                  <div key={garden.id} className="p-2 bg-blue-50 rounded border-l-4 border-blue-400">
                     <div className="text-sm font-medium text-gray-800 mb-1">
-                      {garden.address.raw}
+                      {garden.address}
                     </div>
                     <div className="text-xs text-gray-600 mb-2">
                       <button
-                        onClick={() => garden._id && toggleFavorite(garden._id)}
+                        onClick={() => garden.id && toggleFavorite(garden.id)}
                         className="text-red-600 hover:text-red-800 mr-2"
                       >
                         ❌ Entfernen
@@ -265,12 +265,12 @@ function App() {
         >
           {/* Always show favorite gardens as blue markers */}
           {gardens
-            .filter(garden => garden._id && isFavorite(garden._id) && garden.lat && garden.lng)
+            .filter(garden => garden.id && isFavorite(garden.id) && garden.coordinates.lat && garden.coordinates.lng)
             .map((garden) => (
               <Marker
-                key={`favorite-${garden._id}`}
-                longitude={garden.lng!}
-                latitude={garden.lat!}
+                key={`favorite-${garden.id}`}
+                longitude={garden.coordinates.lng}
+                latitude={garden.coordinates.lat}
                 onClick={e => {
                   e.originalEvent.stopPropagation();
                   setSelectedGarden(garden);
@@ -282,12 +282,12 @@ function App() {
 
           {/* Show filtered gardens as green markers (excluding favorites to avoid duplicates) */}
           {filteredGardens
-            .filter(garden => garden._id && !isFavorite(garden._id) && garden.lat && garden.lng)
+            .filter(garden => garden.id && !isFavorite(garden.id) && garden.coordinates.lat && garden.coordinates.lng)
             .map((garden) => (
               <Marker
-                key={`filtered-${garden._id}`}
-                longitude={garden.lng!}
-                latitude={garden.lat!}
+                key={`filtered-${garden.id}`}
+                longitude={garden.coordinates.lng}
+                latitude={garden.coordinates.lat}
                 onClick={e => {
                   e.originalEvent.stopPropagation();
                   setSelectedGarden(garden);
@@ -297,10 +297,10 @@ function App() {
               </Marker>
             ))}
 
-          {selectedGarden && selectedGarden.lat && selectedGarden.lng && (
+          {selectedGarden && selectedGarden.coordinates.lat && selectedGarden.coordinates.lng && (
             <Popup
-              longitude={selectedGarden.lng}
-              latitude={selectedGarden.lat}
+              longitude={selectedGarden.coordinates.lng}
+              latitude={selectedGarden.coordinates.lat}
               onClose={() => setSelectedGarden(null)}
               closeButton={true}
               closeOnClick={false}
@@ -308,17 +308,17 @@ function App() {
             >
               <div className="p-2">
                 <h3 className="font-semibold text-sm mb-1">
-                  {selectedGarden.address.raw}
+                  {selectedGarden.address}
                 </h3>
                 <div className="text-xs text-gray-600 mb-2 space-y-1">
                   <button
-                    onClick={() => selectedGarden._id && toggleFavorite(selectedGarden._id)}
-                    className={`text-xs ${selectedGarden._id && isFavorite(selectedGarden._id) ? 'text-red-600' : 'text-gray-600'} hover:underline block`}
+                    onClick={() => selectedGarden.id && toggleFavorite(selectedGarden.id)}
+                    className={`text-xs ${selectedGarden.id && isFavorite(selectedGarden.id) ? 'text-red-600' : 'text-gray-600'} hover:underline block`}
                   >
-                    {selectedGarden._id && isFavorite(selectedGarden._id) ? '❤️ Aus Favoriten entfernen' : '🤍 Zu Favoriten hinzufügen'}
+                    {selectedGarden.id && isFavorite(selectedGarden.id) ? '❤️ Aus Favoriten entfernen' : '🤍 Zu Favoriten hinzufügen'}
                   </button>
                   <a
-                    href={selectedGarden.url}
+                    href={`https://www.xn--offene-grten-ncb.de/${selectedGarden.websiteSlug}/`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline block"
@@ -326,7 +326,7 @@ function App() {
                     Details anzeigen
                   </a>
                   <a
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(selectedGarden.address.raw)}&travelmode=transit`}
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(selectedGarden.address)}&travelmode=transit`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-600 hover:underline block"
@@ -338,10 +338,10 @@ function App() {
                   <strong>Öffnungszeiten:</strong>
                   <ul className="mt-1 space-y-1">
                     {selectedGarden.dates.map((date, index) => {
-                      const { formatted, relative } = formatDate(date.parsed);
+                      const { formatted, relative } = formatDate(date);
                       return (
                         <li key={index} className="text-gray-700">
-                          <div>{formatted} {date.parsed.startTime && date.parsed.endTime && `(${date.parsed.startTime}-${date.parsed.endTime})`}</div>
+                          <div>{formatted} {date.startTime && date.endTime && `(${date.startTime}-${date.endTime})`}</div>
                           <div className="text-xs text-gray-500">{relative}</div>
                         </li>
                       );
