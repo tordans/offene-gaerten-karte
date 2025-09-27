@@ -1,6 +1,6 @@
 # Offene Gärten Karte
 
-A React application that displays open gardens in Germany on an interactive map. The app scrapes garden data from [Offene Gärten](https://www.xn--offene-grten-ncb.de/gaerten-alphabetisch/), geocodes the addresses, and presents them in a user-friendly map interface.
+A React application that displays open gardens in Germany on an interactive map. The app uses pre-processed garden data and presents them in a user-friendly map interface.
 
 ## Features
 
@@ -14,11 +14,9 @@ A React application that displays open gardens in Germany on an interactive map.
 ```
 offene-gaerten-karte/
 ├── app/                    # React application (Vite + TypeScript)
-├── scripts/
-│   ├── scrape/            # Web scraping scripts
-│   └── geocode/           # Geocoding script
-├── data/                  # Generated data files
-└── .github/workflows/     # GitHub Actions for deployment
+├── data/                   # Garden data files
+├── shared/                 # Shared types and utilities
+└── .github/workflows/      # GitHub Actions for deployment
 ```
 
 ## Development
@@ -26,27 +24,10 @@ offene-gaerten-karte/
 ### Prerequisites
 
 - Node.js 18+
-- Bun (for scripts)
 
 ### Setup
 
-1. **Scrape Garden Data**:
-   ```bash
-   cd scripts/scrape
-   bun install
-   bun run scrape.ts fetch-urls
-   bun run scrape.ts fetch-pages
-   bun run scrape.ts parse-pages
-   ```
-
-2. **Geocode Addresses**:
-   ```bash
-   cd scripts/geocode
-   bun install
-   bun run geocode.ts
-   ```
-
-3. **Run the React App**:
+1. **Run the React App**:
    ```bash
    cd app
    npm install
@@ -74,14 +55,11 @@ The app is automatically deployed to GitHub Pages when you push to the `main` br
 
 ## Data Flow
 
-1. **Scraping**: Extract garden URLs, download pages, parse addresses and dates
-2. **Geocoding**: Convert addresses to coordinates using Nominatim
-3. **Display**: Show gardens on interactive map with filtering options
+1. **Data**: Uses pre-processed garden data from `data/gardens-parsed.json`
+2. **Display**: Show gardens on interactive map with filtering options
 
 ## Technologies Used
 
 - **Frontend**: React, TypeScript, Vite, Tailwind CSS
 - **Maps**: react-map-gl, MapTiler
-- **Scraping**: Bun, fetch API
-- **Geocoding**: Nominatim API
 - **Deployment**: GitHub Actions, GitHub Pages

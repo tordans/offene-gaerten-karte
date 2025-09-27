@@ -20,9 +20,7 @@ export type Garden = {
   dates: GardenDateRaw[];
   lat?: number;
   lng?: number;
-  _parsedAt?: string;
   _id: string;
-  _geocodedAt?: string;
   [key: string]: any; // For extra raw/debug info
 };
 
