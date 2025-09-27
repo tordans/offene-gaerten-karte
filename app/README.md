@@ -12,18 +12,14 @@ This is a React app (Vite + TypeScript + Tailwind CSS + react-map-gl) that visua
 1. Install dependencies:
    ```sh
    npm install
-   # or
-   bun install
    ```
 
 2. Start the dev server:
    ```sh
    npm run dev
-   # or
-   bun run dev
    ```
 
-The app expects `../../data/gardens-parsed.json` to exist.
+The app expects `./src/data/gardens-and-dates.json` to exist.
 
 ## Features
 
