@@ -13,8 +13,11 @@ import BackgroundLayers from './BackgroundLayers';
 import { useMapParam } from './useMapParam';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
+// Maptiler API key, only valid for `tordans.github.io`
+// https://cloud.maptiler.com/account/keys/22a6bf6f-03b1-42b1-8f75-eccae2a6513f/settings
+const MAP_TILER_API_KEY = 'EaBsqIr5D7rH2Vm2sjv7';
 // Use MapTiler landscape style
-const MAP_STYLE = 'https://api.maptiler.com/maps/landscape/style.json?key=ur6Yh3ULc6QjatOYBgln';
+const MAP_STYLE = `https://api.maptiler.com/maps/landscape/style.json?key=${MAP_TILER_API_KEY}`;
 
 // Function to format parsed dates with relative time
 function formatDate(parsed: { day: number; month: number; year?: number }): { formatted: string; relative: string } {
