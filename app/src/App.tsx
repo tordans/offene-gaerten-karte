@@ -49,7 +49,7 @@ function App() {
   const [selectedDay, setSelectedDay] = useQueryState('day', parseAsInteger);
   const [favorites, setFavorites] = useQueryState('favorites', parseAsArrayOf(parseAsString).withDefault([]));
   const [selectedGarden, setSelectedGarden] = useState<Garden | null>(null);
-  const { viewState, setViewState } = useMapParam();
+  const { viewState, setViewState, onMoveEnd } = useMapParam();
 
   const filteredGardens = selectedMonth
     ? gardens.filter(garden =>
@@ -270,6 +270,7 @@ function App() {
         <Map
           {...viewState}
           onMove={evt => setViewState(evt.viewState)}
+          onMoveEnd={onMoveEnd}
           mapStyle={MAP_STYLE}
           style={{ width: '100%', height: '100%' }}
         >
