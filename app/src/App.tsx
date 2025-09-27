@@ -134,7 +134,7 @@ function App() {
             >
               Offene Gärten
             </a>
-            . Die Daten daten wurden zuletzt am 25.7.2025 gescraped und geocodiert.
+            . Die Daten wurden zuletzt am 25.7.2025 verarbeitet.
           </p>
           <p className="text-xs text-gray-500">
             <a
