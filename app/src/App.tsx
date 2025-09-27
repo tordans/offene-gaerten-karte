@@ -93,7 +93,6 @@ function App() {
       }))
     : [];
 
-
   // Function to toggle favorite status
   const toggleFavorite = (gardenId: string) => {
     const newFavorites = favorites?.includes(gardenId)
