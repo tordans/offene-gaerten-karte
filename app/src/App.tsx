@@ -10,6 +10,7 @@ import DebugPanel from './DebugPanel';
 import DebugToggle from './DebugToggle';
 import BackgroundToggle from './BackgroundToggle';
 import BackgroundLayers from './BackgroundLayers';
+import { useMapParam } from './useMapParam';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 // Use MapTiler landscape style
@@ -45,11 +46,7 @@ function App() {
   const [selectedDay, setSelectedDay] = useQueryState('day', parseAsInteger);
   const [favorites, setFavorites] = useQueryState('favorites', parseAsArrayOf(parseAsString).withDefault([]));
   const [selectedGarden, setSelectedGarden] = useState<Garden | null>(null);
-  const [viewState, setViewState] = useState({
-    longitude: 13.4050, // Berlin center
-    latitude: 52.5200,
-    zoom: 8
-  });
+  const { viewState, setViewState } = useMapParam();
 
   useEffect(() => {
     // Use imported data directly
