@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Map, Marker, Popup } from 'react-map-gl/maplibre';
-import { useQueryState, parseAsArrayOf, parseAsString } from 'nuqs';
+import { useQueryState, parseAsArrayOf, parseAsString, parseAsInteger } from 'nuqs';
 import type { Garden, GardensJson } from './types';
 import { formatDistanceToNow } from 'date-fns';
 import { de } from 'date-fns/locale';
@@ -37,8 +37,8 @@ function formatDate(parsed: { day: number; month: number; year?: number }): { fo
 
 function App() {
   const [gardens, setGardens] = useState<Garden[]>([]);
-  const [selectedMonth, setSelectedMonth] = useState<number | null>(null);
-  const [selectedDay, setSelectedDay] = useState<number | null>(null);
+  const [selectedMonth, setSelectedMonth] = useQueryState('month', parseAsInteger);
+  const [selectedDay, setSelectedDay] = useQueryState('day', parseAsInteger);
   const [favorites, setFavorites] = useQueryState('favorites', parseAsArrayOf(parseAsString).withDefault([]));
   const [selectedGarden, setSelectedGarden] = useState<Garden | null>(null);
   const [viewState, setViewState] = useState({
