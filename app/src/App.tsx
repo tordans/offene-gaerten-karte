@@ -6,6 +6,8 @@ import { formatDistanceToNow } from 'date-fns';
 import { de } from 'date-fns/locale';
 // Import data as a module
 import gardensData from './data/gardens-and-dates.json';
+import DebugPanel from './DebugPanel';
+import DebugToggle from './DebugToggle';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 // Use MapTiler landscape style
@@ -118,6 +120,11 @@ function App() {
 
   return (
     <div className="h-screen flex">
+      <DebugPanel
+        gardens={gardens}
+        gardensData={gardensData}
+      />
+
       {/* Sidebar */}
       <div className="w-64 bg-white shadow-lg p-4 overflow-y-auto">
         <h1 className="text-xl font-bold mb-4">Offene Gärten Karte</h1>
@@ -252,6 +259,11 @@ function App() {
           </div>
         </div>
 
+
+        {/* Debug Link */}
+        <div className="mt-auto pt-4 border-t border-gray-200">
+          <DebugToggle />
+        </div>
 
       </div>
 
