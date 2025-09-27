@@ -10,6 +10,7 @@ import DebugPanel from './DebugPanel';
 import DebugToggle from './DebugToggle';
 import BackgroundToggle from './BackgroundToggle';
 import BackgroundLayers from './BackgroundLayers';
+import DateFilter from './DateFilter';
 import { useMapParam } from './useMapParam';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -92,16 +93,6 @@ function App() {
       }))
     : [];
 
-  const monthNames = [
-    'Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun',
-    'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'
-  ];
-
-  // Helper function to get weekday name for a specific day
-  const getWeekdayName = (day: number, month: number, year?: number) => {
-    const date = new Date(year || new Date().getFullYear(), month - 1, day);
-    return date.toLocaleDateString('de-DE', { weekday: 'short' });
-  };
 
   // Function to toggle favorite status
   const toggleFavorite = (gardenId: string) => {
@@ -152,79 +143,15 @@ function App() {
           </p>
         </div>
 
-        {/* Month Filter */}
-        <div className="mb-6">
-          <h2 className="text-lg font-semibold mb-3">Nach Monat filtern</h2>
-          <div className="space-y-2">
-            <button
-              onClick={() => {
-                setSelectedMonth(null);
-                setSelectedDay(null);
-              }}
-              className={`w-full text-left px-3 py-2 rounded ${
-                selectedMonth === null
-                  ? 'bg-blue-100 text-blue-800'
-                  : 'bg-gray-50 hover:bg-gray-100'
-              }`}
-            >
-              Alle Gärten ({gardens.length})
-            </button>
-            {monthCounts.map(({ month, count }) => (
-              <button
-                key={month}
-                disabled={count === 0}
-                onClick={() => {
-                  setSelectedMonth(month);
-                  setSelectedDay(null);
-                }}
-                className={`w-full text-left px-3 py-2 rounded ${
-                  count === 0
-                    ? 'cursor-not-allowed bg-gray-100 text-gray-400'
-                    : selectedMonth === month
-                    ? 'bg-blue-100 text-blue-800 cursor-pointer'
-                    : 'bg-gray-50 hover:bg-gray-100 cursor-pointer'
-                }`}
-              >
-                {monthNames[month - 1]} ({count})
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Day Filter */}
-        {selectedMonth && availableDays.length > 0 && (
-          <div className="mb-6">
-            <h2 className="text-lg font-semibold mb-3">Nach Tag filtern</h2>
-            <div className="space-y-2">
-              <button
-                onClick={() => setSelectedDay(null)}
-                className={`w-full text-left px-3 py-2 rounded cursor-pointer ${
-                  selectedDay === null
-                    ? 'bg-green-100 text-green-800'
-                    : 'bg-gray-50 hover:bg-gray-100'
-                }`}
-              >
-                Alle Tage im {monthNames[selectedMonth - 1]} ({monthCounts.find(m => m.month === selectedMonth)?.count || 0})
-              </button>
-                                        {availableDays.map(({ day, count }) => (
-                            <button
-                              key={`${selectedMonth}-${day}`}
-                              disabled={count === 0}
-                              onClick={() => setSelectedDay(day)}
-                  className={`w-full text-left px-3 py-2 rounded ${
-                    count === 0
-                      ? 'cursor-not-allowed bg-gray-100 text-gray-400'
-                      : selectedDay === day
-                      ? 'bg-green-100 text-green-800 cursor-pointer'
-                      : 'bg-gray-50 hover:bg-gray-100 cursor-pointer'
-                  }`}
-                >
-                  {getWeekdayName(day, selectedMonth)} {day}. {monthNames[selectedMonth - 1]} ({count})
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+        <DateFilter
+          gardens={gardens}
+          monthCounts={monthCounts}
+          availableDays={availableDays}
+          selectedMonth={selectedMonth}
+          selectedDay={selectedDay}
+          setSelectedMonth={setSelectedMonth}
+          setSelectedDay={setSelectedDay}
+        />
 
         {/* Favorites Section */}
         <div className="mb-6">
