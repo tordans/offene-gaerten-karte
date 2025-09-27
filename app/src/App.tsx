@@ -50,7 +50,6 @@ function App() {
 
   useEffect(() => {
     // Use imported data directly
-    console.log('Loading gardens data:', gardensData);
     setGardens(gardensData as GardensJson);
   }, []);
 
