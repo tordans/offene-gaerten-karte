@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Map, Marker, Popup } from 'react-map-gl/maplibre';
 import { useQueryState, parseAsArrayOf, parseAsString, parseAsInteger } from 'nuqs';
 import type { Garden, GardensJson } from './types';
@@ -44,17 +44,12 @@ function formatDate(parsed: { day: number; month: number; year?: number }): { fo
 }
 
 function App() {
-  const [gardens, setGardens] = useState<Garden[]>([]);
+  const gardens = gardensData as GardensJson;
   const [selectedMonth, setSelectedMonth] = useQueryState('month', parseAsInteger);
   const [selectedDay, setSelectedDay] = useQueryState('day', parseAsInteger);
   const [favorites, setFavorites] = useQueryState('favorites', parseAsArrayOf(parseAsString).withDefault([]));
   const [selectedGarden, setSelectedGarden] = useState<Garden | null>(null);
   const { viewState, setViewState } = useMapParam();
-
-  useEffect(() => {
-    // Use imported data directly
-    setGardens(gardensData as GardensJson);
-  }, []);
 
   const filteredGardens = selectedMonth
     ? gardens.filter(garden =>
