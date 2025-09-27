@@ -172,14 +172,17 @@ function App() {
             {monthCounts.map(({ month, count }) => (
               <button
                 key={month}
+                disabled={count === 0}
                 onClick={() => {
                   setSelectedMonth(month);
                   setSelectedDay(null);
                 }}
                 className={`w-full text-left px-3 py-2 rounded ${
-                  selectedMonth === month
-                    ? 'bg-blue-100 text-blue-800'
-                    : 'bg-gray-50 hover:bg-gray-100'
+                  count === 0
+                    ? 'cursor-not-allowed bg-gray-100 text-gray-400'
+                    : selectedMonth === month
+                    ? 'bg-blue-100 text-blue-800 cursor-pointer'
+                    : 'bg-gray-50 hover:bg-gray-100 cursor-pointer'
                 }`}
               >
                 {monthNames[month - 1]} ({count})
@@ -195,7 +198,7 @@ function App() {
             <div className="space-y-2">
               <button
                 onClick={() => setSelectedDay(null)}
-                className={`w-full text-left px-3 py-2 rounded ${
+                className={`w-full text-left px-3 py-2 rounded cursor-pointer ${
                   selectedDay === null
                     ? 'bg-green-100 text-green-800'
                     : 'bg-gray-50 hover:bg-gray-100'
@@ -206,11 +209,14 @@ function App() {
                                         {availableDays.map(({ day, count }) => (
                             <button
                               key={`${selectedMonth}-${day}`}
+                              disabled={count === 0}
                               onClick={() => setSelectedDay(day)}
                   className={`w-full text-left px-3 py-2 rounded ${
-                    selectedDay === day
-                      ? 'bg-green-100 text-green-800'
-                      : 'bg-gray-50 hover:bg-gray-100'
+                    count === 0
+                      ? 'cursor-not-allowed bg-gray-100 text-gray-400'
+                      : selectedDay === day
+                      ? 'bg-green-100 text-green-800 cursor-pointer'
+                      : 'bg-gray-50 hover:bg-gray-100 cursor-pointer'
                   }`}
                 >
                   {getWeekdayName(day, selectedMonth)} {day}. {monthNames[selectedMonth - 1]} ({count})
@@ -235,13 +241,13 @@ function App() {
                     <div className="text-xs text-gray-600 mb-2">
                       <button
                         onClick={() => garden.id && toggleFavorite(garden.id)}
-                        className="text-red-600 hover:text-red-800 mr-2"
+                        className="text-red-600 hover:text-red-800 mr-2 cursor-pointer"
                       >
                         ❌ Entfernen
                       </button>
                       <button
                         onClick={() => setSelectedGarden(garden)}
-                        className="text-blue-600 hover:text-blue-800"
+                        className="text-blue-600 hover:text-blue-800 cursor-pointer"
                       >
                         Details anzeigen
                       </button>
