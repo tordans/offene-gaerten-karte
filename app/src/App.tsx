@@ -2,9 +2,6 @@ import { useState } from 'react';
 import { Map, Marker, Popup } from 'react-map-gl/maplibre';
 import { useQueryState, parseAsArrayOf, parseAsString, parseAsInteger } from 'nuqs';
 import type { Garden, GardensJson } from './types';
-import { formatDistanceToNow } from 'date-fns';
-import { de } from 'date-fns/locale';
-import { HeartIcon, ArrowTopRightOnSquareIcon, HomeModernIcon } from '@heroicons/react/24/solid';
 // Import data as a module
 import gardensData from './data/gardens-and-dates.json';
 import DebugPanel from './DebugPanel';
@@ -13,6 +10,7 @@ import BackgroundToggle from './BackgroundToggle';
 import BackgroundLayers from './BackgroundLayers';
 import DateFilter from './DateFilter';
 import FavoritesSection from './FavoritesSection';
+import GardenPopup from './GardenPopup';
 import { useMapParam } from './useMapParam';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -22,29 +20,6 @@ const MAP_TILER_API_KEY = 'EaBsqIr5D7rH2Vm2sjv7';
 // Use MapTiler landscape style
 const MAP_STYLE = `https://api.maptiler.com/maps/landscape/style.json?key=${MAP_TILER_API_KEY}`;
 
-// Function to format parsed dates with relative time
-function formatDate(parsed: { day: number; month: number; year?: number }): { formatted: string; relative: string } {
-  const year = parsed.year || new Date().getFullYear();
-
-  // Create date object for formatting
-  const date = new Date(year, parsed.month - 1, parsed.day);
-
-  // Use German locale for date formatting
-  const formatted = date.toLocaleDateString('de-DE', {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
-  });
-
-  // Create date object for relative time calculation
-  const relative = formatDistanceToNow(date, {
-    addSuffix: true,
-    locale: de
-  });
-
-  return { formatted, relative };
-}
 
 function App() {
   const gardens = gardensData as GardensJson;
@@ -223,55 +198,11 @@ function App() {
               closeOnClick={false}
               className="max-w-xs"
             >
-              <div className="p-2">
-                <h3 className="font-semibold text-sm mb-1">
-                  {selectedGarden.address}
-                </h3>
-                <div className="text-xs text-gray-600 mb-2 space-y-1">
-                  <button
-                    onClick={() => selectedGarden.id && toggleFavorite(selectedGarden.id)}
-                    className={`text-xs flex items-center gap-1 ${selectedGarden.id && isFavorite(selectedGarden.id) ? 'text-amber-600' : 'text-blue-600'} hover:underline block`}
-                  >
-                    <HeartIcon className="w-3 h-3" />
-                    {selectedGarden.id && isFavorite(selectedGarden.id) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
-                  </button>
-                  <a
-                    href={`https://www.xn--offene-grten-ncb.de/${selectedGarden.websiteSlug}/`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline flex items-center gap-1"
-                  >
-                    <ArrowTopRightOnSquareIcon className="w-3 h-3" />
-                    Website öffnen
-                  </a>
-                  <a
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(selectedGarden.address)}&travelmode=transit`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-600 hover:underline flex items-center gap-1"
-                  >
-                    <HomeModernIcon className="w-3 h-3" />
-                    Route berechnen (ÖPNV)
-                  </a>
-                </div>
-                <div className="text-xs">
-                  <strong>Öffnungszeiten:</strong>
-                  <ul className="mt-1 space-y-2">
-                    {selectedGarden.dates.map((date, index) => {
-                      const { formatted, relative } = formatDate(date);
-                      return (
-                        <li key={index} className="text-gray-700">
-                          <div className="font-medium">{formatted}</div>
-                          {date.startTime && date.endTime && (
-                            <div className="text-gray-600">{date.startTime}-{date.endTime}</div>
-                          )}
-                          <div className="text-xs text-gray-500">{relative}</div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+              <GardenPopup
+                garden={selectedGarden}
+                isFavorite={isFavorite}
+                toggleFavorite={toggleFavorite}
+              />
             </Popup>
           )}
         </Map>
