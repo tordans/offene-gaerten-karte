@@ -14,8 +14,6 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 function App() {
   const gardens = gardensData as GardensJson;
 
-
-
   return (
     <MapProvider>
       <div className="h-screen flex bg-amber-50">
@@ -29,9 +27,9 @@ function App() {
 
           <ProjectDescription />
 
-          <DateFilter gardens={gardens} />
-
           <FavoritesSection gardens={gardens} />
+
+          <DateFilter gardens={gardens} />
 
           <BackgroundToggle />
 

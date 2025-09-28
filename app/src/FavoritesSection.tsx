@@ -1,9 +1,11 @@
 import { HeartIcon, XMarkIcon, ArrowsPointingInIcon } from '@heroicons/react/24/solid';
 import { useMap } from 'react-map-gl/maplibre';
+import { useQueryState, parseAsInteger } from 'nuqs';
 import type { Garden } from './types';
 import { useFavorites } from './stores/useFavoritesState';
 import { useSetSelectedGarden } from './stores/useSelectedGardenState';
 import { useToggleFavorite, useIsFavorite } from './stores/useFavoritesState';
+import { useFavoritesOnly } from './stores/useFavoritesOnlyState';
 
 type FavoritesSectionProps = {
   gardens: Garden[];
@@ -11,6 +13,9 @@ type FavoritesSectionProps = {
 
 export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
   const [favorites] = useFavorites();
+  const [favoritesOnly, setFavoritesOnly] = useFavoritesOnly();
+  const [, setSelectedMonth] = useQueryState('month', parseAsInteger);
+  const [, setSelectedDay] = useQueryState('day', parseAsInteger);
   const toggleFavorite = useToggleFavorite();
   const isFavorite = useIsFavorite();
   const setSelectedGarden = useSetSelectedGarden();
@@ -65,6 +70,29 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
             Noch keine Favoriten. Klicken Sie auf das Herz-Symbol bei einem Garten, um ihn zu Ihren Favoriten hinzuzufügen.
           </div>
         )}
+      </div>
+
+      {/* Favorites Only Toggle */}
+      <div className="mt-4">
+        <button
+          onClick={() => {
+            setFavoritesOnly(!favoritesOnly);
+            setSelectedMonth(null);
+            setSelectedDay(null);
+          }}
+          className={`w-full px-3 py-2 rounded flex justify-between items-center ${
+            favoritesOnly
+              ? 'bg-blue-100 text-blue-900 border border-blue-300'
+              : 'bg-amber-50 hover:bg-amber-200 border border-amber-200'
+          }`}
+        >
+          <span>
+            {favoritesOnly ? 'Alles anzeigen' : 'Nur Favoriten anzeigen'}
+          </span>
+          <span className="bg-amber-200 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">
+            {favoritesOnly ? gardens.length : favorites.length}
+          </span>
+        </button>
       </div>
     </div>
   );

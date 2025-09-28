@@ -1,5 +1,6 @@
 import { useQueryState, parseAsInteger } from 'nuqs';
 import type { Garden } from './types';
+import { useFavoritesOnly } from './stores/useFavoritesOnlyState';
 
 type DateFilterProps = {
   gardens: Garden[];
@@ -8,6 +9,7 @@ type DateFilterProps = {
 export default function DateFilter({ gardens }: DateFilterProps) {
   const [selectedMonth, setSelectedMonth] = useQueryState('month', parseAsInteger);
   const [selectedDay, setSelectedDay] = useQueryState('day', parseAsInteger);
+  const [, setFavoritesOnly] = useFavoritesOnly();
 
   // Calculate month counts
   const monthCounts = Array.from({ length: 12 }, (_, i) => {
@@ -63,6 +65,7 @@ export default function DateFilter({ gardens }: DateFilterProps) {
           onClick={() => {
             setSelectedMonth(null);
             setSelectedDay(null);
+            setFavoritesOnly(false);
           }}
           className={`w-full text-left px-3 py-2 rounded cursor-pointer flex justify-between items-center ${
             selectedMonth === null
@@ -82,6 +85,7 @@ export default function DateFilter({ gardens }: DateFilterProps) {
               onClick={() => {
                 setSelectedMonth(month);
                 setSelectedDay(null);
+                setFavoritesOnly(false);
               }}
               className={`w-full text-left px-3 py-2 rounded flex justify-between items-center ${
                 count === 0
@@ -99,7 +103,10 @@ export default function DateFilter({ gardens }: DateFilterProps) {
             {selectedMonth === month && availableDays.length > 0 && (
               <div className="ml-4 mt-2 space-y-1">
                 <button
-                  onClick={() => setSelectedDay(null)}
+                  onClick={() => {
+                    setSelectedDay(null);
+                    setFavoritesOnly(false);
+                  }}
                   className={`w-full text-left px-3 py-2 rounded cursor-pointer text-sm flex justify-between items-center ${
                     selectedDay === null
                       ? 'bg-amber-400 text-amber-900'
@@ -113,7 +120,10 @@ export default function DateFilter({ gardens }: DateFilterProps) {
                   <button
                     key={`${selectedMonth}-${day}`}
                     disabled={count === 0}
-                    onClick={() => setSelectedDay(day)}
+                    onClick={() => {
+                      setSelectedDay(day);
+                      setFavoritesOnly(false);
+                    }}
                     className={`w-full text-left px-3 py-2 rounded text-sm flex justify-between items-center ${
                       count === 0
                         ? 'cursor-not-allowed bg-transparent border border-amber-200 text-amber-400'

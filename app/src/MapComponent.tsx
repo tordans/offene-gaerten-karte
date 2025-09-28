@@ -4,6 +4,7 @@ import { useQueryState, parseAsInteger } from 'nuqs';
 import { useMapParam } from './stores/useMapParam';
 import { useSelectedGarden, useSetSelectedGarden } from './stores/useSelectedGardenState';
 import { useToggleFavorite, useIsFavorite } from './stores/useFavoritesState';
+import { useFavoritesOnly } from './stores/useFavoritesOnlyState';
 import type { Garden } from './types';
 import BackgroundLayers from './BackgroundLayers';
 import GardenPopup from './GardenPopup';
@@ -21,19 +22,30 @@ type MapComponentProps = {
 export default function MapComponent({ gardens }: MapComponentProps) {
   const [selectedMonth] = useQueryState('month', parseAsInteger);
   const [selectedDay] = useQueryState('day', parseAsInteger);
+  const [favoritesOnly] = useFavoritesOnly();
   const isFavorite = useIsFavorite();
   const toggleFavorite = useToggleFavorite();
   // Calculate filtered gardens
   const filteredGardens = useMemo(() => {
-    return selectedMonth
-      ? gardens.filter(garden =>
-          garden.dates.some(date =>
-            date.month === selectedMonth &&
-            (selectedDay === null || date.day === selectedDay)
-          )
+    let filtered = gardens;
+
+    // Apply favorites-only filter first
+    if (favoritesOnly) {
+      filtered = gardens.filter(garden => isFavorite(garden.id));
+    }
+
+    // Apply date filters
+    if (selectedMonth) {
+      filtered = filtered.filter(garden =>
+        garden.dates.some(date =>
+          date.month === selectedMonth &&
+          (selectedDay === null || date.day === selectedDay)
         )
-      : gardens;
-  }, [gardens, selectedMonth, selectedDay]);
+      );
+    }
+
+    return filtered;
+  }, [gardens, selectedMonth, selectedDay, favoritesOnly, isFavorite]);
   const { viewState, setViewState, onMoveEnd } = useMapParam();
   const selectedGarden = useSelectedGarden(gardens);
   const setSelectedGarden = useSetSelectedGarden();

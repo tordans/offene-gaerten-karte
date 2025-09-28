@@ -54,7 +54,7 @@ export default function GardenPopup({ garden, isFavorite, toggleFavorite }: Gard
           href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(garden.address)}&travelmode=transit`}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-600 hover:underline flex items-center gap-1"
+          className="text-blue-600 hover:underline flex items-center gap-1"
         >
           <HomeModernIcon className="w-3 h-3" />
           Route berechnen (ÖPNV)
