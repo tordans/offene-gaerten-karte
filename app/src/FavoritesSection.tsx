@@ -72,26 +72,28 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
         )}
       </div>
 
-      {/* Favorites Only Toggle */}
-      <div className="mt-4">
-        <button
-          onClick={() => {
-            setFavoritesOnly(!favoritesOnly)
-            setSelectedMonth(null)
-            setSelectedDay(null)
-          }}
-          className={`flex w-full items-center justify-between rounded px-3 py-2 ${
-            favoritesOnly
-              ? 'border border-blue-300 bg-blue-100 text-blue-900'
-              : 'border border-amber-200 bg-amber-50 hover:bg-amber-200'
-          }`}
-        >
-          <span>{favoritesOnly ? 'Alles anzeigen' : 'Nur Favoriten anzeigen'}</span>
-          <span className="rounded-full bg-amber-200 px-2 py-1 text-xs font-medium text-amber-900">
-            {favoritesOnly ? gardens.length : favorites.length}
-          </span>
-        </button>
-      </div>
+      {/* Favorites Only Toggle - Only show when there are favorites */}
+      {favorites.length > 0 && (
+        <div className="mt-4">
+          <button
+            onClick={() => {
+              setFavoritesOnly(!favoritesOnly)
+              setSelectedMonth(null)
+              setSelectedDay(null)
+            }}
+            className={`flex w-full items-center justify-between rounded px-3 py-2 ${
+              favoritesOnly
+                ? 'border border-blue-300 bg-blue-100 text-blue-900'
+                : 'border border-amber-200 bg-amber-50 hover:bg-amber-200'
+            }`}
+          >
+            <span>{favoritesOnly ? 'Alles anzeigen' : 'Nur Favoriten anzeigen'}</span>
+            <span className="rounded-full bg-amber-200 px-2 py-1 text-xs font-medium text-amber-900">
+              {favoritesOnly ? gardens.length : favorites.length}
+            </span>
+          </button>
+        </div>
+      )}
     </div>
   )
 }
