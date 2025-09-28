@@ -41,24 +41,14 @@ export default function Footer() {
               </p>
               <p>
                 Diese Website wird auf Servern von Github Inc., 88 Colin P Kelly Jr St, San
-                Francisco, CA 94107, USA gehostet. Bitte beachtet die GitHub Privacy Policy.
-              </p>
-              <p>
-                <a
-                  href="https://www.github.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black hover:text-blue-400 hover:underline"
-                >
-                  https://www.github.com/
-                </a>{' '}
+                Francisco, CA 94107, USA gehostet.
                 <a
                   href="https://help.github.com/articles/github-privacy-statement/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-blue-400 hover:underline"
                 >
-                  https://help.github.com/articles/github-privacy-statement/
+                  Bitte beachtet die GitHub Privacy Policy.
                 </a>
               </p>
 
@@ -67,16 +57,14 @@ export default function Footer() {
               </p>
               <p>
                 Die Grafiken für den Kartenstil von Maptiler werden von den Servern von maptiler.com
-                geladen. Bitte beachtet die Datenschutzerklärungen von Maptiler.
-              </p>
-              <p>
+                geladen.
                 <a
-                  href="https://www.maptiler.com/"
+                  href="https://www.maptiler.com/privacy-policy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-blue-400 hover:underline"
                 >
-                  https://www.maptiler.com/
+                  Bitte beachtet die Datenschutzerklärungen von Maptiler.
                 </a>
               </p>
 
@@ -93,7 +81,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-black hover:text-blue-400 hover:underline"
                 >
-                  https://geobasis-bb.de/lgb/de/datenschutz/
+                  Bitte beachtet die Datenschutzerklärungen.
                 </a>
               </p>
             </div>
