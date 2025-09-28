@@ -4,7 +4,7 @@ import { useQueryState, parseAsArrayOf, parseAsString, parseAsInteger } from 'nu
 import type { Garden, GardensJson } from './types';
 import { formatDistanceToNow } from 'date-fns';
 import { de } from 'date-fns/locale';
-import { HeartIcon, ArrowTopRightOnSquareIcon, HomeModernIcon, ArrowsPointingInIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import { HeartIcon, ArrowTopRightOnSquareIcon, HomeModernIcon } from '@heroicons/react/24/solid';
 // Import data as a module
 import gardensData from './data/gardens-and-dates.json';
 import DebugPanel from './DebugPanel';
@@ -12,6 +12,7 @@ import DebugToggle from './DebugToggle';
 import BackgroundToggle from './BackgroundToggle';
 import BackgroundLayers from './BackgroundLayers';
 import DateFilter from './DateFilter';
+import FavoritesSection from './FavoritesSection';
 import { useMapParam } from './useMapParam';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -105,7 +106,6 @@ function App() {
   // Function to check if a garden is favorited
   const isFavorite = (gardenId: string) => favorites?.includes(gardenId) || false;
 
-
   return (
     <div className="h-screen flex bg-amber-50">
       <DebugPanel
@@ -153,56 +153,12 @@ function App() {
           setSelectedDay={setSelectedDay}
         />
 
-        {/* Favorites Section */}
-        <div className="mb-6 border-b border-red-800 pb-4">
-          <div className="flex justify-between items-center mb-3">
-            <h2 className="text-lg font-semibold text-red-700 flex items-center gap-2">
-              <HeartIcon className="w-4 h-4 text-red-600" />
-              Favoriten
-            </h2>
-            <span className="bg-amber-200 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{favorites?.length || 0}</span>
-          </div>
-          <div className="space-y-2">
-            {favorites && favorites.length > 0 ? (
-              gardens
-                .filter(garden => garden.id && isFavorite(garden.id))
-                .map((garden) => (
-                  <div key={garden.id} className="p-2 bg-amber-200 rounded border-l-4 border-blue-500">
-                    <div className="text-sm font-medium text-gray-700 mb-2">
-                      {garden.address}
-                    </div>
-                    <div className="flex gap-2">
-                      <button
-                        onClick={() => garden.id && toggleFavorite(garden.id)}
-                        className="text-red-600 hover:text-red-800 cursor-pointer flex items-center gap-1 text-xs"
-                      >
-                        <XMarkIcon className="w-3 h-3" />
-                        Entfernen
-                      </button>
-                      <button
-                        onClick={() => {
-                          setSelectedGarden(garden);
-                          setViewState({
-                            longitude: garden.coordinates.lng,
-                            latitude: garden.coordinates.lat,
-                            zoom: viewState.zoom
-                          });
-                        }}
-                        className="text-black hover:text-blue-400 cursor-pointer flex items-center gap-1 text-xs"
-                      >
-                        <ArrowsPointingInIcon className="w-3 h-3" />
-                        Karte zentrieren
-                      </button>
-                    </div>
-                  </div>
-                ))
-            ) : (
-              <div className="text-sm text-gray-500 italic">
-                Noch keine Favoriten. Klicken Sie auf das Herz-Symbol bei einem Garten, um ihn zu Ihren Favoriten hinzuzufügen.
-              </div>
-            )}
-          </div>
-        </div>
+        <FavoritesSection
+          gardens={gardens}
+          setSelectedGarden={setSelectedGarden}
+          setViewState={setViewState}
+          viewState={viewState}
+        />
 
         <BackgroundToggle />
 
