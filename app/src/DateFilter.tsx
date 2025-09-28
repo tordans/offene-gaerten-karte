@@ -1,24 +1,47 @@
+import { useQueryState, parseAsInteger } from 'nuqs';
 import type { Garden } from './types';
 
 type DateFilterProps = {
   gardens: Garden[];
-  monthCounts: { month: number; count: number }[];
-  availableDays: { day: number; count: number }[];
-  selectedMonth: number | null;
-  selectedDay: number | null;
-  setSelectedMonth: (month: number | null) => void;
-  setSelectedDay: (day: number | null) => void;
 };
 
-export default function DateFilter({
-  gardens,
-  monthCounts,
-  availableDays,
-  selectedMonth,
-  selectedDay,
-  setSelectedMonth,
-  setSelectedDay
-}: DateFilterProps) {
+export default function DateFilter({ gardens }: DateFilterProps) {
+  const [selectedMonth, setSelectedMonth] = useQueryState('month', parseAsInteger);
+  const [selectedDay, setSelectedDay] = useQueryState('day', parseAsInteger);
+
+  // Calculate month counts
+  const monthCounts = Array.from({ length: 12 }, (_, i) => {
+    const month = i + 1;
+    return {
+      month,
+      count: gardens.filter(garden =>
+        garden.dates.some(date => date.month === month)
+      ).length
+    };
+  });
+
+  // Get available days for selected month with counts
+  const availableDays = selectedMonth
+    ? Array.from(
+        new Set(
+          gardens
+            .flatMap(garden => garden.dates)
+            .filter(date => date.month === selectedMonth)
+            .map(date => date.day)
+        )
+      )
+      .sort((a, b) => a - b)
+      .map(day => ({
+        day,
+        count: gardens.filter(garden =>
+          garden.dates.some(date =>
+            date.month === selectedMonth &&
+            date.day === day
+          )
+        ).length
+      }))
+    : [];
+
   // German month names
   const monthNames = [
     'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',

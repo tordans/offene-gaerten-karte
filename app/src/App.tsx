@@ -1,190 +1,49 @@
-import { useState } from 'react';
-import { Map, Marker, Popup } from 'react-map-gl/maplibre';
-import { useQueryState, parseAsArrayOf, parseAsString, parseAsInteger } from 'nuqs';
-import type { Garden, GardensJson } from './types';
+import { MapProvider } from 'react-map-gl/maplibre';
+import type { GardensJson } from './types';
 // Import data as a module
 import gardensData from './data/gardens-and-dates.json';
 import DebugPanel from './DebugPanel';
 import DebugToggle from './DebugToggle';
 import BackgroundToggle from './BackgroundToggle';
-import BackgroundLayers from './BackgroundLayers';
 import DateFilter from './DateFilter';
 import FavoritesSection from './FavoritesSection';
-import GardenPopup from './GardenPopup';
 import ProjectDescription from './ProjectDescription';
-import { useMapParam } from './useMapParam';
+import MapComponent from './MapComponent';
 import 'maplibre-gl/dist/maplibre-gl.css';
-
-// Maptiler API key, only valid for `tordans.github.io`
-// https://cloud.maptiler.com/account/keys/22a6bf6f-03b1-42b1-8f75-eccae2a6513f/settings
-const MAP_TILER_API_KEY = 'EaBsqIr5D7rH2Vm2sjv7';
-// Use MapTiler landscape style
-const MAP_STYLE = `https://api.maptiler.com/maps/landscape/style.json?key=${MAP_TILER_API_KEY}`;
-
 
 function App() {
   const gardens = gardensData as GardensJson;
-  const [selectedMonth, setSelectedMonth] = useQueryState('month', parseAsInteger);
-  const [selectedDay, setSelectedDay] = useQueryState('day', parseAsInteger);
-  const [favorites, setFavorites] = useQueryState('favorites', parseAsArrayOf(parseAsString).withDefault([]));
-  const [selectedGarden, setSelectedGarden] = useState<Garden | null>(null);
-  const { viewState, setViewState, onMoveEnd } = useMapParam();
 
-  const filteredGardens = selectedMonth
-    ? gardens.filter(garden =>
-        garden.dates.some(date =>
-          date.month === selectedMonth &&
-          (selectedDay === null || date.day === selectedDay)
-        )
-      )
-    : gardens;
 
-  const monthCounts = Array.from({ length: 12 }, (_, i) => {
-    const month = i + 1;
-    return {
-      month,
-      count: gardens.filter(garden =>
-        garden.dates.some(date => date.month === month)
-      ).length
-    };
-  });
-
-  // Get available days for selected month with counts
-  const availableDays = selectedMonth
-    ? Array.from(
-        new Set(
-          gardens
-            .flatMap(garden => garden.dates)
-            .filter(date => date.month === selectedMonth)
-            .map(date => date.day)
-        )
-      )
-      .sort((a, b) => a - b)
-      .map(day => ({
-        day,
-        count: gardens.filter(garden =>
-          garden.dates.some(date =>
-            date.month === selectedMonth &&
-            date.day === day
-          )
-        ).length
-      }))
-    : [];
-
-  // Function to toggle favorite status
-  const toggleFavorite = (gardenId: string) => {
-    const newFavorites = favorites?.includes(gardenId)
-      ? favorites.filter((id: string) => id !== gardenId)
-      : [...(favorites || []), gardenId];
-    setFavorites(newFavorites);
-  };
-
-  // Function to check if a garden is favorited
-  const isFavorite = (gardenId: string) => favorites?.includes(gardenId) || false;
 
   return (
-    <div className="h-screen flex bg-amber-50">
-      <DebugPanel
-        gardens={gardens}
-        gardensData={gardensData}
-      />
-
-      {/* Sidebar */}
-      <div className="w-80 bg-amber-100 shadow-lg p-4 overflow-y-auto border-r-2 border-red-800">
-        <h1 className="text-xl font-bold mb-4 text-red-700">Offene Gärten Karte</h1>
-
-        <ProjectDescription />
-
-        <DateFilter
+    <MapProvider>
+      <div className="h-screen flex bg-amber-50">
+        <DebugPanel
           gardens={gardens}
-          monthCounts={monthCounts}
-          availableDays={availableDays}
-          selectedMonth={selectedMonth}
-          selectedDay={selectedDay}
-          setSelectedMonth={setSelectedMonth}
-          setSelectedDay={setSelectedDay}
+          gardensData={gardensData}
         />
 
-        <FavoritesSection
-          gardens={gardens}
-          setSelectedGarden={setSelectedGarden}
-          setViewState={setViewState}
-          viewState={viewState}
-        />
+        <div className="w-80 bg-amber-100 shadow-lg p-4 overflow-y-auto border-r-2 border-red-800">
+          <h1 className="text-xl font-bold mb-4 text-red-700">Offene Gärten Karte</h1>
 
-        <BackgroundToggle />
+          <ProjectDescription />
 
-        {/* Debug Link */}
-        <div className="mt-auto pt-4 border-t border-gray-200">
-          <DebugToggle />
+          <DateFilter gardens={gardens} />
+
+          <FavoritesSection gardens={gardens} />
+
+          <BackgroundToggle />
+
+          <div className="mt-auto pt-4 border-t border-gray-200">
+            <DebugToggle />
+          </div>
+
         </div>
 
+        <MapComponent gardens={gardens} />
       </div>
-
-      {/* Map */}
-      <div className="flex-1">
-        <Map
-          {...viewState}
-          onMove={evt => setViewState(evt.viewState)}
-          onMoveEnd={onMoveEnd}
-          mapStyle={MAP_STYLE}
-          style={{ width: '100%', height: '100%' }}
-        >
-          <BackgroundLayers />
-
-          {/* Always show favorite gardens as blue markers */}
-          {gardens
-            .filter(garden => garden.id && isFavorite(garden.id) && garden.coordinates.lat && garden.coordinates.lng)
-            .map((garden) => (
-              <Marker
-                key={`favorite-${garden.id}`}
-                longitude={garden.coordinates.lng}
-                latitude={garden.coordinates.lat}
-                onClick={e => {
-                  e.originalEvent.stopPropagation();
-                  setSelectedGarden(garden);
-                }}
-              >
-                <div className="w-6 h-6 rounded-full border-2 border-white cursor-pointer transition-colors" style={{ backgroundColor: '#0000f2' }} />
-              </Marker>
-            ))}
-
-          {/* Show filtered gardens as amber markers (excluding favorites to avoid duplicates) */}
-          {filteredGardens
-            .filter(garden => garden.id && !isFavorite(garden.id) && garden.coordinates.lat && garden.coordinates.lng)
-            .map((garden) => (
-              <Marker
-                key={`filtered-${garden.id}`}
-                longitude={garden.coordinates.lng}
-                latitude={garden.coordinates.lat}
-                onClick={e => {
-                  e.originalEvent.stopPropagation();
-                  setSelectedGarden(garden);
-                }}
-              >
-                <div className="w-6 h-6 rounded-full border-2 border-white cursor-pointer transition-colors bg-amber-500 hover:bg-amber-600" />
-              </Marker>
-            ))}
-
-          {selectedGarden && selectedGarden.coordinates.lat && selectedGarden.coordinates.lng && (
-            <Popup
-              longitude={selectedGarden.coordinates.lng}
-              latitude={selectedGarden.coordinates.lat}
-              onClose={() => setSelectedGarden(null)}
-              closeButton={true}
-              closeOnClick={false}
-              className="max-w-xs"
-            >
-              <GardenPopup
-                garden={selectedGarden}
-                isFavorite={isFavorite}
-                toggleFavorite={toggleFavorite}
-              />
-            </Popup>
-          )}
-        </Map>
-      </div>
-    </div>
+    </MapProvider>
   );
 }
 

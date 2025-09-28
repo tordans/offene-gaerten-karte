@@ -1,32 +1,20 @@
-import { useQueryState, parseAsArrayOf, parseAsString } from 'nuqs';
 import { HeartIcon, XMarkIcon, ArrowsPointingInIcon } from '@heroicons/react/24/solid';
 import type { Garden } from './types';
+import { useFavorites } from './stores/useFavoritesState';
+import { useSetSelectedGarden } from './stores/useSelectedGardenState';
+import { useToggleFavorite, useIsFavorite } from './stores/useFavoritesState';
+import { useMapParam } from './stores/useMapParam';
 
 type FavoritesSectionProps = {
   gardens: Garden[];
-  setSelectedGarden: (garden: Garden | null) => void;
-  setViewState: (viewState: { longitude: number; latitude: number; zoom: number }) => void;
-  viewState: { longitude: number; latitude: number; zoom: number };
 };
 
-export default function FavoritesSection({
-  gardens,
-  setSelectedGarden,
-  setViewState,
-  viewState
-}: FavoritesSectionProps) {
-  const [favorites, setFavorites] = useQueryState('favorites', parseAsArrayOf(parseAsString).withDefault([]));
-
-  // Function to toggle favorite status
-  const toggleFavorite = (gardenId: string) => {
-    const newFavorites = favorites?.includes(gardenId)
-      ? favorites.filter((id: string) => id !== gardenId)
-      : [...(favorites || []), gardenId];
-    setFavorites(newFavorites);
-  };
-
-  // Function to check if a garden is favorited
-  const isFavorite = (gardenId: string) => favorites?.includes(gardenId) || false;
+export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
+  const [favorites] = useFavorites();
+  const toggleFavorite = useToggleFavorite();
+  const isFavorite = useIsFavorite();
+  const setSelectedGarden = useSetSelectedGarden();
+  const { setViewState, viewState } = useMapParam();
 
   return (
     <div className="mb-6 border-b border-red-800 pb-4">
@@ -35,10 +23,10 @@ export default function FavoritesSection({
           <HeartIcon className="w-4 h-4 text-red-600" />
           Favoriten
         </h2>
-        <span className="bg-amber-200 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{favorites?.length || 0}</span>
+        <span className="bg-amber-200 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{favorites.length}</span>
       </div>
       <div className="space-y-2">
-        {favorites && favorites.length > 0 ? (
+        {favorites.length > 0 ? (
           gardens
             .filter(garden => garden.id && isFavorite(garden.id))
             .map((garden) => (
