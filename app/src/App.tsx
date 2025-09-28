@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { MapProvider } from 'react-map-gl/maplibre'
 import type { GardensJson } from './types'
 // Import data as a module
@@ -7,8 +6,8 @@ import BackgroundToggle from './BackgroundToggle'
 import gardensData from './data/gardens-and-dates.json'
 import DateFilter from './DateFilter'
 import DebugPanel from './DebugPanel'
-import DebugToggle from './DebugToggle'
 import FavoritesSection from './FavoritesSection'
+import Footer from './Footer'
 import MapComponent from './MapComponent'
 import ProjectDescription from './ProjectDescription'
 
@@ -31,10 +30,7 @@ function App() {
 
           <BackgroundToggle />
 
-          <div className="mt-auto pt-4 border-t border-gray-200">
-            <DebugToggle />
-          </div>
-
+          <Footer />
         </div>
 
         <MapComponent gardens={gardens} />

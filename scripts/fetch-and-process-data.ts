@@ -1,4 +1,4 @@
-import { writeFileSync } from 'fs';
+import { writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -271,6 +271,15 @@ async function fetchAndProcessData() {
     // Save processed data to app directory
     const appOutputPath = join(__dirname, '../app/src/data/gardens-and-dates.json');
     writeFileSync(appOutputPath, JSON.stringify(processedGardens, null, 2), 'utf-8');
+
+    // Save last updated timestamp
+    const lastUpdated = new Date().toLocaleDateString('de-DE', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric'
+    });
+    const lastUpdatedPath = join(__dirname, '../app/src/data/last-updated.json');
+    writeFileSync(lastUpdatedPath, JSON.stringify({ lastUpdated }, null, 2), 'utf-8');
 
     // Summary statistics
     const gardensWithErrors = processedGardens.filter(garden => garden.errors && garden.errors.length > 0);
