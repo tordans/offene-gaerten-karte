@@ -1,0 +1,10 @@
+# Generated data files
+src/data/gardens-and-dates.json
+src/data/last-updated.json
+
+# Build outputs
+dist/
+node_modules/
+
+# Lock files
+package-lock.json
