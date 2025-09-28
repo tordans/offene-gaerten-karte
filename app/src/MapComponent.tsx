@@ -72,26 +72,39 @@ export default function MapComponent({ gardens }: MapComponentProps) {
         <BackgroundLayers />
 
         {/* Markers for filtered gardens */}
-        {filteredGardens.map((garden) => (
-          <Marker
-            key={garden.id}
-            longitude={garden.coordinates.lng}
-            latitude={garden.coordinates.lat}
-            onClick={(event) => {
-              event.originalEvent.stopPropagation();
-              setSelectedGarden(garden);
-            }}
-          >
-            <div
-              className={`w-4 h-4 rounded-full cursor-pointer ${
-                isFavorite(garden.id)
-                  ? 'bg-blue-600'
-                  : 'bg-amber-500 hover:bg-amber-600'
-              }`}
-              style={isFavorite(garden.id) ? { backgroundColor: '#0000f2' } : {}}
-            />
-          </Marker>
-        ))}
+        {filteredGardens.map((garden) => {
+          const isFav = isFavorite(garden.id);
+          const matchesDateFilter = !selectedMonth || garden.dates.some(date =>
+            date.month === selectedMonth &&
+            (selectedDay === null || date.day === selectedDay)
+          );
+
+          let markerColor;
+          if (isFav) {
+            // Favorite gardens: bright blue if they match date filter, light blue if they don't
+            markerColor = matchesDateFilter ? '#0000f2' : '#60a5fa'; // light blue
+          } else {
+            // Non-favorite gardens: amber
+            markerColor = '#f59e0b';
+          }
+
+          return (
+            <Marker
+              key={garden.id}
+              longitude={garden.coordinates.lng}
+              latitude={garden.coordinates.lat}
+              onClick={(event) => {
+                event.originalEvent.stopPropagation();
+                setSelectedGarden(garden);
+              }}
+            >
+              <div
+                className="w-4 h-4 rounded-full cursor-pointer hover:opacity-80"
+                style={{ backgroundColor: markerColor }}
+              />
+            </Marker>
+          );
+        })}
 
         {/* Popup for selected garden */}
         {selectedGarden && (
