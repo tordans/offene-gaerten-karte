@@ -66,6 +66,7 @@ export default function MapComponent({ gardens }: MapComponentProps) {
         {...viewState}
         onMove={(event) => setViewState(event.viewState)}
         onMoveEnd={onMoveEnd}
+        onClick={() => setSelectedGarden(null)}
         mapStyle={MAP_STYLE}
         style={{ width: '100%', height: '100%' }}
       >
@@ -112,7 +113,7 @@ export default function MapComponent({ gardens }: MapComponentProps) {
             longitude={selectedGarden.coordinates.lng}
             latitude={selectedGarden.coordinates.lat}
             onClose={() => setSelectedGarden(null)}
-            closeButton={false}
+            closeButton={true}
             closeOnClick={false}
             className="custom-popup"
           >
