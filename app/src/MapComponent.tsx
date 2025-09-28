@@ -32,16 +32,25 @@ export default function MapComponent({ gardens }: MapComponentProps) {
     // Apply favorites-only filter first
     if (favoritesOnly) {
       filtered = gardens.filter(garden => isFavorite(garden.id));
-    }
+    } else {
+      // When not in favorites-only mode, always show favorites + apply date filters to non-favorites
+      const favoriteGardens = gardens.filter(garden => isFavorite(garden.id));
+      const nonFavoriteGardens = gardens.filter(garden => !isFavorite(garden.id));
 
-    // Apply date filters
-    if (selectedMonth) {
-      filtered = filtered.filter(garden =>
-        garden.dates.some(date =>
-          date.month === selectedMonth &&
-          (selectedDay === null || date.day === selectedDay)
-        )
-      );
+      let dateFilteredNonFavorites = nonFavoriteGardens;
+
+      // Apply date filters to non-favorite gardens only
+      if (selectedMonth) {
+        dateFilteredNonFavorites = nonFavoriteGardens.filter(garden =>
+          garden.dates.some(date =>
+            date.month === selectedMonth &&
+            (selectedDay === null || date.day === selectedDay)
+          )
+        );
+      }
+
+      // Combine favorites (always visible) with date-filtered non-favorites
+      filtered = [...favoriteGardens, ...dateFilteredNonFavorites];
     }
 
     return filtered;
