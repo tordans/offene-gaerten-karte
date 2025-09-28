@@ -7,9 +7,11 @@ type GardenPopupProps = {
   garden: Garden;
   isFavorite: (gardenId: string) => boolean;
   toggleFavorite: (gardenId: string) => void;
+  selectedMonth?: number | null;
+  selectedDay?: number | null;
 };
 
-export default function GardenPopup({ garden, isFavorite, toggleFavorite }: GardenPopupProps) {
+export default function GardenPopup({ garden, isFavorite, toggleFavorite, selectedMonth, selectedDay }: GardenPopupProps) {
   // Helper function to format dates
   const formatDate = (date: { day: number; month: number; year?: number; startTime?: string; endTime?: string }) => {
     const year = date.year || new Date().getFullYear();
@@ -65,8 +67,21 @@ export default function GardenPopup({ garden, isFavorite, toggleFavorite }: Gard
         <ul className="mt-1 space-y-2">
           {garden.dates.map((date, index) => {
             const { formatted, relative } = formatDate(date);
+
+            // Check if this date matches the current filter
+            const matchesFilter = selectedMonth
+              ? date.month === selectedMonth && (selectedDay === null || date.day === selectedDay)
+              : false;
+
             return (
-              <li key={index} className="text-gray-700">
+              <li
+                key={index}
+                className={`text-gray-700 ${
+                  matchesFilter
+                    ? 'border-l-4 border-amber-500 pl-2 bg-amber-50'
+                    : ''
+                }`}
+              >
                 <div className="font-medium">{formatted}</div>
                 {date.startTime && date.endTime && (
                   <div className="text-gray-600">{date.startTime}-{date.endTime}</div>

@@ -121,6 +121,8 @@ export default function MapComponent({ gardens }: MapComponentProps) {
               garden={selectedGarden}
               isFavorite={isFavorite}
               toggleFavorite={toggleFavorite}
+              selectedMonth={selectedMonth}
+              selectedDay={selectedDay}
             />
           </Popup>
         )}
