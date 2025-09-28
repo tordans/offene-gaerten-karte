@@ -32,8 +32,8 @@ export default function DateFilter({
   };
 
   return (
-    <div className="mb-6">
-      <h2 className="text-lg font-semibold mb-3">Nach Datum filtern</h2>
+    <div className="mb-6 border-b border-red-800 pb-4">
+      <h2 className="text-lg font-semibold mb-3 text-red-700">Nach Datum filtern</h2>
       <div className="space-y-2">
         {/* All Gardens Option */}
         <button
@@ -43,12 +43,12 @@ export default function DateFilter({
           }}
           className={`w-full text-left px-3 py-2 rounded cursor-pointer flex justify-between items-center ${
             selectedMonth === null
-              ? 'bg-blue-100 text-blue-800'
-              : 'bg-gray-50 hover:bg-gray-100'
+              ? 'bg-amber-400 text-amber-900'
+              : 'bg-amber-50 hover:bg-amber-200'
           }`}
         >
           <span>Alle Gärten</span>
-          <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs font-medium">{gardens.length}</span>
+          <span className="bg-amber-100 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{gardens.length}</span>
         </button>
 
         {/* Month Options */}
@@ -62,14 +62,14 @@ export default function DateFilter({
               }}
               className={`w-full text-left px-3 py-2 rounded flex justify-between items-center ${
                 count === 0
-                  ? 'cursor-not-allowed bg-gray-100 text-gray-400'
+                  ? 'cursor-not-allowed bg-transparent border border-amber-200 text-gray-700'
                   : selectedMonth === month
-                  ? 'bg-blue-100 text-blue-800 cursor-pointer'
-                  : 'bg-gray-50 hover:bg-gray-100 cursor-pointer'
+                  ? 'bg-amber-400 text-amber-900 cursor-pointer'
+                  : 'bg-amber-50 hover:bg-amber-200 cursor-pointer'
               }`}
             >
               <span>{monthNames[month - 1]}</span>
-              <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs font-medium">{count}</span>
+              <span className="bg-amber-100 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{count}</span>
             </button>
 
             {/* Day Options - Show as subgroup when month is selected */}
@@ -79,12 +79,12 @@ export default function DateFilter({
                   onClick={() => setSelectedDay(null)}
                   className={`w-full text-left px-3 py-2 rounded cursor-pointer text-sm flex justify-between items-center ${
                     selectedDay === null
-                      ? 'bg-green-100 text-green-800'
-                      : 'bg-gray-50 hover:bg-gray-100'
+                      ? 'bg-amber-400 text-amber-900'
+                      : 'bg-amber-50 hover:bg-amber-200'
                   }`}
                 >
                   <span>Alle Tage im {monthNames[selectedMonth - 1]}</span>
-                  <span className="bg-green-200 text-green-700 px-2 py-1 rounded-full text-xs font-medium">{monthCounts.find(m => m.month === selectedMonth)?.count || 0}</span>
+                  <span className="bg-amber-100 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{monthCounts.find(m => m.month === selectedMonth)?.count || 0}</span>
                 </button>
                 {availableDays.map(({ day, count }) => (
                   <button
@@ -93,14 +93,14 @@ export default function DateFilter({
                     onClick={() => setSelectedDay(day)}
                     className={`w-full text-left px-3 py-2 rounded text-sm flex justify-between items-center ${
                       count === 0
-                        ? 'cursor-not-allowed bg-gray-100 text-gray-400'
+                        ? 'cursor-not-allowed bg-transparent border border-amber-200 text-amber-400'
                         : selectedDay === day
-                        ? 'bg-green-100 text-green-800 cursor-pointer'
-                        : 'bg-gray-50 hover:bg-gray-100 cursor-pointer'
+                        ? 'bg-amber-400 text-amber-900 cursor-pointer'
+                        : 'bg-amber-50 hover:bg-amber-200 cursor-pointer'
                     }`}
                   >
                     <span>{getWeekdayName(day, selectedMonth)} {day}. {monthNames[selectedMonth - 1]}</span>
-                    <span className="bg-green-200 text-green-700 px-2 py-1 rounded-full text-xs font-medium">{count}</span>
+                    <span className="bg-amber-100 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{count}</span>
                   </button>
                 ))}
               </div>

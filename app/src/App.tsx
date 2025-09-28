@@ -4,6 +4,7 @@ import { useQueryState, parseAsArrayOf, parseAsString, parseAsInteger } from 'nu
 import type { Garden, GardensJson } from './types';
 import { formatDistanceToNow } from 'date-fns';
 import { de } from 'date-fns/locale';
+import { HeartIcon, ArrowTopRightOnSquareIcon, HomeModernIcon, ArrowsPointingInIcon, XMarkIcon } from '@heroicons/react/24/solid';
 // Import data as a module
 import gardensData from './data/gardens-and-dates.json';
 import DebugPanel from './DebugPanel';
@@ -106,25 +107,25 @@ function App() {
 
 
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex bg-amber-50">
       <DebugPanel
         gardens={gardens}
         gardensData={gardensData}
       />
 
       {/* Sidebar */}
-      <div className="w-64 bg-white shadow-lg p-4 overflow-y-auto">
-        <h1 className="text-xl font-bold mb-4">Offene Gärten Karte</h1>
+      <div className="w-80 bg-amber-100 shadow-lg p-4 overflow-y-auto border-r-2 border-red-800">
+        <h1 className="text-xl font-bold mb-4 text-red-700">Offene Gärten Karte</h1>
 
         {/* Project Description */}
-        <div className="mb-6 p-3 bg-gray-50 rounded-lg">
-          <p className="text-sm text-gray-700 mb-3">
+        <div className="mb-6 p-3 bg-amber-200 rounded-lg border border-red-200">
+          <p className="text-sm text-gray-600 mb-3">
             Diese interaktive Karte zeigt alle offenen Gärten aus der Datenbank von
             <a
               href="https://www.xn--offene-grten-ncb.de/gaerten-alphabetisch/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline ml-1"
+              className="text-black hover:text-blue-400 hover:underline ml-1"
             >
               Offene Gärten
             </a>
@@ -135,7 +136,7 @@ function App() {
               href="https://github.com/tordans/offene-gaerten-karte"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-black hover:text-blue-400 hover:underline"
             >
               GitHub Repository
             </a>
@@ -153,29 +154,44 @@ function App() {
         />
 
         {/* Favorites Section */}
-        <div className="mb-6">
-          <h2 className="text-lg font-semibold mb-3">Favoriten ({favorites?.length || 0})</h2>
+        <div className="mb-6 border-b border-red-800 pb-4">
+          <div className="flex justify-between items-center mb-3">
+            <h2 className="text-lg font-semibold text-red-700 flex items-center gap-2">
+              <HeartIcon className="w-4 h-4 text-red-600" />
+              Favoriten
+            </h2>
+            <span className="bg-amber-200 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{favorites?.length || 0}</span>
+          </div>
           <div className="space-y-2">
             {favorites && favorites.length > 0 ? (
               gardens
                 .filter(garden => garden.id && isFavorite(garden.id))
                 .map((garden) => (
-                  <div key={garden.id} className="p-2 bg-blue-50 rounded border-l-4 border-blue-400">
-                    <div className="text-sm font-medium text-gray-800 mb-1">
+                  <div key={garden.id} className="p-2 bg-amber-200 rounded border-l-4 border-blue-500">
+                    <div className="text-sm font-medium text-gray-700 mb-2">
                       {garden.address}
                     </div>
-                    <div className="text-xs text-gray-600 mb-2">
+                    <div className="flex gap-2">
                       <button
                         onClick={() => garden.id && toggleFavorite(garden.id)}
-                        className="text-red-600 hover:text-red-800 mr-2 cursor-pointer"
+                        className="text-red-600 hover:text-red-800 cursor-pointer flex items-center gap-1 text-xs"
                       >
-                        ❌ Entfernen
+                        <XMarkIcon className="w-3 h-3" />
+                        Entfernen
                       </button>
                       <button
-                        onClick={() => setSelectedGarden(garden)}
-                        className="text-blue-600 hover:text-blue-800 cursor-pointer"
+                        onClick={() => {
+                          setSelectedGarden(garden);
+                          setViewState({
+                            longitude: garden.coordinates.lng,
+                            latitude: garden.coordinates.lat,
+                            zoom: viewState.zoom
+                          });
+                        }}
+                        className="text-black hover:text-blue-400 cursor-pointer flex items-center gap-1 text-xs"
                       >
-                        Details anzeigen
+                        <ArrowsPointingInIcon className="w-3 h-3" />
+                        Karte zentrieren
                       </button>
                     </div>
                   </div>
@@ -221,11 +237,11 @@ function App() {
                   setSelectedGarden(garden);
                 }}
               >
-                <div className="w-6 h-6 rounded-full border-2 border-white cursor-pointer transition-colors bg-blue-500 hover:bg-blue-600" />
+                <div className="w-6 h-6 rounded-full border-2 border-white cursor-pointer transition-colors" style={{ backgroundColor: '#0000f2' }} />
               </Marker>
             ))}
 
-          {/* Show filtered gardens as green markers (excluding favorites to avoid duplicates) */}
+          {/* Show filtered gardens as amber markers (excluding favorites to avoid duplicates) */}
           {filteredGardens
             .filter(garden => garden.id && !isFavorite(garden.id) && garden.coordinates.lat && garden.coordinates.lng)
             .map((garden) => (
@@ -238,7 +254,7 @@ function App() {
                   setSelectedGarden(garden);
                 }}
               >
-                <div className="w-6 h-6 rounded-full border-2 border-white cursor-pointer transition-colors bg-green-500 hover:bg-green-600" />
+                <div className="w-6 h-6 rounded-full border-2 border-white cursor-pointer transition-colors bg-amber-500 hover:bg-amber-600" />
               </Marker>
             ))}
 
@@ -258,35 +274,41 @@ function App() {
                 <div className="text-xs text-gray-600 mb-2 space-y-1">
                   <button
                     onClick={() => selectedGarden.id && toggleFavorite(selectedGarden.id)}
-                    className={`text-xs ${selectedGarden.id && isFavorite(selectedGarden.id) ? 'text-red-600' : 'text-gray-600'} hover:underline block`}
+                    className={`text-xs flex items-center gap-1 ${selectedGarden.id && isFavorite(selectedGarden.id) ? 'text-amber-600' : 'text-blue-600'} hover:underline block`}
                   >
-                    {selectedGarden.id && isFavorite(selectedGarden.id) ? '❤️ Aus Favoriten entfernen' : '🤍 Zu Favoriten hinzufügen'}
+                    <HeartIcon className="w-3 h-3" />
+                    {selectedGarden.id && isFavorite(selectedGarden.id) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}
                   </button>
                   <a
                     href={`https://www.xn--offene-grten-ncb.de/${selectedGarden.websiteSlug}/`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline block"
+                    className="text-blue-600 hover:underline flex items-center gap-1"
                   >
-                    Details anzeigen
+                    <ArrowTopRightOnSquareIcon className="w-3 h-3" />
+                    Website öffnen
                   </a>
                   <a
                     href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(selectedGarden.address)}&travelmode=transit`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-green-600 hover:underline block"
+                    className="text-green-600 hover:underline flex items-center gap-1"
                   >
-                    🚌 Route berechnen (ÖPNV)
+                    <HomeModernIcon className="w-3 h-3" />
+                    Route berechnen (ÖPNV)
                   </a>
                 </div>
                 <div className="text-xs">
                   <strong>Öffnungszeiten:</strong>
-                  <ul className="mt-1 space-y-1">
+                  <ul className="mt-1 space-y-2">
                     {selectedGarden.dates.map((date, index) => {
                       const { formatted, relative } = formatDate(date);
                       return (
                         <li key={index} className="text-gray-700">
-                          <div>{formatted} {date.startTime && date.endTime && `(${date.startTime}-${date.endTime})`}</div>
+                          <div className="font-medium">{formatted}</div>
+                          {date.startTime && date.endTime && (
+                            <div className="text-gray-600">{date.startTime}-{date.endTime}</div>
+                          )}
                           <div className="text-xs text-gray-500">{relative}</div>
                         </li>
                       );

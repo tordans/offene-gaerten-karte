@@ -6,7 +6,7 @@ export default function DebugToggle() {
   return (
     <button
       onClick={() => setDebugMode(!debugMode)}
-      className="text-xs text-gray-500 hover:text-gray-700 underline"
+      className="text-xs text-gray-600 hover:text-red-700 underline"
       title="Debug-Modus umschalten"
     >
       {debugMode ? 'Debug-Modus deaktivieren' : 'Debug-Modus aktivieren'}
