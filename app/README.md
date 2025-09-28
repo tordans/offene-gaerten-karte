@@ -10,6 +10,7 @@ This is a React app (Vite + TypeScript + Tailwind CSS + react-map-gl) that visua
 ## Usage
 
 1. Install dependencies:
+
    ```sh
    npm install
    ```

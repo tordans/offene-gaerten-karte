@@ -1,29 +1,27 @@
-import { MapProvider } from 'react-map-gl/maplibre';
-import type { GardensJson } from './types';
+import { useEffect } from 'react'
+import { MapProvider } from 'react-map-gl/maplibre'
+import type { GardensJson } from './types'
 // Import data as a module
-import gardensData from './data/gardens-and-dates.json';
-import DebugPanel from './DebugPanel';
-import DebugToggle from './DebugToggle';
-import BackgroundToggle from './BackgroundToggle';
-import DateFilter from './DateFilter';
-import FavoritesSection from './FavoritesSection';
-import ProjectDescription from './ProjectDescription';
-import MapComponent from './MapComponent';
-import 'maplibre-gl/dist/maplibre-gl.css';
+import 'maplibre-gl/dist/maplibre-gl.css'
+import BackgroundToggle from './BackgroundToggle'
+import gardensData from './data/gardens-and-dates.json'
+import DateFilter from './DateFilter'
+import DebugPanel from './DebugPanel'
+import DebugToggle from './DebugToggle'
+import FavoritesSection from './FavoritesSection'
+import MapComponent from './MapComponent'
+import ProjectDescription from './ProjectDescription'
 
 function App() {
-  const gardens = gardensData as GardensJson;
+  const gardens = gardensData as GardensJson
 
   return (
     <MapProvider>
-      <div className="h-screen flex bg-amber-50">
-        <DebugPanel
-          gardens={gardens}
-          gardensData={gardensData}
-        />
+      <div className="flex h-screen bg-amber-50">
+        <DebugPanel gardens={gardens} gardensData={gardensData} />
 
-        <div className="w-80 bg-amber-100 shadow-lg p-4 overflow-y-auto border-r-2 border-red-800">
-          <h1 className="text-xl font-bold mb-4 text-red-700">Offene Gärten Karte</h1>
+        <div className="w-80 overflow-y-auto border-r-2 border-red-800 bg-amber-100 p-4 shadow-lg">
+          <h1 className="mb-2 text-xl font-bold text-red-700">Offene Gärten Karte</h1>
 
           <ProjectDescription />
 
@@ -42,7 +40,7 @@ function App() {
         <MapComponent gardens={gardens} />
       </div>
     </MapProvider>
-  );
+  )
 }
 
-export default App;
+export default App

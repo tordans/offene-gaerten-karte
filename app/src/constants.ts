@@ -2,6 +2,6 @@
 export const BACKGROUND_OPTIONS = {
   standard: 'standard',
   aerial: 'aerial',
-} as const;
+} as const
 
-export type BackgroundOption = keyof typeof BACKGROUND_OPTIONS;
+export type BackgroundOption = keyof typeof BACKGROUND_OPTIONS

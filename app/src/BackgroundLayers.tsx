@@ -1,32 +1,37 @@
-import { useQueryState, parseAsStringEnum } from 'nuqs';
-import { Source, Layer } from 'react-map-gl/maplibre';
-import { BACKGROUND_OPTIONS } from './constants';
+import { parseAsStringEnum, useQueryState } from 'nuqs'
+import { Layer, Source } from 'react-map-gl/maplibre'
+import { BACKGROUND_OPTIONS } from './constants'
 
 // Brandenburg aerial imagery configuration
 const BRANDENBURG_AERIAL = {
   id: 'brandenburg-dop20',
   name: 'Brandenburg GeoBasis-DE/LGB (latest) / DOP20c',
-  tiles: 'https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=bebb_dop20c&STYLES=&crs=EPSG:3857&WIDTH=512&HEIGHT=512&BBOX={bbox-epsg-3857}',
+  tiles:
+    'https://isk.geobasis-bb.de/mapproxy/dop20c/service/wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&LAYERS=bebb_dop20c&STYLES=&crs=EPSG:3857&WIDTH=512&HEIGHT=512&BBOX={bbox-epsg-3857}',
   maxzoom: 20,
   minzoom: 0,
   tileSize: 512,
-  attribution: 'GeoBasis-DE/LGB / BB-BE DOP20c, dl-de/by-2-0; Geoportal Berlin / DOP20, dl-de/by-2-0',
-};
+  attribution:
+    'GeoBasis-DE/LGB / BB-BE DOP20c, dl-de/by-2-0; Geoportal Berlin / DOP20, dl-de/by-2-0',
+}
 
 // Layer visibility utility
 const layerVisibility = (visible: boolean) => ({
-  visibility: visible ? 'visible' as const : 'none' as const
-});
+  visibility: visible ? ('visible' as const) : ('none' as const),
+})
 
 export default function BackgroundLayers() {
-  const [background] = useQueryState('background', parseAsStringEnum(Object.values(BACKGROUND_OPTIONS)).withDefault('standard'));
+  const [background] = useQueryState(
+    'background',
+    parseAsStringEnum(Object.values(BACKGROUND_OPTIONS)).withDefault('standard'),
+  )
 
   // Brandenburg aerial imagery source and layer
-  const brandenburgSourceId = 'brandenburg-aerial-tiles';
-  const brandenburgLayerId = 'brandenburg-aerial-layer';
+  const brandenburgSourceId = 'brandenburg-aerial-tiles'
+  const brandenburgLayerId = 'brandenburg-aerial-layer'
 
   // Check if aerial imagery should be visible
-  const isAerialVisible = background === 'aerial';
+  const isAerialVisible = background === 'aerial'
 
   return (
     <>
@@ -47,5 +52,5 @@ export default function BackgroundLayers() {
         layout={layerVisibility(isAerialVisible)}
       />
     </>
-  );
+  )
 }
