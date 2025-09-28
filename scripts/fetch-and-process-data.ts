@@ -273,10 +273,12 @@ async function fetchAndProcessData() {
     writeFileSync(appOutputPath, JSON.stringify(processedGardens, null, 2), 'utf-8');
 
     // Save last updated timestamp
-    const lastUpdated = new Date().toLocaleDateString('de-DE', {
+    const lastUpdated = new Date().toLocaleString('de-DE', {
       day: '2-digit',
       month: '2-digit',
-      year: 'numeric'
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
     });
     const lastUpdatedPath = join(__dirname, '../app/src/data/last-updated.json');
     writeFileSync(lastUpdatedPath, JSON.stringify({ lastUpdated }, null, 2), 'utf-8');
