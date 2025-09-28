@@ -25,6 +25,16 @@ export default function Footer() {
           <div className="mt-3">
             <h2 className="mb-1 font-medium">Datenschutz:</h2>
             <p className="mb-2">
+              <a
+                href="https://www.xn--offene-grten-ncb.de/datenschutzhinweise/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-blue-400 hover:underline"
+              >
+                Es galten die Datenschutzhinweise von Offene Gärten Brandenburg.
+              </a>
+            </p>
+            <p className="mb-2">
               Bei der Nutzung dieser Website werden von uns keine personenbezogenen Daten erfasst
               oder gespeichert. Es gibt kein Webtracking und keine Cookies.
             </p>
