@@ -1,9 +1,9 @@
 import { HeartIcon, XMarkIcon, ArrowsPointingInIcon } from '@heroicons/react/24/solid';
+import { useMap } from 'react-map-gl/maplibre';
 import type { Garden } from './types';
 import { useFavorites } from './stores/useFavoritesState';
 import { useSetSelectedGarden } from './stores/useSelectedGardenState';
 import { useToggleFavorite, useIsFavorite } from './stores/useFavoritesState';
-import { useMapParam } from './stores/useMapParam';
 
 type FavoritesSectionProps = {
   gardens: Garden[];
@@ -14,13 +14,13 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
   const toggleFavorite = useToggleFavorite();
   const isFavorite = useIsFavorite();
   const setSelectedGarden = useSetSelectedGarden();
-  const { setViewState, viewState } = useMapParam();
+  const { gardenMap: mapInstance } = useMap();
 
   return (
     <div className="mb-6 border-b border-red-800 pb-4">
       <div className="flex justify-between items-center mb-3">
-        <h2 className="text-lg font-semibold text-red-700 flex items-center gap-2">
-          <HeartIcon className="w-4 h-4 text-red-600" />
+        <h2 className="text-lg font-semibold text-blue-600 flex items-center gap-2">
+          <HeartIcon className="w-4 h-4 text-blue-600" />
           Favoriten
         </h2>
         <span className="bg-amber-200 text-amber-900 px-2 py-1 rounded-full text-xs font-medium">{favorites.length}</span>
@@ -45,11 +45,12 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
                   <button
                     onClick={() => {
                       setSelectedGarden(garden);
-                      setViewState({
-                        longitude: garden.coordinates.lng,
-                        latitude: garden.coordinates.lat,
-                        zoom: viewState.zoom
-                      });
+                      if (mapInstance) {
+                        mapInstance.flyTo({
+                          center: [garden.coordinates.lng, garden.coordinates.lat],
+                          duration: 1000
+                        });
+                      }
                     }}
                     className="text-black hover:text-blue-400 cursor-pointer flex items-center gap-1 text-xs"
                   >

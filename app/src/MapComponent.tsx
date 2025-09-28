@@ -41,6 +41,7 @@ export default function MapComponent({ gardens }: MapComponentProps) {
   return (
     <div className="flex-1 relative">
       <Map
+        id="gardenMap"
         {...viewState}
         onMove={(event) => setViewState(event.viewState)}
         onMoveEnd={onMoveEnd}
