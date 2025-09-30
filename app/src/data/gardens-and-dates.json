@@ -13,7 +13,8 @@
         "month": 5,
         "year": 2025,
         "startTime": "10:00",
-        "endTime": "18:00"
+        "endTime": "18:00",
+        "note": "TEST: Terminverschiebung"
       },
       {
         "day": 14,
@@ -571,11 +572,18 @@
         "year": 2025,
         "startTime": "00:00",
         "endTime": "23:59"
+      },
+      {
+        "day": 1,
+        "month": 1,
+        "year": 2025,
+        "startTime": "00:00",
+        "endTime": "23:59",
+        "note": "TEST 123"
       }
     ],
     "errors": [
-      "lat, lng conversion failed, falling back to berlin",
-      "1 invalid date entries found"
+      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
