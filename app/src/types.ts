@@ -4,6 +4,7 @@ export type GardenDate = {
   year?: number
   startTime?: string // '10:00'
   endTime?: string // '18:00'
+  note?: string // 'NOTIZ' field from spreadsheet
 }
 
 export type Garden = {

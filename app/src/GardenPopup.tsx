@@ -25,6 +25,7 @@ export default function GardenPopup({
     year?: number
     startTime?: string
     endTime?: string
+    note?: string
   }) => {
     const year = date.year || new Date().getFullYear()
     const parsed = { day: date.day, month: date.month, year }
@@ -99,6 +100,7 @@ export default function GardenPopup({
                   </div>
                 )}
                 <div className="text-xs text-gray-500">{relative}</div>
+                {date.note && <div className="text-xs text-gray-500">{date.note}</div>}
               </li>
             )
           })}

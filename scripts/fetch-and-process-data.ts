@@ -40,6 +40,7 @@ type ProcessedGarden = {
     year?: number;
     startTime?: string;
     endTime?: string;
+    note?: string;
   }>;
   errors?: string[];
 };
@@ -96,7 +97,8 @@ function parseDateFromSheets(dateData: DateFromSheets) {
       month,
       year,
       startTime,
-      endTime
+      endTime,
+      note: dateData.NOTIZ || undefined
     };
   } catch {
     return null;
