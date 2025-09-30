@@ -45,6 +45,14 @@ type ProcessedGarden = {
   errors?: string[];
 };
 
+function findColumnIndices(headers: string[], columnNames: string[]): Record<string, number> {
+  const indices: Record<string, number> = {};
+  columnNames.forEach(name => {
+    indices[name] = headers.findIndex(header => header === name);
+  });
+  return indices;
+}
+
 function parseCSV(csvText: string) {
   const lines = csvText.split('\n');
   return lines.map(line => {
@@ -152,16 +160,23 @@ async function fetchAndProcessData() {
 
     // Create a map of dates by GARTEN_ID
     const datesByGardenId = new Map<string, DateFromSheets[]>();
+
+    // Find column indices for date data (explicit allow list)
+    const datenHeaders = datenData[0] || [];
+    const datenIndices = findColumnIndices(datenHeaders, ['GARTEN_ID', 'TAG', 'VON', 'BIS', 'NOTIZ']);
+
+    console.log('Date sheet column mapping:', datenIndices);
+
     for (const [index, row] of datenData.entries()) {
       if (index === 0) continue; // Skip header row
-      if (row.length < 5) continue;
+      if (row.length < Math.max(...Object.values(datenIndices)) + 1) continue;
 
       const dateEntry: DateFromSheets = {
-        GARTEN_ID: row[0],
-        TAG: row[1],
-        VON: row[2],
-        BIS: row[3],
-        NOTIZ: row[4]
+        GARTEN_ID: row[datenIndices.GARTEN_ID] || '',
+        TAG: row[datenIndices.TAG] || '',
+        VON: row[datenIndices.VON] || '',
+        BIS: row[datenIndices.BIS] || '',
+        NOTIZ: row[datenIndices.NOTIZ] || ''
       };
 
       if (!datesByGardenId.has(dateEntry.GARTEN_ID)) {
@@ -173,16 +188,22 @@ async function fetchAndProcessData() {
     // Convert to app format
     const processedGardens: ProcessedGarden[] = [];
 
+    // Find column indices for garden data (explicit allow list)
+    const gaertenHeaders = gaertenData[0] || [];
+    const gaertenIndices = findColumnIndices(gaertenHeaders, ['GARTEN_ID', 'WEBSITE_SLUG', 'LAT', 'LNG', 'ADRESSE']);
+
+    console.log('Garden sheet column mapping:', gaertenIndices);
+
     for (const [index, row] of gaertenData.entries()) {
       if (index === 0) continue; // Skip header row
-      if (row.length < 9) continue;
+      if (row.length < Math.max(...Object.values(gaertenIndices)) + 1) continue;
 
       const garden: GardenFromSheets = {
-        GARTEN_ID: row[0],
-        WEBSITE_SLUG: row[1],
-        LAT: row[3],
-        LNG: row[4],
-        ADRESSE: row[7]
+        GARTEN_ID: row[gaertenIndices.GARTEN_ID] || '',
+        WEBSITE_SLUG: row[gaertenIndices.WEBSITE_SLUG] || '',
+        LAT: row[gaertenIndices.LAT] || '',
+        LNG: row[gaertenIndices.LNG] || '',
+        ADRESSE: row[gaertenIndices.ADRESSE] || ''
       };
 
       // Convert coordinates
