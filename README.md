@@ -21,45 +21,18 @@ offene-gaerten-karte/
 
 ## Development
 
-### Prerequisites
+```bash
+cd app
+npm install
+npm run dev
+```
 
-- Node.js 18+
+The app is automatically deployed to GitHub Pages when you push to the `main` branch.
+https://tordans.github.io/offene-gaerten-karte/
 
-### Setup
-
-1. **Run the React App**:
-   ```bash
-   cd app
-   npm install
-   npm run dev
-   ```
-
-## Deployment
-
-This project is configured for automatic deployment to GitHub Pages via GitHub Actions.
-
-### Manual Deployment
-
-1. Build the app:
-   ```bash
-   cd app
-   npm run build
-   ```
-
-2. The built files will be in `app/dist/`
-
-### GitHub Pages
-
-The app is automatically deployed to GitHub Pages when you push to the `main` branch. The deployment URL will be:
-`https://[your-username].github.io/offene-gaerten-karte/`
-
-## Data Flow
-
-1. **Data**: Uses pre-processed garden data from `data/gardens-parsed.json`
-2. **Display**: Show gardens on interactive map with filtering options
-
-## Technologies Used
+### Technologies Used
 
 - **Frontend**: React, TypeScript, Vite, Tailwind CSS
+- **State management**: nuqs, zustand, useState
 - **Maps**: react-map-gl, MapTiler
 - **Deployment**: GitHub Actions, GitHub Pages
