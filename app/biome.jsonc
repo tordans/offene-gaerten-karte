@@ -1,0 +1,80 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "root": ".." // git root is one level up from app/
+  },
+  "files": {
+    // "ignoreUnknown": false, // default
+    // Biome respects .gitignore by default (via vcs.useIgnoreFile)
+    // dist/ and node_modules/ are already ignored via .gitignore
+    // We only need to explicitly exclude files that are tracked by git but should be ignored by Biome
+    "includes": ["**/*", "!src/data/gardens-and-dates.json", "!src/data/last-updated.json"]
+  },
+  "formatter": {
+    // "enabled": true, // default
+    // "formatWithErrors": false, // default
+    "indentStyle": "space", // default: "tab"
+    // "indentWidth": 2, // default
+    // "lineEnding": "lf", // default
+    "lineWidth": 100 // default: 80
+    // "attributePosition": "auto" // default
+  },
+  "linter": {
+    // "enabled": true, // default
+    "rules": {
+      // "recommended": true, // default
+      "correctness": {
+        "useExhaustiveDependencies": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noShadowRestrictedNames": "off"
+      },
+      "style": {
+        "useImportType": "off",
+        "noNonNullAssertion": "off"
+      },
+      "nursery": {
+        "useSortedClasses": "error"
+      },
+      "a11y": {
+        // "recommended": true, // default
+        "useButtonType": "off"
+      },
+      "complexity": {
+        // "recommended": true, // default
+        "noImportantStyles": "off"
+      }
+      // "performance": {
+      //   "recommended": true // default
+      // },
+      // "security": {
+      //   "recommended": true // default
+      // }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single", // default: "double"
+      // "jsxQuoteStyle": "double", // default
+      // "quoteProperties": "asNeeded", // default
+      // "trailingCommas": "es5", // default
+      "semicolons": "asNeeded" // default: "always"
+      // "arrowParentheses": "always", // default
+      // "bracketSpacing": true, // default
+      // "bracketSameLine": false // default
+    },
+    "globals": ["window", "document", "navigator", "console", "location", "history"]
+  },
+  "overrides": [
+    {
+      "includes": ["**/translations/*.const.ts"],
+      "formatter": {
+        "lineWidth": 320
+      }
+    }
+  ]
+}

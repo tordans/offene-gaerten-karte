@@ -14,7 +14,7 @@ const DEFAULT_MAP_PARAM: MapParam = {
 
 // Round numbers for URL to maintain 6 decimal places (shorter for URL)
 const roundForURL = (num: number, decimals: number = 6): number => {
-  return Math.round(num * Math.pow(10, decimals)) / Math.pow(10, decimals)
+  return Math.round(num * 10 ** decimals) / 10 ** decimals
 }
 
 const mapParamParser = createParser({
@@ -27,7 +27,7 @@ const mapParamParser = createParser({
     const lng = parseFloat(parts[2])
 
     // Basic validation
-    if (isNaN(zoom) || isNaN(lat) || isNaN(lng)) return null
+    if (Number.isNaN(zoom) || Number.isNaN(lat) || Number.isNaN(lng)) return null
     if (zoom < 0 || zoom > 22) return null
     if (lat < -90 || lat > 90) return null
     if (lng < -180 || lng > 180) return null

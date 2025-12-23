@@ -62,11 +62,12 @@ export default function DateFilter({ gardens }: DateFilterProps) {
   }
 
   return (
-    <div className="mb-6 border-b border-red-800 pb-4">
-      <h2 className="mb-3 text-lg font-semibold text-red-700">Nach Datum filtern</h2>
+    <div className="mb-6 border-red-800 border-b pb-4">
+      <h2 className="mb-3 font-semibold text-lg text-red-700">Nach Datum filtern</h2>
       <div className="space-y-2">
         {/* All Gardens Option */}
         <button
+          type="button"
           onClick={() => {
             setSelectedMonth(null)
             setSelectedDay(null)
@@ -79,7 +80,7 @@ export default function DateFilter({ gardens }: DateFilterProps) {
           }`}
         >
           <span>Alle Gärten</span>
-          <span className="rounded-full bg-amber-100 px-2 py-1 text-xs font-medium text-amber-900">
+          <span className="rounded-full bg-amber-100 px-2 py-1 font-medium text-amber-900 text-xs">
             {gardens.length}
           </span>
         </button>
@@ -88,6 +89,7 @@ export default function DateFilter({ gardens }: DateFilterProps) {
         {monthCounts.map(({ month, count }) => (
           <div key={month}>
             <button
+              type="button"
               disabled={count === 0}
               onClick={() => {
                 setSelectedMonth(month)
@@ -103,7 +105,7 @@ export default function DateFilter({ gardens }: DateFilterProps) {
               }`}
             >
               <span>{monthNames[month - 1]}</span>
-              <span className="rounded-full bg-amber-100 px-2 py-1 text-xs font-medium text-amber-900">
+              <span className="rounded-full bg-amber-100 px-2 py-1 font-medium text-amber-900 text-xs">
                 {count}
               </span>
             </button>
@@ -112,6 +114,7 @@ export default function DateFilter({ gardens }: DateFilterProps) {
             {selectedMonth === month && availableDays.length > 0 && (
               <div className="mt-2 ml-4 space-y-1">
                 <button
+                  type="button"
                   onClick={() => {
                     setSelectedDay(null)
                     setFavoritesOnly(false)
@@ -123,12 +126,13 @@ export default function DateFilter({ gardens }: DateFilterProps) {
                   }`}
                 >
                   <span>Alle Tage im {monthNames[selectedMonth - 1]}</span>
-                  <span className="rounded-full bg-amber-100 px-2 py-1 text-xs font-medium text-amber-900">
+                  <span className="rounded-full bg-amber-100 px-2 py-1 font-medium text-amber-900 text-xs">
                     {monthCounts.find((m) => m.month === selectedMonth)?.count || 0}
                   </span>
                 </button>
                 {availableDays.map(({ day, count }) => (
                   <button
+                    type="button"
                     key={`${selectedMonth}-${day}`}
                     disabled={count === 0}
                     onClick={() => {
@@ -146,7 +150,7 @@ export default function DateFilter({ gardens }: DateFilterProps) {
                     <span>
                       {getWeekdayName(day, selectedMonth)} {day}. {monthNames[selectedMonth - 1]}
                     </span>
-                    <span className="rounded-full bg-amber-100 px-2 py-1 text-xs font-medium text-amber-900">
+                    <span className="rounded-full bg-amber-100 px-2 py-1 font-medium text-amber-900 text-xs">
                       {count}
                     </span>
                   </button>

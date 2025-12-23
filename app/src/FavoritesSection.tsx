@@ -21,13 +21,13 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
   const { gardenMap: mapInstance } = useMap()
 
   return (
-    <div className="mb-6 border-b border-red-800 pb-4">
+    <div className="mb-6 border-red-800 border-b pb-4">
       <div className="mb-3 flex items-center justify-between">
-        <h2 className="flex items-center gap-2 text-lg font-semibold text-blue-600">
+        <h2 className="flex items-center gap-2 font-semibold text-blue-600 text-lg">
           <HeartIcon className="h-4 w-4 text-blue-600" />
           Favoriten
         </h2>
-        <span className="rounded-full bg-amber-200 px-2 py-1 text-xs font-medium text-amber-900">
+        <span className="rounded-full bg-amber-200 px-2 py-1 font-medium text-amber-900 text-xs">
           {favorites.length}
         </span>
       </div>
@@ -36,17 +36,19 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
           gardens
             .filter((garden) => garden.id && isFavorite(garden.id))
             .map((garden) => (
-              <div key={garden.id} className="rounded border-l-4 border-blue-500 bg-amber-200 p-2">
-                <div className="mb-2 text-sm font-medium text-gray-700">{garden.address}</div>
+              <div key={garden.id} className="rounded border-blue-500 border-l-4 bg-amber-200 p-2">
+                <div className="mb-2 font-medium text-gray-700 text-sm">{garden.address}</div>
                 <div className="flex gap-2">
                   <button
+                    type="button"
                     onClick={() => garden.id && toggleFavorite(garden.id)}
-                    className="flex cursor-pointer items-center gap-1 text-xs text-red-600 hover:text-red-800"
+                    className="flex cursor-pointer items-center gap-1 text-red-600 text-xs hover:text-red-800"
                   >
                     <XMarkIcon className="h-3 w-3" />
                     Entfernen
                   </button>
                   <button
+                    type="button"
                     onClick={() => {
                       setSelectedGarden(garden)
                       if (mapInstance) {
@@ -56,7 +58,7 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
                         })
                       }
                     }}
-                    className="flex cursor-pointer items-center gap-1 text-xs text-black hover:text-blue-400"
+                    className="flex cursor-pointer items-center gap-1 text-black text-xs hover:text-blue-400"
                   >
                     <ArrowsPointingInIcon className="h-3 w-3" />
                     Karte zentrieren
@@ -65,7 +67,7 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
               </div>
             ))
         ) : (
-          <div className="text-sm text-gray-500 italic">
+          <div className="text-gray-500 text-sm italic">
             Noch keine Favoriten. Klicken Sie auf das Herz-Symbol bei einem Garten, um ihn zu Ihren
             Favoriten hinzuzufügen.
           </div>
@@ -76,6 +78,7 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
       {favorites.length > 0 && (
         <div className="mt-4">
           <button
+            type="button"
             onClick={() => {
               setFavoritesOnly(!favoritesOnly)
               setSelectedMonth(null)
@@ -88,7 +91,7 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
             }`}
           >
             <span>{favoritesOnly ? 'Alles anzeigen' : 'Nur Favoriten anzeigen'}</span>
-            <span className="rounded-full bg-amber-200 px-2 py-1 text-xs font-medium text-amber-900">
+            <span className="rounded-full bg-amber-200 px-2 py-1 font-medium text-amber-900 text-xs">
               {favoritesOnly ? gardens.length : favorites.length}
             </span>
           </button>

@@ -1,7 +1,7 @@
 export default function ProjectDescription() {
   return (
     <div>
-      <p className="mb-6 text-sm text-gray-600">
+      <p className="mb-6 text-gray-600 text-sm">
         Eine interaktive Karte der
         <a
           href="https://www.xn--offene-grten-ncb.de/gaerten-alphabetisch/"

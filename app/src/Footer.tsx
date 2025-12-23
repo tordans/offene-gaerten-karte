@@ -5,10 +5,10 @@ export default function Footer() {
   return (
     <div className="pt-4">
       <details className="mb-2">
-        <summary className="cursor-pointer text-xs text-gray-600 underline hover:text-red-700">
+        <summary className="cursor-pointer text-gray-600 text-xs underline hover:text-red-700">
           Impressum, Datenschutz
         </summary>
-        <div className="mt-2 space-y-2 text-xs text-gray-600">
+        <div className="mt-2 space-y-2 text-gray-600 text-xs">
           <div>
             <h2 className="mb-1 font-medium">Impressum:</h2>
             <p>
@@ -100,10 +100,10 @@ export default function Footer() {
       </details>
 
       <details className="mb-2">
-        <summary className="cursor-pointer text-xs text-gray-600 underline hover:text-red-700">
+        <summary className="cursor-pointer text-gray-600 text-xs underline hover:text-red-700">
           Mehr erfahren
         </summary>
-        <div className="mt-2 space-y-1 text-xs text-gray-600">
+        <div className="mt-2 space-y-1 text-gray-600 text-xs">
           <p>
             <a
               href="https://github.com/tordans/offene-gaerten-karte"
@@ -119,7 +119,7 @@ export default function Footer() {
         </div>
       </details>
 
-      <p className="text-xs text-gray-500">Zuletzt aktualisiert: {lastUpdatedData.lastUpdated}</p>
+      <p className="text-gray-500 text-xs">Zuletzt aktualisiert: {lastUpdatedData.lastUpdated}</p>
     </div>
   )
 }

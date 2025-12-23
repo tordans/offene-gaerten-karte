@@ -45,9 +45,10 @@ export default function GardenPopup({
 
   return (
     <div className="p-2">
-      <h3 className="mb-1 text-sm font-semibold">{garden.address}</h3>
-      <div className="mb-2 space-y-1 text-xs text-gray-600">
+      <h3 className="mb-1 font-semibold text-sm">{garden.address}</h3>
+      <div className="mb-2 space-y-1 text-gray-600 text-xs">
         <button
+          type="button"
           onClick={() => garden.id && toggleFavorite(garden.id)}
           className={`flex items-center gap-1 text-xs ${garden.id && isFavorite(garden.id) ? 'text-amber-600' : 'text-blue-600'} block hover:underline`}
         >
@@ -78,7 +79,7 @@ export default function GardenPopup({
       <div className="text-xs">
         <strong>Öffnungszeiten:</strong>
         <ul className="mt-1 space-y-2">
-          {garden.dates.map((date, index) => {
+          {garden.dates.map((date) => {
             const { formatted, relative } = formatDate(date)
 
             // Check if this date matches the current filter
@@ -88,9 +89,16 @@ export default function GardenPopup({
 
             return (
               <li
-                key={index}
+                key={[
+                  garden.id,
+                  date.year,
+                  date.month,
+                  date.day,
+                  date.startTime,
+                  date.endTime,
+                ].join('-')}
                 className={`text-gray-700 ${
-                  matchesFilter ? 'border-l-4 border-amber-500 bg-amber-50 pl-2' : ''
+                  matchesFilter ? 'border-amber-500 border-l-4 bg-amber-50 pl-2' : ''
                 }`}
               >
                 <div className="font-medium">{formatted}</div>
@@ -99,8 +107,8 @@ export default function GardenPopup({
                     {date.startTime}-{date.endTime}
                   </div>
                 )}
-                <div className="text-xs text-gray-500">{relative}</div>
-                {date.note && <div className="text-xs text-gray-500">{date.note}</div>}
+                <div className="text-gray-500 text-xs">{relative}</div>
+                {date.note && <div className="text-gray-500 text-xs">{date.note}</div>}
               </li>
             )
           })}

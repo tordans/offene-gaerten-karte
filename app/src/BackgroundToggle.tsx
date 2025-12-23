@@ -9,10 +9,11 @@ export default function BackgroundToggle() {
   )
 
   return (
-    <div className="mb-4 border-b border-red-800 pb-4">
-      <h2 className="mb-3 text-lg font-semibold text-red-700">Kartenhintergrund</h2>
+    <div className="mb-4 border-red-800 border-b pb-4">
+      <h2 className="mb-3 font-semibold text-lg text-red-700">Kartenhintergrund</h2>
       <div className="space-y-2">
         <button
+          type="button"
           onClick={() => setBackground('standard')}
           className={`flex w-full items-center gap-2 rounded px-3 py-2 text-left ${
             background === 'standard'
@@ -24,6 +25,7 @@ export default function BackgroundToggle() {
           Standard-Karte
         </button>
         <button
+          type="button"
           onClick={() => setBackground('aerial')}
           className={`flex w-full items-center gap-2 rounded px-3 py-2 text-left ${
             background === 'aerial'

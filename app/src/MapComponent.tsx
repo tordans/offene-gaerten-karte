@@ -82,7 +82,7 @@ export default function MapComponent({ gardens }: MapComponentProps) {
                 date.month === selectedMonth && (selectedDay === null || date.day === selectedDay),
             )
 
-          let markerColor
+          let markerColor: string
           if (isFav) {
             // Favorite gardens: bright blue if they match date filter, light blue if they don't
             markerColor = matchesDateFilter ? '#0000f2' : '#60a5fa' // light blue

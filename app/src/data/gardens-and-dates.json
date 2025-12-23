@@ -192,9 +192,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "39",
@@ -248,9 +246,7 @@
         "endTime": "19:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "81",
@@ -582,9 +578,7 @@
         "note": "TEST 123"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "63",
@@ -816,9 +810,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "80",
@@ -862,9 +854,7 @@
         "endTime": "16:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "96",
@@ -1285,9 +1275,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "121",
@@ -1488,9 +1476,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "91",
@@ -1884,9 +1870,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "32",
@@ -2032,9 +2016,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "73",
@@ -2085,9 +2067,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "49",
@@ -2127,9 +2107,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "1 invalid date entries found"
-    ]
+    "errors": ["1 invalid date entries found"]
   },
   {
     "id": "66",
@@ -2237,9 +2215,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "27",
@@ -2283,9 +2259,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "135",
@@ -2541,9 +2515,7 @@
       "lng": 13.3370936
     },
     "dates": [],
-    "errors": [
-      "1 invalid date entries found"
-    ]
+    "errors": ["1 invalid date entries found"]
   },
   {
     "id": "11",
@@ -2622,9 +2594,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "102",
@@ -2946,9 +2916,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "122",
@@ -3056,9 +3024,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "95",
@@ -3173,9 +3139,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "105",
@@ -3219,9 +3183,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "17",
@@ -3343,9 +3305,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "21",
@@ -3395,9 +3355,7 @@
       "lng": 13.1314394
     },
     "dates": [],
-    "errors": [
-      "3 invalid date entries found"
-    ]
+    "errors": ["3 invalid date entries found"]
   },
   {
     "id": "99",
@@ -3883,9 +3841,7 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   },
   {
     "id": "128",
@@ -3932,8 +3888,6 @@
         "endTime": "18:00"
       }
     ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
-    ]
+    "errors": ["lat, lng conversion failed, falling back to berlin"]
   }
 ]

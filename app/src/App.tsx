@@ -2,8 +2,8 @@ import { MapProvider } from 'react-map-gl/maplibre'
 import type { GardensJson } from './types'
 // Import data as a module
 import 'maplibre-gl/dist/maplibre-gl.css'
-import gardensData from './data/gardens-and-dates.json'
 import DebugPanel from './DebugPanel'
+import gardensData from './data/gardens-and-dates.json'
 import MapComponent from './MapComponent'
 import Sidebar from './Sidebar'
 

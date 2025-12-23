@@ -37,8 +37,12 @@ export default function DebugPanel({ gardens, gardensData }: DebugPanelProps) {
   return (
     <div className="w-96 overflow-y-auto bg-gray-900 p-4 text-white shadow-lg">
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-lg font-bold">Debug-Informationen</h2>
-        <button onClick={() => setDebugMode(false)} className="text-gray-400 hover:text-white">
+        <h2 className="font-bold text-lg">Debug-Informationen</h2>
+        <button
+          type="button"
+          onClick={() => setDebugMode(false)}
+          className="text-gray-400 hover:text-white"
+        >
           ✕
         </button>
       </div>
@@ -69,6 +73,7 @@ export default function DebugPanel({ gardens, gardensData }: DebugPanelProps) {
         <div className="mb-2 flex items-center justify-between">
           <h3 className="font-semibold">Rohdaten (JSON)</h3>
           <button
+            type="button"
             onClick={() => {
               navigator.clipboard.writeText(JSON.stringify(gardensData, null, 2))
             }}
@@ -83,7 +88,7 @@ export default function DebugPanel({ gardens, gardensData }: DebugPanelProps) {
         </div>
       </div>
 
-      <div className="text-xs text-gray-400">
+      <div className="text-gray-400 text-xs">
         Debug-Modus über den Button in der Seitenleiste aktivieren
       </div>
     </div>
