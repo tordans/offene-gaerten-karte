@@ -1,5 +1,4 @@
 import { createParser, useQueryState } from 'nuqs'
-import { useEffect, useState } from 'react'
 
 type MapParam = {
   zoom: number
@@ -48,38 +47,22 @@ const mapParamParser = createParser({
 export function useMapParam() {
   const [mapParam, setMapParam] = useQueryState('map', mapParamParser)
 
-  // Internal state for smooth map interaction
-  const [internalViewState, setInternalViewState] = useState({
-    longitude: mapParam.lng,
-    latitude: mapParam.lat,
-    zoom: mapParam.zoom,
-  })
+  const setViewState = (newViewState: { longitude: number; latitude: number; zoom: number }) => {
+    setMapParam({
+      zoom: newViewState.zoom,
+      lat: newViewState.latitude,
+      lng: newViewState.longitude,
+    })
+  }
 
-  // Update internal state when URL changes (but not on first render)
-  useEffect(() => {
-    setInternalViewState({
+  const onMoveEnd = () => {}
+
+  return {
+    viewState: {
       longitude: mapParam.lng,
       latitude: mapParam.lat,
       zoom: mapParam.zoom,
-    })
-  }, [mapParam.lng, mapParam.lat, mapParam.zoom])
-
-  const setViewState = (newViewState: { longitude: number; latitude: number; zoom: number }) => {
-    // Update internal state immediately for smooth interaction
-    setInternalViewState(newViewState)
-  }
-
-  const onMoveEnd = () => {
-    // Update URL when user stops moving the map
-    setMapParam({
-      zoom: internalViewState.zoom,
-      lat: internalViewState.latitude,
-      lng: internalViewState.longitude,
-    })
-  }
-
-  return {
-    viewState: internalViewState,
+    },
     setViewState,
     onMoveEnd,
   }
