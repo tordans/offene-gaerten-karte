@@ -1,17 +1,18 @@
 import { useEffect } from 'react'
 import { MapProvider } from 'react-map-gl/maplibre'
-import type { GardensJson } from '../../scripts/schemas.ts'
+import { gardensJsonSchema, type GardensJson } from '../../scripts/schemas.ts'
 // Import data as a module
 import 'maplibre-gl/dist/maplibre-gl.css'
 import DebugPanel from './DebugPanel'
-import gardensData from './data/gardens-and-dates.json'
+import gardensDataRaw from './data/gardens-and-dates.json'
 import MapComponent from './MapComponent'
 import Sidebar from './Sidebar'
 import { useFavoritesFeatureActions } from './stores/useFavoritesFeatureState'
 import { useFavorites } from './stores/useFavoritesState'
 
 function App() {
-  const gardens = gardensData as GardensJson
+  const gardens = gardensJsonSchema.parse(gardensDataRaw)
+  const gardensData = gardensDataRaw as unknown as GardensJson
   const { enable } = useFavoritesFeatureActions()
   const [favorites] = useFavorites()
 
