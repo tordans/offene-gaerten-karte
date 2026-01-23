@@ -1,5 +1,5 @@
 import { parseAsString, useQueryState } from 'nuqs'
-import type { Garden } from '../types'
+import type { Garden } from '../../../scripts/schemas.ts'
 
 // Store selected garden ID in URL, but we need to find the garden object
 export function useSelectedGardenId() {

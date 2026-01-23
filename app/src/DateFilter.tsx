@@ -1,6 +1,6 @@
 import { parseAsInteger, useQueryState } from 'nuqs'
+import type { Garden } from '../../scripts/schemas.ts'
 import { useFavoritesOnly } from './stores/useFavoritesOnlyState'
-import type { Garden } from './types'
 
 type DateFilterProps = {
   gardens: Garden[]

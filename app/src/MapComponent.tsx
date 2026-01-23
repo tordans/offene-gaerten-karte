@@ -1,13 +1,13 @@
 import { parseAsInteger, useQueryState } from 'nuqs'
 import { useMemo } from 'react'
 import { Map, Marker, Popup } from 'react-map-gl/maplibre'
+import type { Garden } from '../../scripts/schemas.ts'
 import BackgroundLayers from './BackgroundLayers'
 import GardenPopup from './GardenPopup'
 import { useFavoritesOnly } from './stores/useFavoritesOnlyState'
 import { useIsFavorite, useToggleFavorite } from './stores/useFavoritesState'
 import { useMapParam } from './stores/useMapParam'
 import { useSelectedGarden, useSetSelectedGarden } from './stores/useSelectedGardenState'
-import type { Garden } from './types'
 
 // Maptiler API key, only valid for `tordans.github.io`
 // https://cloud.maptiler.com/account/keys/22a6bf6f-03b1-42b1-8f75-eccae2a6513f/settings
@@ -88,7 +88,7 @@ export default function MapComponent({ gardens }: MapComponentProps) {
             markerColor = matchesDateFilter ? '#000000' : '#808080'
           } else {
             // Non-favorite gardens: green
-            markerColor = '#009642'
+            markerColor = '#15803d' // green-700
           }
 
           return (

@@ -1,6 +1,15 @@
 import { writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+  TERMIN_TYP,
+  terminTypSchema,
+  dateSchema,
+  gardenSchema,
+  gardensJsonSchema,
+  type Garden,
+  type GardenDate,
+} from './schemas.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,6 +19,7 @@ const SHEET_ID = '1osuhw20aR0ZwlC-4MwKkO89vuxKqL-meSNXyRy5JHd4';
 const GAERTEN_SHEET_GID = '0';
 const DATEN_SHEET_GID = '1889715507';
 
+// Raw sheet types
 type GardenFromSheets = {
   GARTEN_ID: string;
   WEBSITE_SLUG: string;
@@ -24,25 +34,7 @@ type DateFromSheets = {
   VON: string;
   BIS: string;
   NOTIZ: string;
-};
-
-type ProcessedGarden = {
-  id: string;
-  websiteSlug: string;
-  address: string;
-  coordinates: {
-    lat: number;
-    lng: number;
-  };
-  dates: Array<{
-    day: number;
-    month: number;
-    year?: number;
-    startTime?: string;
-    endTime?: string;
-    note?: string;
-  }>;
-  errors?: string[];
+  STATUS?: string;
 };
 
 function findColumnIndices(headers: string[], columnNames: string[]): Record<string, number> {
@@ -76,38 +68,36 @@ function parseCSV(csvText: string) {
 }
 
 
-function parseDateFromSheets(dateData: DateFromSheets) {
-  // Parse date from DATEN sheet format
+function parseDateFromSheets(dateData: DateFromSheets): GardenDate | null {
   try {
-    // Validate TAG field format
+    // Validate TAG field format (DD.MM.YYYY)
     if (!dateData.TAG || !/^\d{1,2}\.\d{1,2}\.\d{4}$/.test(dateData.TAG)) {
       return null;
     }
 
-    // Parse TAG field (DD.MM.YYYY format)
+    // Parse TAG field
     const [day, month, year] = dateData.TAG.split('.').map(Number);
-
-    // Validate parsed values
     if (isNaN(day) || isNaN(month) || isNaN(year)) return null;
-    if (day < 1 || day > 31 || month < 1 || month > 12) return null;
-    if (year < 2020 || year > 2030) return null;
 
-    // Parse time fields (HH:MM format)
+    // Validate and parse times
     const startTime = dateData.VON || '10:00';
     const endTime = dateData.BIS || '18:00';
 
-    // Validate time formats
-    if (dateData.VON && !/^\d{1,2}:\d{2}$/.test(dateData.VON)) return null;
-    if (dateData.BIS && !/^\d{1,2}:\d{2}$/.test(dateData.BIS)) return null;
+    // terminTyp is already validated during initial parsing, use it directly
+    const terminTyp = dateData.STATUS || TERMIN_TYP.REGELTERMIN;
 
-    return {
+    // Validate with Zod schema
+    const parsed = dateSchema.safeParse({
       day,
       month,
       year,
-      startTime,
-      endTime,
-      note: dateData.NOTIZ || undefined
-    };
+      startTime: dateData.VON ? startTime : undefined,
+      endTime: dateData.BIS ? endTime : undefined,
+      note: dateData.NOTIZ || undefined,
+      terminTyp,
+    });
+
+    return parsed.success ? parsed.data : null;
   } catch {
     return null;
   }
@@ -163,7 +153,7 @@ async function fetchAndProcessData() {
 
     // Find column indices for date data (explicit allow list)
     const datenHeaders = datenData[0] || [];
-    const datenIndices = findColumnIndices(datenHeaders, ['GARTEN_ID', 'TAG', 'VON', 'BIS', 'NOTIZ']);
+    const datenIndices = findColumnIndices(datenHeaders, ['GARTEN_ID', 'TAG', 'VON', 'BIS', 'NOTIZ', 'STATUS']);
 
     console.log('Date sheet column mapping:', datenIndices);
 
@@ -171,12 +161,20 @@ async function fetchAndProcessData() {
       if (index === 0) continue; // Skip header row
       if (row.length < Math.max(...Object.values(datenIndices)) + 1) continue;
 
+      // Validate and parse STATUS field with Zod schema
+      const rawStatus = row[datenIndices.STATUS]?.trim() || TERMIN_TYP.REGELTERMIN;
+      const statusValidation = terminTypSchema.safeParse(rawStatus);
+      const validatedStatus = statusValidation.success 
+        ? statusValidation.data 
+        : TERMIN_TYP.REGELTERMIN; // Default to Regeltermin if invalid
+
       const dateEntry: DateFromSheets = {
         GARTEN_ID: row[datenIndices.GARTEN_ID] || '',
         TAG: row[datenIndices.TAG] || '',
         VON: row[datenIndices.VON] || '',
         BIS: row[datenIndices.BIS] || '',
-        NOTIZ: row[datenIndices.NOTIZ] || ''
+        NOTIZ: row[datenIndices.NOTIZ] || '',
+        STATUS: validatedStatus
       };
 
       if (!datesByGardenId.has(dateEntry.GARTEN_ID)) {
@@ -186,7 +184,7 @@ async function fetchAndProcessData() {
     }
 
     // Convert to app format
-    const processedGardens: ProcessedGarden[] = [];
+    const processedGardens: Garden[] = [];
 
     // Find column indices for garden data (explicit allow list)
     const gaertenHeaders = gaertenData[0] || [];
@@ -279,7 +277,7 @@ async function fetchAndProcessData() {
         });
       }
 
-      const processedGarden: ProcessedGarden = {
+      const processedGarden = {
         id: garden.GARTEN_ID,
         websiteSlug: garden.WEBSITE_SLUG,
         address: garden.ADRESSE,
@@ -288,7 +286,19 @@ async function fetchAndProcessData() {
         ...(errors.length > 0 && { errors })
       };
 
-      processedGardens.push(processedGarden);
+      // Validate with Zod schema - only include valid gardens
+      const validated = gardenSchema.safeParse(processedGarden);
+      if (validated.success) {
+        processedGardens.push(validated.data);
+      }
+      // Invalid gardens (e.g., empty IDs) are excluded from output
+    }
+
+    // Validate final output with Zod (already validated individually, but double-check)
+    const validationResult = gardensJsonSchema.safeParse(processedGardens);
+    if (!validationResult.success) {
+      console.error('Final validation failed:', validationResult.error.issues);
+      // Still save the data, but log the errors
     }
 
     // Save processed data to app directory

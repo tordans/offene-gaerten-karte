@@ -18,8 +18,6 @@ const useFavoritesFeatureStore = create<FavoritesFeatureState>((set) => ({
   },
 }))
 
-export const useFavoritesFeatureEnabled = () =>
-  useFavoritesFeatureStore((state) => state.enabled)
+export const useFavoritesFeatureEnabled = () => useFavoritesFeatureStore((state) => state.enabled)
 
-export const useFavoritesFeatureActions = () =>
-  useFavoritesFeatureStore((state) => state.actions)
+export const useFavoritesFeatureActions = () => useFavoritesFeatureStore((state) => state.actions)

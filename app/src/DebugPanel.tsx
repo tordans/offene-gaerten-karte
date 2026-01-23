@@ -1,5 +1,5 @@
 import { parseAsBoolean, useQueryState } from 'nuqs'
-import type { Garden, GardensJson } from './types'
+import type { Garden, GardensJson } from '../../scripts/schemas.ts'
 
 type DebugPanelProps = {
   gardens: Garden[]

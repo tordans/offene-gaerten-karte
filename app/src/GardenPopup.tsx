@@ -1,8 +1,14 @@
-import { ArrowTopRightOnSquareIcon, HeartIcon, HomeModernIcon } from '@heroicons/react/24/solid'
+import {
+  ArrowTopRightOnSquareIcon,
+  HeartIcon,
+  HomeModernIcon,
+  InformationCircleIcon,
+} from '@heroicons/react/24/solid'
 import { formatDistanceToNow } from 'date-fns'
 import { de } from 'date-fns/locale'
+import type { Garden, TerminTyp } from '../../scripts/schemas.ts'
+import { TERMIN_TYP } from '../../scripts/schemas.ts'
 import { useFavoritesFeatureEnabled } from './stores/useFavoritesFeatureState'
-import type { Garden } from './types'
 
 type GardenPopupProps = {
   garden: Garden
@@ -29,6 +35,7 @@ export default function GardenPopup({
     startTime?: string
     endTime?: string
     note?: string
+    terminTyp: string
   }) => {
     const year = date.year || new Date().getFullYear()
     const parsed = { day: date.day, month: date.month, year }
@@ -54,7 +61,7 @@ export default function GardenPopup({
           <button
             type="button"
             onClick={() => garden.id && toggleFavorite(garden.id)}
-            className="flex cursor-pointer items-center gap-1 text-xs text-blue-600 block hover:underline"
+            className="flex cursor-pointer items-center gap-1 text-blue-600 text-xs hover:underline"
           >
             <HeartIcon className="size-3 text-black" />
             {garden.id && isFavorite(garden.id)
@@ -92,6 +99,21 @@ export default function GardenPopup({
               ? date.month === selectedMonth && (selectedDay === null || date.day === selectedDay)
               : false
 
+            // Determine styling based on terminTyp
+            const terminTyp = date.terminTyp
+            const isAbgesagt =
+              terminTyp === TERMIN_TYP.ABGESAGT || terminTyp === TERMIN_TYP.TERMINVERSCHIEBUNG
+            const isZusatztermin = terminTyp === TERMIN_TYP.ZUSATZTERMIN
+
+            // Get label text for non-Regeltermin entries
+            const terminLabels: Record<TerminTyp, string | null> = {
+              [TERMIN_TYP.REGELTERMIN]: null,
+              [TERMIN_TYP.ABGESAGT]: 'Termin abgesagt',
+              [TERMIN_TYP.ZUSATZTERMIN]: 'Zusatztermin',
+              [TERMIN_TYP.TERMINVERSCHIEBUNG]: 'Termin verschoben',
+            }
+            const terminLabel = terminLabels[terminTyp]
+
             return (
               <li
                 key={[
@@ -102,18 +124,66 @@ export default function GardenPopup({
                   date.startTime,
                   date.endTime,
                 ].join('-')}
-                className={`text-gray-700 ${
-                  matchesFilter ? 'border-amber-500 border-l-4 bg-amber-50 pl-2' : ''
-                }`}
+                className={`${matchesFilter ? 'border-amber-500 border-l-4 bg-amber-50 pl-2' : ''}`}
               >
-                <div className="font-medium">{formatted}</div>
+                <div
+                  className={`font-medium ${
+                    isAbgesagt
+                      ? 'text-red-700 line-through'
+                      : isZusatztermin
+                        ? 'text-green-700'
+                        : 'text-gray-700'
+                  }`}
+                >
+                  {formatted}
+                </div>
                 {date.startTime && date.endTime && (
-                  <div className="text-gray-600">
+                  <div
+                    className={`${
+                      isAbgesagt
+                        ? 'text-red-700 line-through'
+                        : isZusatztermin
+                          ? 'text-green-700'
+                          : 'text-gray-600'
+                    }`}
+                  >
                     {date.startTime}-{date.endTime}
                   </div>
                 )}
-                <div className="text-gray-500 text-xs">{relative}</div>
-                {date.note && <div className="text-gray-500 text-xs">{date.note}</div>}
+                <div
+                  className={`text-xs ${
+                    isAbgesagt
+                      ? 'text-red-700 line-through'
+                      : isZusatztermin
+                        ? 'text-green-700'
+                        : 'text-gray-500'
+                  }`}
+                >
+                  {relative}
+                </div>
+                {terminLabel && (
+                  <div
+                    className={`flex items-center gap-1 font-medium text-xs ${
+                      isAbgesagt ? 'text-red-700' : 'text-green-700'
+                    }`}
+                  >
+                    <InformationCircleIcon className="size-3" />
+                    {terminLabel}
+                  </div>
+                )}
+                {date.note && (
+                  <div
+                    className={`text-xs ${
+                      isAbgesagt
+                        ? 'text-red-700 line-through'
+                        : isZusatztermin
+                          ? 'text-green-700'
+                          : 'text-gray-500'
+                    }`}
+                  >
+                    {date.note}
+                  </div>
+                )}
               </li>
             )
           })}

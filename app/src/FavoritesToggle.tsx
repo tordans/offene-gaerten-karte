@@ -1,7 +1,7 @@
 import { parseAsArrayOf, parseAsString, useQueryState } from 'nuqs'
 import {
-  useFavoritesFeatureEnabled,
   useFavoritesFeatureActions,
+  useFavoritesFeatureEnabled,
 } from './stores/useFavoritesFeatureState'
 
 export default function FavoritesToggle() {

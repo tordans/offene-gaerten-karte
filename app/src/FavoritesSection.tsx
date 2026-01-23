@@ -1,10 +1,10 @@
 import { ArrowsPointingInIcon, HeartIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import { parseAsInteger, useQueryState } from 'nuqs'
 import { useMap } from 'react-map-gl/maplibre'
+import type { Garden } from '../../scripts/schemas.ts'
 import { useFavoritesOnly } from './stores/useFavoritesOnlyState'
 import { useFavorites, useIsFavorite, useToggleFavorite } from './stores/useFavoritesState'
 import { useSetSelectedGarden } from './stores/useSelectedGardenState'
-import type { Garden } from './types'
 
 type FavoritesSectionProps = {
   gardens: Garden[]

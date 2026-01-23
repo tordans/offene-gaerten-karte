@@ -1,6 +1,6 @@
 import DebugToggle from './DebugToggle'
-import FavoritesToggle from './FavoritesToggle'
 import lastUpdatedData from './data/last-updated.json'
+import FavoritesToggle from './FavoritesToggle'
 
 export default function Footer() {
   return (

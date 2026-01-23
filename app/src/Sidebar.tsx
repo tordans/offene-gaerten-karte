@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import type { GardensJson } from '../../scripts/schemas.ts'
 import BackgroundToggle from './BackgroundToggle'
 import DateFilter from './DateFilter'
 import FavoritesSection from './FavoritesSection'
@@ -7,7 +8,6 @@ import MobileMenuButton from './MobileMenuButton'
 import MobileSidebarToggle from './MobileSidebarToggle'
 import ProjectDescription from './ProjectDescription'
 import { useFavoritesFeatureEnabled } from './stores/useFavoritesFeatureState'
-import type { GardensJson } from './types'
 
 type SidebarProps = {
   gardens: GardensJson
