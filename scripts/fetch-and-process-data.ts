@@ -105,20 +105,24 @@ function parseDateFromSheets(dateData: DateFromSheets): GardenDate | null {
 
 function convertCoordinates(latStr: string, lngStr: string) {
   try {
-    // Validate input format (should be like "528.544.129")
     if (!latStr || !lngStr) return null;
 
-    // Check if the format contains dots (expected format)
-    if (!latStr.includes('.') || !lngStr.includes('.')) return null;
+    // Germany bounds with buffer (lat: ~47-55, lng: ~6-15, buffered to 46-56, 5-16)
+    const GERMANY_LAT_MIN = 46;
+    const GERMANY_LAT_MAX = 56;
+    const GERMANY_LNG_MIN = 5;
+    const GERMANY_LNG_MAX = 16;
 
-    // Convert from format like "528.544.129" to "52.8544129"
-    const lat = parseFloat(latStr.replace(/\./g, '')) / 10000000;
-    const lng = parseFloat(lngStr.replace(/\./g, '')) / 10000000;
+    // Parse decimal format (e.g., "53.4105003", "13.5593833")
+    const lat = parseFloat(latStr.trim());
+    const lng = parseFloat(lngStr.trim());
 
+    // Validate parsing succeeded
     if (isNaN(lat) || isNaN(lng)) return null;
 
-    // Validate coordinate ranges (rough bounds for Germany/Berlin area)
-    if (lat < 47 || lat > 55 || lng < 5 || lng > 15) return null;
+    // Validate coordinate ranges (buffered bounds for Germany)
+    // GeoJSON uses [longitude, latitude] order, but we store as {lat, lng}
+    if (lat < GERMANY_LAT_MIN || lat > GERMANY_LAT_MAX || lng < GERMANY_LNG_MIN || lng > GERMANY_LNG_MAX) return null;
 
     return { lat, lng };
   } catch {
@@ -217,10 +221,14 @@ async function fetchAndProcessData() {
       if (!coords) {
         if (!garden.LAT || !garden.LNG) {
           errors.push("lat, lng fields are empty");
-        } else if (!garden.LAT.includes('.') || !garden.LNG.includes('.')) {
-          errors.push("lat, lng format invalid (expected format like 528.544.129)");
         } else {
-          errors.push("lat, lng conversion failed, falling back to berlin");
+          const latNum = parseFloat(garden.LAT.trim());
+          const lngNum = parseFloat(garden.LNG.trim());
+          if (isNaN(latNum) || isNaN(lngNum)) {
+            errors.push("lat, lng format invalid (expected decimal format like 53.4105003, 13.5593833)");
+          } else {
+            errors.push("lat, lng conversion failed or out of range, falling back to berlin");
+          }
         }
       }
 

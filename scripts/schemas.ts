@@ -40,8 +40,8 @@ export const dateSchema = z.object({
 });
 
 export const coordinatesSchema = z.object({
-  lat: z.number().min(47).max(55),
-  lng: z.number().min(5).max(15),
+  lat: z.number().min(46).max(56), // Germany bounds with buffer
+  lng: z.number().min(5).max(16),  // Germany bounds with buffer
 });
 
 export const gardenSchema = z.object({
