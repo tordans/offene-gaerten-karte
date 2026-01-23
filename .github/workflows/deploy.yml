@@ -32,32 +32,30 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: lts/*
-          cache: 'npm'
-          cache-dependency-path: app/package-lock.json
+          bun-version: latest
 
       - name: Install Script Dependencies
         run: |
           cd scripts
-          npm ci
+          bun install
 
       - name: Fetch Latest Data from Google Sheets
         run: |
           cd scripts
-          npm run fetch-data
+          bun run fetch-data
 
       - name: Install App Dependencies
         run: |
           cd app
-          npm ci
+          bun install
 
       - name: Build
         run: |
           cd app
-          npm run build
+          bun run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
