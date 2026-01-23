@@ -84,11 +84,11 @@ export default function MapComponent({ gardens }: MapComponentProps) {
 
           let markerColor: string
           if (isFav) {
-            // Favorite gardens: bright blue if they match date filter, light blue if they don't
-            markerColor = matchesDateFilter ? '#0000f2' : '#60a5fa' // light blue
+            // Favorite gardens: black if they match date filter, gray if they don't
+            markerColor = matchesDateFilter ? '#000000' : '#808080'
           } else {
-            // Non-favorite gardens: amber
-            markerColor = '#f59e0b'
+            // Non-favorite gardens: green
+            markerColor = '#009642'
           }
 
           return (
