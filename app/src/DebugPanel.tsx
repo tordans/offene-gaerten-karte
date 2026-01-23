@@ -41,7 +41,7 @@ export default function DebugPanel({ gardens, gardensData }: DebugPanelProps) {
         <button
           type="button"
           onClick={() => setDebugMode(false)}
-          className="text-gray-400 hover:text-white"
+          className="cursor-pointer text-gray-400 hover:text-white"
         >
           ✕
         </button>
@@ -77,7 +77,7 @@ export default function DebugPanel({ gardens, gardensData }: DebugPanelProps) {
             onClick={() => {
               navigator.clipboard.writeText(JSON.stringify(gardensData, null, 2))
             }}
-            className="rounded bg-blue-600 px-2 py-1 text-xs hover:bg-blue-700"
+            className="cursor-pointer rounded bg-blue-600 px-2 py-1 text-xs hover:bg-blue-700"
             title="JSON in Zwischenablage kopieren"
           >
             Kopieren

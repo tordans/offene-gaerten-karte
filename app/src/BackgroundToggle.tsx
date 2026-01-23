@@ -15,7 +15,7 @@ export default function BackgroundToggle() {
         <button
           type="button"
           onClick={() => setBackground('standard')}
-          className={`flex w-full items-center gap-2 rounded px-3 py-2 text-left ${
+          className={`flex w-full cursor-pointer items-center gap-2 rounded px-3 py-2 text-left ${
             background === 'standard'
               ? 'bg-amber-400 text-amber-900'
               : 'bg-amber-50 hover:bg-amber-200'

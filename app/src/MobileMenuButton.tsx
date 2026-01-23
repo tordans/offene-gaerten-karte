@@ -9,7 +9,7 @@ export default function MobileMenuButton({ onOpen }: MobileMenuButtonProps) {
     <button
       type="button"
       onClick={onOpen}
-      className="fixed top-4 left-4 z-50 rounded-full border-2 border-red-800 bg-amber-100 p-3 shadow-lg transition-colors hover:bg-amber-200 lg:hidden"
+      className="fixed top-4 left-4 z-50 cursor-pointer rounded-full border-2 border-red-800 bg-amber-100 p-3 shadow-lg transition-colors hover:bg-amber-200 lg:hidden"
       aria-label="Menü öffnen"
     >
       <Bars3Icon className="size-6 text-red-700" />
