@@ -102,7 +102,7 @@ export default function MapComponent({ gardens }: MapComponentProps) {
               }}
             >
               <div
-                className="h-4 w-4 cursor-pointer rounded-full hover:opacity-80"
+                className="size-4 cursor-pointer rounded-full hover:opacity-80"
                 style={{ backgroundColor: markerColor }}
               />
             </Marker>

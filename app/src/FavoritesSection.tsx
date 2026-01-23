@@ -44,7 +44,7 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
                     onClick={() => garden.id && toggleFavorite(garden.id)}
                     className="flex cursor-pointer items-center gap-1 text-red-600 text-xs hover:text-red-800"
                   >
-                    <XMarkIcon className="h-3 w-3" />
+                    <XMarkIcon className="size-3" />
                     Entfernen
                   </button>
                   <button
@@ -60,7 +60,7 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
                     }}
                     className="flex cursor-pointer items-center gap-1 text-black text-xs hover:text-blue-400"
                   >
-                    <ArrowsPointingInIcon className="h-3 w-3" />
+                    <ArrowsPointingInIcon className="size-3" />
                     Karte zentrieren
                   </button>
                 </div>

@@ -68,7 +68,7 @@ export default function GardenPopup({
           rel="noopener noreferrer"
           className="flex items-center gap-1 text-blue-600 hover:underline"
         >
-          <ArrowTopRightOnSquareIcon className="h-3 w-3" />
+          <ArrowTopRightOnSquareIcon className="size-3" />
           Website öffnen
         </a>
         <a
@@ -77,7 +77,7 @@ export default function GardenPopup({
           rel="noopener noreferrer"
           className="flex items-center gap-1 text-blue-600 hover:underline"
         >
-          <HomeModernIcon className="h-3 w-3" />
+          <HomeModernIcon className="size-3" />
           Route berechnen (ÖPNV)
         </a>
       </div>

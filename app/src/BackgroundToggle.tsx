@@ -21,7 +21,7 @@ export default function BackgroundToggle() {
               : 'bg-amber-50 hover:bg-amber-200'
           }`}
         >
-          <MapIcon className="h-4 w-4" />
+          <MapIcon className="size-4" />
           Standard-Karte
         </button>
         <button
@@ -33,7 +33,7 @@ export default function BackgroundToggle() {
               : 'bg-amber-50 hover:bg-amber-200'
           }`}
         >
-          <CameraIcon className="h-4 w-4" />
+          <CameraIcon className="size-4" />
           Luftbild (Brandenburg)
         </button>
       </div>
