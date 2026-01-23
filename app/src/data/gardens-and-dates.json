@@ -184,8 +184,8 @@
     "websiteSlug": "garten-nummer-005",
     "address": "16775 Stechlin, Forststeig 2a",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 53.144773,
+      "lng": 13.0430243
     },
     "dates": [
       {
@@ -204,9 +204,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -324,8 +321,8 @@
     "websiteSlug": "garten-nummer-008",
     "address": "16247 Althüttendorf, Glasstr. 15",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.958742,
+      "lng": 13.8035379
     },
     "dates": [
       {
@@ -344,9 +341,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -381,8 +375,8 @@
     "websiteSlug": "garten-nummer-010",
     "address": "16303 Schwedt, Bernd-von-Arnim-Str. 42",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 53.0162031,
+      "lng": 14.226455
     },
     "dates": [
       {
@@ -433,9 +427,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -567,8 +558,8 @@
     "websiteSlug": "garten-nummer-015",
     "address": "Bahnhofstr. 30, 16845 Neustadt (Dosse)",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.8544129,
+      "lng": 12.4466449
     },
     "dates": [
       {
@@ -587,9 +578,6 @@
         "endTime": "18:00",
         "terminTyp": "Terminverschiebung"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -673,7 +661,7 @@
       }
     ],
     "errors": [
-      "lat, lng conversion failed, falling back to berlin"
+      "lat, lng fields are empty"
     ]
   },
   {
@@ -743,8 +731,8 @@
     "websiteSlug": "garten-nummer-021",
     "address": "16359, Bahnhofstraße. 29, Germany",
     "coordinates": {
-      "lat": 51.4744366,
-      "lng": 7.3069855
+      "lat": 51.4705756,
+      "lng": 7.3147361
     },
     "dates": [
       {
@@ -875,8 +863,8 @@
     "websiteSlug": "garten-nummer-025",
     "address": "Kiezerstr. ; Schollene",
     "coordinates": {
-      "lat": 52.6776556,
-      "lng": 12.2181562
+      "lat": 52.52,
+      "lng": 13.405
     },
     "dates": [
       {
@@ -895,6 +883,9 @@
         "endTime": "17:00",
         "terminTyp": "Regeltermin"
       }
+    ],
+    "errors": [
+      "lat, lng fields are empty"
     ]
   },
   {
@@ -1034,8 +1025,8 @@
     "websiteSlug": "garten-nummer-031",
     "address": "14612 Falkensee, Zaunkönigstr. 8",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.55306,
+      "lng": 13.0561331
     },
     "dates": [
       {
@@ -1046,9 +1037,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -1163,8 +1151,8 @@
     "websiteSlug": "garten-nummer-033",
     "address": "14612 Falkensee, Leinestraße 39",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.576122,
+      "lng": 13.0688904
     },
     "dates": [
       {
@@ -1183,9 +1171,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -1290,8 +1275,8 @@
     "websiteSlug": "garten-nummer-037",
     "address": "13591 Berlin-Spandau, Bolteweg 32",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.526801,
+      "lng": 13.1625491
     },
     "dates": [
       {
@@ -1342,9 +1327,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -1352,8 +1334,8 @@
     "websiteSlug": "garten-nummer-038",
     "address": "13583 Berlin-Spandau, Borkzeile 34",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.539645,
+      "lng": 13.1915693
     },
     "dates": [
       {
@@ -1364,9 +1346,6 @@
         "endTime": "16:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -1374,8 +1353,8 @@
     "websiteSlug": "garten-nummer-039",
     "address": "13587 Berlin-Spandau/Hakenfelde, Klingenhofer Steig 24 a",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.561674,
+      "lng": 13.2009961
     },
     "dates": [
       {
@@ -1426,9 +1405,6 @@
         "endTime": "19:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -1436,8 +1412,8 @@
     "websiteSlug": "garten-nummer-040",
     "address": "13465 Berlin-Fronau, Ansgarstr. 15",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.63854,
+      "lng": 13.2677328
     },
     "dates": [
       {
@@ -1448,9 +1424,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -1795,8 +1768,8 @@
     "websiteSlug": "garten-nummer-056",
     "address": "15366 Neuenhagen, Edelweißstr. 21",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.506327,
+      "lng": 13.7117616
     },
     "dates": [
       {
@@ -1815,9 +1788,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -1960,8 +1930,8 @@
     "websiteSlug": "garten-nummer-062",
     "address": "Pfalzburger Str. 5; 10719 Berlin",
     "coordinates": {
-      "lat": 52.4989632,
-      "lng": 13.3222004
+      "lat": 52.52,
+      "lng": 13.405
     },
     "dates": [
       {
@@ -1972,6 +1942,9 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
+    ],
+    "errors": [
+      "lat, lng fields are empty"
     ]
   },
   {
@@ -1979,8 +1952,8 @@
     "websiteSlug": "garten-nummer-063",
     "address": "10829 Berlin-Schöneberg, Kleingartenkolonie Lindenhain im Schöneberger Südgelände, Hans-Dannert-Weg 158",
     "coordinates": {
-      "lat": 52.4701013,
-      "lng": 13.3589885
+      "lat": 52.4682986,
+      "lng": 13.3595013
     },
     "dates": [
       {
@@ -2033,8 +2006,8 @@
     "websiteSlug": "garten-nummer-065",
     "address": "12043 Berlin-Neukölln, böhmisches dorf",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.475977,
+      "lng": 13.4446226
     },
     "dates": [
       {
@@ -2053,9 +2026,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -2106,8 +2076,8 @@
     "websiteSlug": "garten-nummer-067",
     "address": "Straße 179, 36, 12355 Berlin",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.4072132,
+      "lng": 13.493508
     },
     "dates": [
       {
@@ -2118,9 +2088,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -2182,8 +2149,8 @@
     "websiteSlug": "garten-nummer-070",
     "address": "15569 Woltersdorf, Eichendamm 25a",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.458578,
+      "lng": 13.7309946
     },
     "dates": [
       {
@@ -2202,9 +2169,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -2352,8 +2316,8 @@
     "websiteSlug": "garten-nummer-078",
     "address": "14167 Berlin-Zehlendorf, Prinz-Handjery-Str. 32A",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.4246869,
+      "lng": 13.267086
     },
     "dates": [
       {
@@ -2372,9 +2336,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -2447,8 +2408,8 @@
     "websiteSlug": "garten-nummer-082",
     "address": "14469 Potsdam-Bornim, Florastr. 61",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.423309,
+      "lng": 13.0151696
     },
     "dates": [
       {
@@ -2459,9 +2420,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -2469,8 +2427,8 @@
     "websiteSlug": "garten-nummer-083",
     "address": "karl foerster garten",
     "coordinates": {
-      "lat": 50.9696737,
-      "lng": 11.0075814
+      "lat": 52.4208275,
+      "lng": 13.0199909
     },
     "dates": [
       {
@@ -2596,7 +2554,7 @@
     "websiteSlug": "garten-nummer-088",
     "address": "14467 Potsdam, Am Grünen Gitter 9",
     "coordinates": {
-      "lat": 52.4002257,
+      "lat": 52.4002258,
       "lng": 13.0375355
     },
     "dates": [
@@ -2785,8 +2743,8 @@
     "websiteSlug": "garten-nummer-095",
     "address": "Berliner Str. 37; 14979 Großbeeren",
     "coordinates": {
-      "lat": 52.3591969,
-      "lng": 13.3104145
+      "lat": 52.52,
+      "lng": 13.405
     },
     "dates": [
       {
@@ -2813,6 +2771,9 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
+    ],
+    "errors": [
+      "lat, lng fields are empty"
     ]
   },
   {
@@ -3407,8 +3368,8 @@
     "websiteSlug": "garten-nummer-113",
     "address": "14548 Schwielowsee, uferpromenade",
     "coordinates": {
-      "lat": 52.3428165,
-      "lng": 12.9796812
+      "lat": 52.344291,
+      "lng": 12.9833198
     },
     "dates": [
       {
@@ -3596,7 +3557,7 @@
     "websiteSlug": "garten-nummer-120",
     "address": "14558, Nuthetal, Schinkelstr. 17",
     "coordinates": {
-      "lat": 52.3503757,
+      "lat": 52.3503758,
       "lng": 13.1076617
     },
     "dates": [
@@ -3650,8 +3611,8 @@
     "websiteSlug": "garten-nummer-122",
     "address": "Alte Feldstr. 14; 14558 Nuthetal",
     "coordinates": {
-      "lat": 52.3157734,
-      "lng": 13.1330931
+      "lat": 52.52,
+      "lng": 13.405
     },
     "dates": [
       {
@@ -3662,6 +3623,9 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
+    ],
+    "errors": [
+      "lat, lng fields are empty"
     ]
   },
   {
@@ -3861,7 +3825,7 @@
       }
     ],
     "errors": [
-      "lat, lng conversion failed, falling back to berlin"
+      "lat, lng fields are empty"
     ]
   },
   {
@@ -3896,8 +3860,8 @@
     "websiteSlug": "garten-nummer-128",
     "address": "15 749 Mittenwalde, Telzer Höhe 1",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.248522,
+      "lng": 13.4979145
     },
     "dates": [
       {
@@ -3940,9 +3904,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -3950,8 +3911,8 @@
     "websiteSlug": "garten-nummer-129",
     "address": "15754 Heidesee, Ring 41",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.2369412,
+      "lng": 13.815099
     },
     "dates": [
       {
@@ -3970,9 +3931,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
@@ -4087,8 +4045,8 @@
     "websiteSlug": "garten-nummer-131",
     "address": "Siedlung 23 c; 15848 Ranzig",
     "coordinates": {
-      "lat": 52.1145516,
-      "lng": 14.1771329
+      "lat": 52.52,
+      "lng": 13.405
     },
     "dates": [
       {
@@ -4099,6 +4057,9 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
+    ],
+    "errors": [
+      "lat, lng fields are empty"
     ]
   },
   {
@@ -4106,8 +4067,8 @@
     "websiteSlug": "garten-nummer-132",
     "address": "Trebatscher Hauptstraße 26a; 15848 Tauche/",
     "coordinates": {
-      "lat": 52.0844183,
-      "lng": 14.1657841
+      "lat": 52.52,
+      "lng": 13.405
     },
     "dates": [
       {
@@ -4118,6 +4079,9 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
+    ],
+    "errors": [
+      "lat, lng fields are empty"
     ]
   },
   {
@@ -4230,8 +4194,8 @@
     "websiteSlug": "garten-nummer-136",
     "address": "14913 Jüterbog, Grüna 95",
     "coordinates": {
-      "lat": 52.52,
-      "lng": 13.405
+      "lat": 52.031535,
+      "lng": 13.082388
     },
     "dates": [
       {
@@ -4250,9 +4214,6 @@
         "endTime": "18:00",
         "terminTyp": "Regeltermin"
       }
-    ],
-    "errors": [
-      "lat, lng conversion failed, falling back to berlin"
     ]
   },
   {
