@@ -6,6 +6,7 @@ import Footer from './Footer'
 import MobileMenuButton from './MobileMenuButton'
 import MobileSidebarToggle from './MobileSidebarToggle'
 import ProjectDescription from './ProjectDescription'
+import { useFavoritesFeatureEnabled } from './stores/useFavoritesFeatureState'
 import type { GardensJson } from './types'
 
 type SidebarProps = {
@@ -15,6 +16,7 @@ type SidebarProps = {
 
 export default function Sidebar({ gardens, onStateChange }: SidebarProps) {
   const [isOpen, setIsOpen] = useState(true)
+  const favoritesFeatureEnabled = useFavoritesFeatureEnabled()
 
   const handleStateChange = (newIsOpen: boolean) => {
     setIsOpen(newIsOpen)
@@ -31,7 +33,7 @@ export default function Sidebar({ gardens, onStateChange }: SidebarProps) {
         <MobileSidebarToggle onClose={() => handleStateChange(false)} />
         <h1 className="mb-2 font-bold text-red-700 text-xl">Offene Gärten Karte</h1>
         <ProjectDescription />
-        <FavoritesSection gardens={gardens} />
+        {favoritesFeatureEnabled && <FavoritesSection gardens={gardens} />}
         <DateFilter gardens={gardens} />
         <BackgroundToggle />
         <Footer />

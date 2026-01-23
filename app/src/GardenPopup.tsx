@@ -1,6 +1,7 @@
 import { ArrowTopRightOnSquareIcon, HeartIcon, HomeModernIcon } from '@heroicons/react/24/solid'
 import { formatDistanceToNow } from 'date-fns'
 import { de } from 'date-fns/locale'
+import { useFavoritesFeatureEnabled } from './stores/useFavoritesFeatureState'
 import type { Garden } from './types'
 
 type GardenPopupProps = {
@@ -18,6 +19,8 @@ export default function GardenPopup({
   selectedMonth,
   selectedDay,
 }: GardenPopupProps) {
+  const favoritesFeatureEnabled = useFavoritesFeatureEnabled()
+
   // Helper function to format dates
   const formatDate = (date: {
     day: number
@@ -47,16 +50,18 @@ export default function GardenPopup({
     <div className="p-2">
       <h3 className="mb-1 font-semibold text-sm">{garden.address}</h3>
       <div className="mb-2 space-y-1 text-gray-600 text-xs">
-        <button
-          type="button"
-          onClick={() => garden.id && toggleFavorite(garden.id)}
-          className={`flex items-center gap-1 text-xs ${garden.id && isFavorite(garden.id) ? 'text-amber-600' : 'text-blue-600'} block hover:underline`}
-        >
-          <HeartIcon className="h-3 w-3" />
-          {garden.id && isFavorite(garden.id)
-            ? 'Aus Favoriten entfernen'
-            : 'Zu Favoriten hinzufügen'}
-        </button>
+        {favoritesFeatureEnabled && (
+          <button
+            type="button"
+            onClick={() => garden.id && toggleFavorite(garden.id)}
+            className={`flex items-center gap-1 text-xs ${garden.id && isFavorite(garden.id) ? 'text-amber-600' : 'text-blue-600'} block hover:underline`}
+          >
+            <HeartIcon className="h-3 w-3" />
+            {garden.id && isFavorite(garden.id)
+              ? 'Aus Favoriten entfernen'
+              : 'Zu Favoriten hinzufügen'}
+          </button>
+        )}
         <a
           href={`https://www.xn--offene-grten-ncb.de/${garden.websiteSlug}/`}
           target="_blank"

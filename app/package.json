@@ -23,6 +23,7 @@
     "maplibre-gl": "^5.16.0",
     "nuqs": "^2.8.6",
     "pmtiles": "^4.3.2",
+    "zustand": "^5.0.2",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-map-gl": "^8.1.0"

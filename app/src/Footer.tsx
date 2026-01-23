@@ -1,4 +1,5 @@
 import DebugToggle from './DebugToggle'
+import FavoritesToggle from './FavoritesToggle'
 import lastUpdatedData from './data/last-updated.json'
 
 export default function Footer() {
@@ -116,6 +117,8 @@ export default function Footer() {
           </p>
 
           <DebugToggle />
+
+          <FavoritesToggle />
         </div>
       </details>
 
