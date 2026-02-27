@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import type { GardensJson } from '../../scripts/schemas.ts'
-import BackgroundToggle from './BackgroundToggle'
 import DateFilter from './DateFilter'
 import FavoritesSection from './FavoritesSection'
 import Footer from './Footer'
@@ -35,7 +34,6 @@ export default function Sidebar({ gardens, onStateChange }: SidebarProps) {
         <ProjectDescription />
         {favoritesFeatureEnabled && <FavoritesSection gardens={gardens} />}
         <DateFilter gardens={gardens} />
-        <BackgroundToggle />
         <Footer />
       </nav>
 

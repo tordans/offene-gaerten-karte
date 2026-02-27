@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { MapProvider } from 'react-map-gl/maplibre'
-import { gardensJsonSchema, type GardensJson } from '../../scripts/schemas.ts'
+import { type GardensJson, gardensJsonSchema } from '../../scripts/schemas.ts'
 // Import data as a module
 import 'maplibre-gl/dist/maplibre-gl.css'
 import DebugPanel from './DebugPanel'

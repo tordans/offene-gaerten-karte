@@ -2,7 +2,6 @@ import { parseAsInteger, useQueryState } from 'nuqs'
 import { useMemo } from 'react'
 import { Map, Marker, Popup } from 'react-map-gl/maplibre'
 import type { Garden } from '../../scripts/schemas.ts'
-import BackgroundLayers from './BackgroundLayers'
 import GardenPopup from './GardenPopup'
 import { useFavoritesOnly } from './stores/useFavoritesOnlyState'
 import { useIsFavorite, useToggleFavorite } from './stores/useFavoritesState'
@@ -70,8 +69,6 @@ export default function MapComponent({ gardens }: MapComponentProps) {
         mapStyle={MAP_STYLE}
         style={{ width: '100%', height: '100%' }}
       >
-        <BackgroundLayers />
-
         {/* Markers for filtered gardens */}
         {filteredGardens.map((garden) => {
           const isFav = isFavorite(garden.id)
