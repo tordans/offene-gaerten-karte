@@ -23,6 +23,7 @@ const DATEN_SHEET_GID = '1889715507'
 type GardenFromSheets = {
   GARTEN_ID: string
   WEBSITE_SLUG: string
+  PUBLIC_NAME: string
   LAT: string
   LNG: string
   ADRESSE: string
@@ -211,6 +212,7 @@ async function fetchAndProcessData() {
     const gaertenIndices = findColumnIndices(gaertenHeaders, [
       'GARTEN_ID',
       'WEBSITE_SLUG',
+      'PUBLIC_NAME',
       'LAT',
       'LNG',
       'ADRESSE',
@@ -225,6 +227,7 @@ async function fetchAndProcessData() {
       const garden: GardenFromSheets = {
         GARTEN_ID: row[gaertenIndices.GARTEN_ID] || '',
         WEBSITE_SLUG: row[gaertenIndices.WEBSITE_SLUG] || '',
+        PUBLIC_NAME: row[gaertenIndices.PUBLIC_NAME] ?? '',
         LAT: row[gaertenIndices.LAT] || '',
         LNG: row[gaertenIndices.LNG] || '',
         ADRESSE: row[gaertenIndices.ADRESSE] || '',
@@ -269,6 +272,11 @@ async function fetchAndProcessData() {
       // Validate address format
       if (!garden.ADRESSE || garden.ADRESSE.trim() === '') {
         errors.push('address is empty or missing')
+      }
+
+      // Validate PUBLIC_NAME format
+      if (!garden.PUBLIC_NAME || garden.PUBLIC_NAME.trim() === '') {
+        errors.push('PUBLIC_NAME is empty or missing')
       }
 
       // Get dates for this garden from DATEN sheet
@@ -318,6 +326,7 @@ async function fetchAndProcessData() {
       const processedGarden = {
         id: garden.GARTEN_ID,
         websiteSlug: garden.WEBSITE_SLUG,
+        name: garden.PUBLIC_NAME?.trim() ?? '',
         address: garden.ADRESSE,
         coordinates: coords || BERLIN_CENTER,
         dates,

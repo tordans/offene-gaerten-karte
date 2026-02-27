@@ -45,6 +45,7 @@ export const coordinatesSchema = z.object({
 export const gardenSchema = z.object({
   id: z.string().min(1),
   websiteSlug: z.string().min(1),
+  name: z.string().min(1),
   address: z.string().min(1),
   coordinates: coordinatesSchema,
   dates: z.array(dateSchema),

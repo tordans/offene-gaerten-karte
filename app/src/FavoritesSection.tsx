@@ -37,7 +37,13 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
             .filter((garden) => garden.id && isFavorite(garden.id))
             .map((garden) => (
               <div key={garden.id} className="rounded border-blue-500 border-l-4 bg-amber-200 p-2">
-                <div className="mb-2 font-medium text-gray-700 text-sm">{garden.address}</div>
+                <div className="mb-1 flex items-center gap-2">
+                  <span className="rounded-full bg-gray-700 px-2 py-0.5 font-medium text-white text-xs">
+                    {garden.id}
+                  </span>
+                  <span className="font-semibold text-sm">{garden.name}</span>
+                </div>
+                <p className="mb-2 text-gray-600 text-xs">{garden.address}</p>
                 <div className="flex gap-2">
                   <button
                     type="button"
