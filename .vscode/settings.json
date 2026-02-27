@@ -1,5 +1,7 @@
 {
-  "cSpell.words": [
-    "NOMINATIM"
-  ]
+	"prettier.enable": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
+	}
 }
