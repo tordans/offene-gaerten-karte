@@ -63,7 +63,7 @@ export default function GardenPopup({
             onClick={() => garden.id && toggleFavorite(garden.id)}
             className="flex cursor-pointer items-center gap-1 text-blue-600 text-xs hover:underline"
           >
-            <HeartIcon className="size-3 text-black" />
+            <HeartIcon className="size-3 text-red-600" />
             {garden.id && isFavorite(garden.id)
               ? 'Aus Favoriten entfernen'
               : 'Zu Favoriten hinzufügen'}

@@ -24,7 +24,7 @@ export default function FavoritesSection({ gardens }: FavoritesSectionProps) {
     <div className="mb-6 border-red-800 border-b pb-4">
       <div className="mb-3 flex items-center justify-between">
         <h2 className="flex items-center gap-2 font-semibold text-black text-lg">
-          <HeartIcon className="size-4 text-black" />
+          <HeartIcon className="size-4 text-red-600" />
           Favoriten
         </h2>
         <span className="rounded-full bg-amber-200 px-2 py-1 font-medium text-amber-900 text-xs">
