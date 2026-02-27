@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "biome lint --write .",
-    "lint:check": "biome lint .",
-    "format": "biome format --write .",
-    "format:check": "biome format .",
-    "check": "biome check --write --unsafe .",
-    "check:check": "biome check .",
+    "lint": "biome lint --write . --config-path=biome.jsonc",
+    "lint:check": "biome lint . --config-path=biome.jsonc",
+    "format": "biome format --write . --config-path=biome.jsonc",
+    "format:check": "biome format . --config-path=biome.jsonc",
+    "check": "biome check --write --unsafe . --config-path=biome.jsonc",
+    "check:check": "biome check . --config-path=biome.jsonc",
     "preview": "vite preview",
     "updatePackages:major": "npx taze major --includeLocked --write && npm install",
     "updatePackages:minor": "npx taze minor --includeLocked --write && npm install"

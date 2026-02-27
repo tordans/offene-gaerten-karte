@@ -12,7 +12,12 @@
     // Biome respects .gitignore by default (via vcs.useIgnoreFile)
     // dist/ and node_modules/ are already ignored via .gitignore
     // We only need to explicitly exclude files that are tracked by git but should be ignored by Biome
-    "includes": ["**/*", "!src/data/gardens-and-dates.json", "!src/data/last-updated.json"]
+    "includes": [
+      "**/*",
+      "!src/data/gardens-and-dates.json",
+      "!src/data/last-updated.json",
+      "!!**/dist"
+    ]
   },
   "formatter": {
     // "enabled": true, // default
