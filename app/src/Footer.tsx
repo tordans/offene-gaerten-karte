@@ -64,18 +64,27 @@ export default function Footer() {
               </p>
 
               <p>
-                <strong>Kartenstil Maptiler (maptiler.com)</strong>
+                <strong>Kartenstil OpenFreeMap (openfreemap.org)</strong>
               </p>
               <p>
-                Die Grafiken für den Kartenstil von Maptiler werden von den Servern von maptiler.com
-                geladen.
+                Die Kartenkacheln und der Stil „Liberty“ werden von den Servern von
+                tiles.openfreemap.org geladen (Projekt:{' '}
                 <a
-                  href="https://www.maptiler.com/privacy-policy/"
+                  href="https://openfreemap.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-blue-400 hover:underline"
                 >
-                  Bitte beachtet die Datenschutzerklärungen von Maptiler.
+                  openfreemap.org
+                </a>
+                ).{' '}
+                <a
+                  href="https://openfreemap.org/privacy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-blue-400 hover:underline"
+                >
+                  Bitte beachtet die Datenschutzerklärung von OpenFreeMap.
                 </a>
               </p>
 

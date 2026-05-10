@@ -4,7 +4,7 @@ A React application that displays open gardens in Germany on an interactive map.
 
 ## Features
 
-- **Interactive Map**: Shows all gardens with geocoded coordinates using MapTiler
+- **Interactive Map**: Shows all gardens with geocoded coordinates using OpenFreeMap (Liberty)
 - **Month Filtering**: Filter gardens by opening month with count display
 - **Garden Details**: Click markers to see address, opening dates, and link to original page
 - **Responsive Design**: Clean, modern UI using Tailwind CSS
@@ -34,5 +34,5 @@ https://tordans.github.io/offene-gaerten-karte/
 
 - **Frontend**: React, TypeScript, Vite, Tailwind CSS
 - **State management**: nuqs, zustand, useState
-- **Maps**: react-map-gl, MapTiler
+- **Maps**: react-map-gl, maplibre-gl, OpenFreeMap
 - **Deployment**: GitHub Actions, GitHub Pages
