@@ -20,7 +20,7 @@
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.2.1",
     "date-fns": "^4.1.0",
-    "maplibre-gl": "^5.19.0",
+    "maplibre-gl": "^6.16.0",
     "nuqs": "^2.8.8",
     "pmtiles": "^4.4.0",
     "react": "^19.2.4",
