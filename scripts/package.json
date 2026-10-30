@@ -7,7 +7,7 @@
     "fetch-data": "node --experimental-strip-types fetch-and-process-data.ts"
   },
   "dependencies": {
-    "zod": "^4.3.5"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
